@@ -86,7 +86,7 @@ const IntroPage = () => {
     <div className="intro-page" onClick={handleScreenClick}>
       <div className={`background ${transitionActive ? "active" : ""}`}></div>
       <div className="container-title">
-        <ul>
+        <ul translate="no">
           {textTitleArray.map((item, index) => (
             <li
               key={index}
