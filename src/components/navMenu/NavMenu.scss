@@ -1,0 +1,382 @@
+@import "./../../styles/root.scss";
+
+.container-nav-menu {
+  /* -----------------------------------
+ * --------------- Menu icon
+----------------------------------- */
+  .container-button {
+    position: fixed;
+    right: 2%;
+    top: 4%;
+    display: flex;
+    z-index: 11;
+
+    .first-border {
+      border: 2px solid #666;
+      border-radius: 50%;
+      padding: 8px;
+      transition: border 0.2s ease-out;
+      transition-delay: 0.1s;
+      background-color: #fffc;
+
+      @media (min-width: 768px) {
+        &:hover {
+          cursor: pointer;
+          border: 2px solid #0000;
+          transition: border 0.2s ease;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 0;
+          height: 0;
+          border: 2px solid #888;
+          border-radius: 50%;
+          opacity: 0;
+          transition: width 0.4s ease, height 0.4s ease, opacity 0.25s ease;
+          pointer-events: none;
+        }
+
+        &:hover::before {
+          background-color: #fffc;
+          width: 128px;
+          height: 128px;
+          opacity: 1;
+          transition: width 0.4s ease, height 0.4s ease, opacity 0.35s ease;
+        }
+      }
+      .second-border {
+        border: 4px solid #444;
+        border-radius: 50%;
+        display: flex;
+        padding: 12px;
+        background-color: #fffc;
+
+        .container-burger {
+          height: 55px;
+          width: 55px;
+
+          .item-burger {
+            position: absolute;
+            height: 5px;
+            width: 55px;
+            background-color: $on-background--primary;
+            transform: translate(-50%, -50%);
+            border-radius: 16px;
+          }
+          .item-burger-1 {
+            top: 40%;
+            left: 50%;
+            transition: top 0.4s, left 0.4s, transform 0.4s;
+          }
+          .item-burger-2 {
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+            transition: opacity 0.4s;
+            transition-delay: 0.8s;
+          }
+          .item-burger-3 {
+            top: 60%;
+            left: 50%;
+            transition: top 0.4s, left 0.4s, transform 0.4s;
+          }
+          &.active {
+            .item-burger-1 {
+              top: 48%;
+              left: 24%;
+              transform: rotate(45deg);
+              transition: top 0.4s, left 0.4s, transform 0.4s;
+              transition-delay: 0.8s;
+            }
+            .item-burger-2 {
+              opacity: 0;
+              transition: opacity 0.4s;
+            }
+            .item-burger-3 {
+              top: 48%;
+              left: 24%;
+              transform: rotate(-45deg);
+              transition: top 0.4s, left 0.4s, transform 0.4s;
+              transition-delay: 0.8s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* -----------------------------------
+ * --------------- Overlay
+----------------------------------- */
+  .container-overlay {
+    background-color: $on-background--secondary;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0 0 0 0;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.6s, height 0.6s, opacity 0.6s, margin 0.6s,
+      border-radius 0.2s;
+    transition-delay: 0.8s;
+
+    &.active {
+      opacity: 1;
+      width: 110%;
+      height: 200%;
+      margin: -32% -16% 0 0;
+      border-radius: 50% 0 0 50%;
+      pointer-events: auto;
+      transition: width 0.8s, height 0.6s, opacity 0.6s;
+    }
+  }
+
+  /* -----------------------------------
+ * --------------- Top Line
+----------------------------------- */
+  .container-top-line {
+    background-color: $on-background--primary;
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    right: 50%;
+    opacity: 0;
+    width: 0;
+    height: 48px;
+    margin-right: 3px;
+    pointer-events: none;
+    transition: width 0.6s ease, opacity 2.4s ease;
+
+    &.active {
+      opacity: 1;
+      width: 50%;
+      pointer-events: auto;
+      transition: width 0.8s ease, opacity 0.2s ease;
+      transition-delay: 0.8s;
+    }
+  }
+
+  /* -----------------------------------
+ * --------------- Middle line
+----------------------------------- */
+  .container-middle-line {
+    background-color: $background--primary;
+    z-index: 12;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 2px;
+    height: 0;
+    pointer-events: none;
+    transition: height 0.8s ease, opacity 0.6s ease;
+    transition-delay: 0.4s;
+
+    &.active {
+      opacity: 1;
+      height: 100%;
+      pointer-events: auto;
+      transition: height 0.8s ease, opacity 0.4s ease;
+      transition-delay: 0.4s;
+    }
+  }
+
+  /* -----------------------------------
+ * --------------- Bottom line
+----------------------------------- */
+  .container-bottom-line {
+    background-color: $on-background--primary;
+    z-index: 11;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    width: 0;
+    height: 48px;
+    pointer-events: none;
+    transition: width 0.6s ease, opacity 2.4s ease;
+
+    &.active {
+      opacity: 1;
+      width: 50%;
+      pointer-events: auto;
+      transition: width 0.8s ease, opacity 0.2s ease;
+      transition-delay: 0.8s;
+    }
+  }
+
+  /* -----------------------------------
+ * --------------- List items
+----------------------------------- */
+  .container-list {
+    z-index: 12;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease, top 0.8s;
+    list-style-type: none;
+    padding: 0;
+
+    &.active {
+      pointer-events: auto;
+      opacity: 1;
+      top: 50%;
+      transition: opacity 0.8s ease, top 0.8s;
+      transition-delay: 0.8s;
+    }
+
+    li {
+      padding: 4% 8px;
+      @media (max-width: 1400px) {
+        padding: 8% 8px;
+      }
+      p {
+        position: absolute;
+        margin-left: -64px;
+        font-size: 18px;
+        font-family: "Gilroy-SemiBold";
+        color: $text-color--primary;
+      }
+      h3 {
+        margin: 0;
+        text-decoration: none;
+        color: $text-color--primary;
+        font-family: "Gilroy-Bold";
+        font-size: 6vw;
+        white-space: nowrap;
+        transition: color 0.4s ease;
+
+        @media (min-width: 768px) {
+          &:hover {
+            color: $on-text-color--primary;
+            transition: color 0.2s ease;
+            cursor: pointer;
+          }
+        }
+      }
+      span {
+        position: absolute;
+        margin-left: 50%;
+        width: 100%;
+        font-size: 1.2vw;
+        color: $text-color--primary;
+      }
+      @media (max-width: 1400px) {
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  /* -----------------------------------
+ * --------------- Dead zone
+----------------------------------- */
+  .dead-zone {
+    position: fixed;
+    z-index: 9;
+    opacity: 0;
+    background-color: #0001;
+    width: 0;
+    height: 0;
+    top: -50%;
+    right: 0;
+    border-radius: 50% 0 0 60%;
+    transition: width 1s, height 4.8s, opacity 0.8s;
+
+    &.active {
+      opacity: 1;
+      width: 128%;
+      height: 200%;
+      transition: width 1.8s, height 0.4s, opacity 0.8s;
+      transition-delay: 0.4s;
+    }
+  }
+
+  /* -----------------------------------
+ * --------------- Media query
+----------------------------------- */
+  @media (max-width: 768px) {
+    /*
+  * Menu icon
+  */
+    .container-button {
+      top: 4%;
+      right: 8%;
+      .first-border {
+        padding: 6px;
+        .second-border {
+          padding: 8px;
+          .container-burger {
+            height: 55px;
+            width: 55px;
+            &.active {
+              .item-burger-1 {
+                top: 48%;
+                left: 21%;
+              }
+              .item-burger-3 {
+                top: 48%;
+                left: 21%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* -----------------------------------
+ * --------------- Background overlay
+----------------------------------- */
+    .container-overlay {
+      border-radius: 50% 0 0 50%;
+      opacity: 1;
+      top: 0;
+      right: 0;
+      height: 100%;
+      transition: width 0.8s, height 0.8s, opacity 0.8s, margin 0.8s;
+      transition-delay: 0.8s;
+      &.active {
+        margin: -64% -16% 0 0;
+        transition: width 0.8s, height 0.8s, opacity 0.2s;
+      }
+    }
+
+    /* -----------------------------------
+ * --------------- Middle line
+----------------------------------- */
+    .container-middle-line {
+      width: 1px;
+    }
+
+    /* -----------------------------------
+ * --------------- List items
+----------------------------------- */
+    .container-list {
+      transform: translate(-50%, -50%);
+      left: 50%;
+      li {
+        padding: 32px 8px;
+        p {
+          display: none;
+        }
+        h3 {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}
