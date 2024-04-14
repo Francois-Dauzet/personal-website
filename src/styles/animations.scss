@@ -1,0 +1,14 @@
+/*
+* Transition and intro
+*/
+@keyframes changeTextColorForStopAnimation {
+  0% {
+    color: #3330;
+  }
+  50% {
+    color: #3338;
+  }
+  100% {
+    color: #3330;
+  }
+}

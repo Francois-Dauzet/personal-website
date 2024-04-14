@@ -47,4 +47,13 @@
       }
     }
   }
+  .text-stop-animation {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3330;
+    animation: changeTextColorForStopAnimation 2s infinite;
+    animation-delay: 1s;
+  }
 }

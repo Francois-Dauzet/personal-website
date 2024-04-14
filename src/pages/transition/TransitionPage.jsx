@@ -75,10 +75,11 @@ const TransitionPage = () => {
                 fontSize: `${88 / currentPageName.length}vw`,
               }}
             >
-              {item}
+              {item === "." ? "\u200B \u200B" : item}
             </li>
           ))}
         </ul>
+        <span className="text-stop-animation">Click to stop the animation</span>
       </div>
     </div>
   );

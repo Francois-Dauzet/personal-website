@@ -3,18 +3,21 @@ import "./IntroPage.scss";
 import { useNavigate } from "react-router-dom";
 
 const IntroPage = () => {
-  const data = "Welcome";
+  const TitleData = "Welcome";
+  const subtitleData = "in.my.website";
   const navigate = useNavigate();
   const [transitionActive, setTransitionActive] = useState(false);
 
-  const textTitleArray = data.split("");
-  const letterItems = useRef([]);
+  const textTitleArray = TitleData.split("");
+  const textSubtitleArray = subtitleData.split("");
+  const titleLetterItems = useRef([]);
+  const subtitleLetterItems = useRef([]);
   const timeouts = useRef([]);
 
   useEffect(() => {
-    const executeAnimation = () => {
+    const executeTitleAnimation = () => {
       setTransitionActive(true);
-      letterItems.current.forEach((item, index) => {
+      titleLetterItems.current.forEach((item, index) => {
         if (item) {
           timeouts.current.push(
             setTimeout(() => {
@@ -36,12 +39,33 @@ const IntroPage = () => {
               item.style.transform = `translateY(+1400%) rotate(${
                 Math.floor(Math.random() * 2884) - 1440
               }deg)`;
+            }, index * 160 + 4000)
+          );
+        }
+      });
+    };
+    executeTitleAnimation();
 
-              if (index === textTitleArray.length - 1) {
+    const executeSubtitleAnimation = () => {
+      setTransitionActive(true);
+      subtitleLetterItems.current.forEach((item, index) => {
+        if (item) {
+          timeouts.current.push(
+            setTimeout(() => {
+              item.style.transform = `translateY(0)`;
+            }, index * 160)
+          );
+          timeouts.current.push(
+            setTimeout(() => {
+              item.style.transform = `translateY(2000%) rotate(${
+                Math.floor(Math.random() * 2884) - 1440
+              }deg)`;
+
+              if (index === textSubtitleArray.length - 1) {
                 timeouts.current.push(
                   setTimeout(() => {
-                    navigate("/home");
-                  }, index * 160 + 250)
+                    navigate("/about-me");
+                  }, index * 100)
                 );
               }
             }, index * 160 + 4000)
@@ -50,12 +74,12 @@ const IntroPage = () => {
       });
     };
 
-    executeAnimation();
-  }, [textTitleArray.length, navigate]);
+    executeSubtitleAnimation();
+  }, [textSubtitleArray.length, navigate]);
 
   const handleScreenClick = () => {
     timeouts.current.forEach((timeout) => clearTimeout(timeout));
-    navigate("/home");
+    navigate("/about-me");
   };
 
   return (
@@ -66,18 +90,35 @@ const IntroPage = () => {
           {textTitleArray.map((item, index) => (
             <li
               key={index}
-              ref={(el) => (letterItems.current[index] = el)}
+              ref={(el) => (titleLetterItems.current[index] = el)}
               style={{
                 transform: `translateY(-1400%) rotate(${
                   Math.floor(Math.random() * 1442) - 720
                 }deg)`,
-                fontSize: `${88 / data.length}vw`,
+                fontSize: `${88 / TitleData.length}vw`,
               }}
             >
-              {item}
+              {item === "." ? "\u200B \u200B" : item}
             </li>
           ))}
         </ul>
+        <ul>
+          {textSubtitleArray.map((item, index) => (
+            <li
+              key={index}
+              ref={(el) => (subtitleLetterItems.current[index] = el)}
+              style={{
+                transform: `translateY(-2000%) rotate(${
+                  Math.floor(Math.random() * 1442) - 720
+                }deg)`,
+                fontSize: `${66 / subtitleData.length}vw`,
+              }}
+            >
+              {item === "." ? "\u200B \u200B" : item}
+            </li>
+          ))}
+        </ul>
+        <span className="text-stop-animation">Click to stop the animation</span>
       </div>
     </div>
   );
