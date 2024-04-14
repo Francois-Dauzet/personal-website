@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import "./SkillsPage.scss";
+import "./ExperiencePage.scss";
 
-const SkillsPage = () => {
+const ExperiencePage = () => {
   useEffect(() => {
     const transition = document.querySelector(".container-transition");
     setTimeout(() => {
@@ -12,9 +12,9 @@ const SkillsPage = () => {
   return (
     <div className="skills-page">
       <div className={"container-transition active"}></div>
-      <h1>SkillsPage</h1>
+      <h1>ExperiencePage</h1>
     </div>
   );
 };
 
-export default SkillsPage;
+export default ExperiencePage;

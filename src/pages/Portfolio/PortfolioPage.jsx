@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import "./ProjectsPage.scss";
+import "./PortfolioPage.scss";
 
-const ProjectsPage = () => {
+const PortfolioPage = () => {
   useEffect(() => {
     const transition = document.querySelector(".container-transition");
     setTimeout(() => {
@@ -12,9 +12,9 @@ const ProjectsPage = () => {
   return (
     <div className="projects-page">
       <div className={"container-transition active"}></div>
-      <h1>ProjectsPage</h1>
+      <h1>PortfolioPage</h1>
     </div>
   );
 };
 
-export default ProjectsPage;
+export default PortfolioPage;

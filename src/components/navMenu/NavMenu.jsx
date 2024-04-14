@@ -93,22 +93,24 @@ const NavMenu = () => {
         <ul className={`container-list ${overlayActive ? "active" : ""}`}>
           <li>
             <p>01.</p>
-            <h3 onClick={() => handleNavMenu("About.Me", "home")}>About Me</h3>
-            <span>Description</span>
+            <h3 onClick={() => handleNavMenu("About.Me", "about-me")}>
+              About Me
+            </h3>
+            <span>Learn more</span>
           </li>
           <li>
             <p>02.</p>
-            <h3 onClick={() => handleNavMenu("Experience", "skills")}>
+            <h3 onClick={() => handleNavMenu("Experience", "experience")}>
               Experience
             </h3>
-            <span>Description</span>
+            <span>Explore my background</span>
           </li>
           <li>
             <p>03.</p> <div></div>
-            <h3 onClick={() => handleNavMenu("Portfolio", "projects")}>
+            <h3 onClick={() => handleNavMenu("Portfolio", "portfolio")}>
               Portfolio
             </h3>
-            <span>Description</span>
+            <span>Discover my work</span>
           </li>
         </ul>
         <div onClick={() => toggleOverlay(false)} className="dead-zone"></div>

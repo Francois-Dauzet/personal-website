@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import "./HomePage.scss";
+import "./AboutMePage.scss";
 import { useTranslation } from "react-i18next";
 
-const HomePage = () => {
+const AboutMePage = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -15,9 +15,9 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <div className={"container-transition active"}></div>
-      <h1>HomePage</h1>
+      <h1>AboutMePage</h1>
     </div>
   );
 };
 
-export default HomePage;
+export default AboutMePage;

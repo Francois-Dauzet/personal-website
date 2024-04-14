@@ -3,7 +3,7 @@ import "./IntroPage.scss";
 import { useNavigate } from "react-router-dom";
 
 const IntroPage = () => {
-  const data = "AppSculpt";
+  const data = "Welcome";
   const navigate = useNavigate();
   const [transitionActive, setTransitionActive] = useState(false);
 
