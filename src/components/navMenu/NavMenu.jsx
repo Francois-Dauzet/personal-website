@@ -93,21 +93,30 @@ const NavMenu = () => {
         <ul className={`container-list ${overlayActive ? "active" : ""}`}>
           <li>
             <p>01.</p>
-            <h3 onClick={() => handleNavMenu("About.Me", "about-me")}>
+            <h3
+              translate="no"
+              onClick={() => handleNavMenu("About.Me", "about-me")}
+            >
               About Me
             </h3>
             <span>Learn more</span>
           </li>
           <li>
             <p>02.</p>
-            <h3 onClick={() => handleNavMenu("Experience", "experience")}>
+            <h3
+              translate="no"
+              onClick={() => handleNavMenu("Experience", "experience")}
+            >
               Experience
             </h3>
             <span>Explore my background</span>
           </li>
           <li>
             <p>03.</p> <div></div>
-            <h3 onClick={() => handleNavMenu("Portfolio", "portfolio")}>
+            <h3
+              translate="no"
+              onClick={() => handleNavMenu("Portfolio", "portfolio")}
+            >
               Portfolio
             </h3>
             <span>Discover my work</span>
