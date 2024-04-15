@@ -1,14 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
-import "./TransitionPage.scss";
-import { useStateStore } from "../../stores/stateStore";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useRef, useState } from 'react';
+import './TransitionPage.scss';
+import { useStateStore } from '../../stores/stateStore';
+import { useNavigate } from 'react-router-dom';
 
 const TransitionPage = () => {
   const navigate = useNavigate();
   const { currentPageName, currentPageRoute } = useStateStore();
   const [transitionActive, setTransitionActive] = useState(false);
 
-  const textTitleArray = currentPageName.split("");
+  const textTitleArray = currentPageName.split('');
   const letterItems = useRef([]);
   const timeouts = useRef([]);
 
@@ -55,19 +55,19 @@ const TransitionPage = () => {
   }, [textTitleArray.length, navigate, currentPageRoute]);
 
   const handleScreenClick = () => {
-    timeouts.current.forEach((timeout) => clearTimeout(timeout));
+    timeouts.current.forEach(timeout => clearTimeout(timeout));
     navigate(`/${currentPageRoute}`);
   };
 
   return (
     <div className="transition-page" onClick={handleScreenClick}>
-      <div className={`background ${transitionActive ? "active" : ""}`}></div>
+      <div className={`background ${transitionActive ? 'active' : ''}`}></div>
       <div className="container-title">
         <ul translate="no">
           {textTitleArray.map((item, index) => (
             <li
               key={index}
-              ref={(el) => (letterItems.current[index] = el)}
+              ref={el => (letterItems.current[index] = el)}
               style={{
                 transform: `translateY(-1400%) rotate(${
                   Math.floor(Math.random() * 1442) - 720
@@ -75,11 +75,13 @@ const TransitionPage = () => {
                 fontSize: `${88 / currentPageName.length}vw`,
               }}
             >
-              {item === "." ? "\u200B \u200B" : item}
+              {item === '.' ? '\u200B \u200B' : item}
             </li>
           ))}
         </ul>
-        <span className="text-stop-animation">Click to stop the animation</span>
+        <span translate="no" className="text-stop-animation">
+          Click to stop the animation
+        </span>
       </div>
     </div>
   );
