@@ -19,7 +19,7 @@
       transition-delay: 0.1s;
       background-color: #fffc;
 
-      @media (min-width: 800px) {
+      @media (min-width: 1000px) {
         &:hover {
           cursor: pointer;
           border: 2px solid #0000;
@@ -243,6 +243,9 @@
       @media (max-width: 1400px) {
         padding: 8% 8px;
       }
+      @media (max-width: 1000px) {
+        margin: 8% 0;
+      }
       p {
         position: absolute;
         margin-left: -64px;
@@ -267,7 +270,7 @@
           font-size: 5rem;
         }
 
-        @media (min-width: 800px) {
+        @media (min-width: 1000px) {
           &:hover {
             color: $on-text-color--primary;
             transition: color 0.2s ease;
@@ -287,7 +290,7 @@
           font-size: 1.5rem;
         }
       }
-      @media (max-width: 800px) {
+      @media (max-width: 1000px) {
         span {
           font-size: 1rem;
         }
@@ -322,7 +325,7 @@
   /* -----------------------------------
  * --------------- Media query
 ----------------------------------- */
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     /*
   * Menu icon
   */
