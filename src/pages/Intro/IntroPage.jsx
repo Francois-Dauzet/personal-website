@@ -108,7 +108,7 @@ const IntroPage = () => {
               key={index}
               ref={(el) => (subtitleLetterItems.current[index] = el)}
               style={{
-                transform: `translateY(-2000%) rotate(${
+                transform: `translateY(-2200%) rotate(${
                   Math.floor(Math.random() * 1442) - 720
                 }deg)`,
                 fontSize: `${66 / subtitleData.length}vw`,
