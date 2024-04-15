@@ -1,6 +1,6 @@
-import "./styles/App.scss";
-import NavMenu from "./components/navMenu/NavMenu";
-import Router from "./router/Router";
+import './styles/App.scss';
+import NavMenu from './components/navMenu/NavMenu';
+import Router from './router/Router';
 
 function App() {
   return (
@@ -8,7 +8,6 @@ function App() {
       <nav>
         <NavMenu />
       </nav>
-
       <Router />
     </div>
   );

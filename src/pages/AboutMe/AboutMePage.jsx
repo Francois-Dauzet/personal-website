@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './AboutMePage.scss';
 import { useTranslation } from 'react-i18next';
+import HeaderSection from '../../components/headerSection/HeaderSection';
 
 const AboutMePage = () => {
   const { t } = useTranslation();
@@ -15,6 +16,7 @@ const AboutMePage = () => {
   return (
     <div className="container-about-me-page">
       <div className={'container-transition active'}></div>
+      <HeaderSection />
       <h1>AboutMePage</h1>
     </div>
   );

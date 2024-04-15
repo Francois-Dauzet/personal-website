@@ -1,0 +1,81 @@
+@import './../../styles/root.scss';
+
+.container-header-section {
+  /* -----------------------------------
+ * --------------- Container header
+----------------------------------- */
+  min-height: 64vh;
+  width: 100vw;
+  display: flex;
+  // overflow: hidden;
+  // flex-direction: column;
+  background-image: url(https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg);
+  background-position: right;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container-left {
+    width: 33vw;
+    border-right: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container-image {
+      background-color: $on-background--secondary;
+      padding: 0 0 0.025rem 0.25rem;
+      opacity: 98%;
+
+      img {
+        height: 36vh;
+      }
+    }
+  }
+  .container-right {
+    background-color: #0008;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 67vw;
+
+    .container-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      border-top: 4px solid $on-background--secondary;
+      margin-left: 8%;
+      margin-right: 16%;
+
+      h1 {
+        color: #fff;
+        font-family: 'Gilroy-Bold';
+        font-size: 2.25rem;
+      }
+
+      p {
+        color: #eee;
+        font-family: 'Gilroy-Regular';
+        margin: 0.5rem 0;
+        font-size: 1rem;
+      }
+
+      a {
+        margin-top: 1.5rem;
+        background-color: $on-background--secondary;
+        text-decoration: none;
+        padding: 0.5rem 0.5rem;
+        font-family: 'Gilroy-Bold';
+        transition: color 0.2s ease, background-color 0.2s ease;
+
+        &:hover {
+          color: $on-text-color--primary;
+          background-color: $on-background--primary;
+          transition: color 0.2s ease, background-color 0.2s ease;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
