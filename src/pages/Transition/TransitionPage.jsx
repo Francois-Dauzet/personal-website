@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './TransitionPage.scss';
 import { useStateStore } from '../../stores/stateStore';
 import { useNavigate } from 'react-router-dom';
+import './TransitionPage.scss';
 
 const TransitionPage = () => {
   const navigate = useNavigate();
@@ -55,7 +55,7 @@ const TransitionPage = () => {
   }, [textTitleArray.length, navigate, currentPageRoute]);
 
   const handleScreenClick = () => {
-    timeouts.current.forEach(timeout => clearTimeout(timeout));
+    timeouts.current.forEach((timeout) => clearTimeout(timeout));
     navigate(`/${currentPageRoute}`);
   };
 
@@ -67,7 +67,7 @@ const TransitionPage = () => {
           {textTitleArray.map((item, index) => (
             <li
               key={index}
-              ref={el => (letterItems.current[index] = el)}
+              ref={(el) => (letterItems.current[index] = el)}
               style={{
                 transform: `translateY(-1400%) rotate(${
                   Math.floor(Math.random() * 1442) - 720
