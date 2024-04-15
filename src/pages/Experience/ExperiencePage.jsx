@@ -1,17 +1,17 @@
-import React, { useEffect } from "react";
-import "./ExperiencePage.scss";
+import React, { useEffect } from 'react';
+import './ExperiencePage.scss';
 
 const ExperiencePage = () => {
   useEffect(() => {
-    const transition = document.querySelector(".container-transition");
+    const transition = document.querySelector('.container-transition');
     setTimeout(() => {
-      transition.classList.remove("active");
+      transition.classList.remove('active');
     }, 100);
   }, []);
 
   return (
-    <div className="skills-page">
-      <div className={"container-transition active"}></div>
+    <div className="container-experience-page">
+      <div className={'container-transition active'}></div>
       <h1>ExperiencePage</h1>
     </div>
   );

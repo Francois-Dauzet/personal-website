@@ -78,19 +78,19 @@ const IntroPage = () => {
   }, [textSubtitleArray.length, navigate]);
 
   const handleScreenClick = () => {
-    timeouts.current.forEach(timeout => clearTimeout(timeout));
+    timeouts.current.forEach((timeout) => clearTimeout(timeout));
     navigate('/about-me');
   };
 
   return (
-    <div className="intro-page" onClick={handleScreenClick}>
+    <div className="container-intro-page" onClick={handleScreenClick}>
       <div className={`background ${transitionActive ? 'active' : ''}`}></div>
       <div className="container-title">
         <ul translate="no">
           {textTitleArray.map((item, index) => (
             <li
               key={index}
-              ref={el => (titleLetterItems.current[index] = el)}
+              ref={(el) => (titleLetterItems.current[index] = el)}
               style={{
                 transform: `translateY(-1400%) rotate(${
                   Math.floor(Math.random() * 1442) - 720
@@ -106,7 +106,7 @@ const IntroPage = () => {
           {textSubtitleArray.map((item, index) => (
             <li
               key={index}
-              ref={el => (subtitleLetterItems.current[index] = el)}
+              ref={(el) => (subtitleLetterItems.current[index] = el)}
               style={{
                 transform: `translateY(-2000%) rotate(${
                   Math.floor(Math.random() * 1442) - 720

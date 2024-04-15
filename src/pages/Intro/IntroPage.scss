@@ -1,6 +1,6 @@
-@import "./../../styles/root.scss";
+@import './../../styles/root.scss';
 
-.intro-page {
+.container-intro-page {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@
       li {
         list-style-type: none;
         color: $text-color--primary;
-        font-family: "Gilroy-Bold";
+        font-family: 'Gilroy-Bold';
         text-align: center;
         transition: 1.6s cubic-bezier(0.64, -0.32, 0.64, 1.2);
         text-transform: uppercase;

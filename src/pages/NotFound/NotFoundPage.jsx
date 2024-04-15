@@ -1,9 +1,9 @@
-import React from "react";
-import "./NotFoundPage.scss";
+import React from 'react';
+import './NotFoundPage.scss';
 
 const NotFoundPage = () => {
   return (
-    <div className="skills-page">
+    <div className="container-not-found-page">
       <h1>NotFoundPage</h1>
     </div>
   );

@@ -60,7 +60,7 @@ const TransitionPage = () => {
   };
 
   return (
-    <div className="transition-page" onClick={handleScreenClick}>
+    <div className="container-transition-page" onClick={handleScreenClick}>
       <div className={`background ${transitionActive ? 'active' : ''}`}></div>
       <div className="container-title">
         <ul translate="no">

@@ -1,4 +1,4 @@
-@import "./../../styles/root.scss";
+@import './../../styles/root.scss';
 
 .container-nav-menu {
   /* -----------------------------------
@@ -19,7 +19,7 @@
       transition-delay: 0.1s;
       background-color: #fffc;
 
-      @media (min-width: 768px) {
+      @media (min-width: 800px) {
         &:hover {
           cursor: pointer;
           border: 2px solid #0000;
@@ -27,7 +27,7 @@
         }
 
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           top: 50%;
           left: 50%;
@@ -246,20 +246,28 @@
       p {
         position: absolute;
         margin-left: -64px;
-        font-size: 18px;
-        font-family: "Gilroy-SemiBold";
+        font-size: 1.25rem;
+        font-family: 'Gilroy-SemiBold';
         color: $text-color--primary;
+
+        @media (max-width: 1400px) {
+          font-size: 1rem;
+        }
       }
       h3 {
         margin: 0;
         text-decoration: none;
         color: $text-color--primary;
-        font-family: "Gilroy-Bold";
-        font-size: 6vw;
+        font-family: 'Gilroy-Bold';
+        font-size: 8rem;
         white-space: nowrap;
         transition: color 0.4s ease;
 
-        @media (min-width: 768px) {
+        @media (max-width: 1400px) {
+          font-size: 5rem;
+        }
+
+        @media (min-width: 800px) {
           &:hover {
             color: $on-text-color--primary;
             transition: color 0.2s ease;
@@ -271,12 +279,17 @@
         position: absolute;
         margin-left: 50%;
         width: 100%;
-        font-size: 1.2vw;
+        font-size: 2rem;
         color: $text-color--primary;
       }
       @media (max-width: 1400px) {
         span {
-          font-size: 18px;
+          font-size: 1.5rem;
+        }
+      }
+      @media (max-width: 800px) {
+        span {
+          font-size: 1rem;
         }
       }
     }
@@ -309,7 +322,7 @@
   /* -----------------------------------
  * --------------- Media query
 ----------------------------------- */
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     /*
   * Menu icon
   */
@@ -374,7 +387,7 @@
           display: none;
         }
         h3 {
-          font-size: 48px;
+          font-size: 3rem;
         }
       }
     }
