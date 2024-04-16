@@ -1,7 +1,7 @@
 /*
-* Transition and intro
+* For stop button animation
 */
-@keyframes changeTextColorForStopAnimation {
+@keyframes heart-effect {
   0% {
     color: #3330;
   }
@@ -10,5 +10,17 @@
   }
   100% {
     color: #3330;
+  }
+}
+
+/*
+* For backgroud profile image
+*/
+@keyframes levitating-effect {
+  0% {
+    background-position: 0 0; /* Début de l'animation, position initiale */
+  }
+  100% {
+    background-position: 0 100%; /* Fin de l'animation, position levée */
   }
 }

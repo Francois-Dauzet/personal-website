@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import imgProfilePath from '../../assets/images/profil_hover.jpeg';
+import imgProfilePath from '../../assets/images/profil.png';
 
 //* Styles
 
