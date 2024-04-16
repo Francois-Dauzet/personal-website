@@ -1,11 +1,28 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import imgProfilePath from '../../assets/images/profile.png';
 
 //* Styles
 
 import './HeaderSection.scss';
 const HeaderSection = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.scrollY;
+      const containerHeaderSection = document.querySelector(
+        '.container-header-section'
+      );
+      if (containerHeaderSection) {
+        containerHeaderSection.style.backgroundPositionY = scrollPos / 2 + 'px';
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <section>
       <div className="container-header-section">
