@@ -11,7 +11,7 @@
  * --------------- Transition
 ----------------------------------- */
   .container-transition {
-    background-color: $on-background--secondary;
+    background-color: map-get(map-get($background, secondary), 100);
     z-index: 11;
     position: fixed;
     top: 0;

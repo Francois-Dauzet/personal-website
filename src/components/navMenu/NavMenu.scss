@@ -64,7 +64,7 @@
             position: absolute;
             height: 5px;
             width: 55px;
-            background-color: $on-background--primary;
+            background-color: map-get(map-get($background, on-primary), 100);
             transform: translate(-50%, -50%);
             border-radius: 16px;
           }
@@ -114,7 +114,7 @@
  * --------------- Overlay
 ----------------------------------- */
   .container-overlay {
-    background-color: $on-background--secondary;
+    background-color: map-get(map-get($background, secondary), 100);
     z-index: 10;
     position: fixed;
     top: 0;
@@ -144,7 +144,7 @@
  * --------------- Top Line
 ----------------------------------- */
   .container-top-line {
-    background-color: $on-background--primary;
+    background-color: map-get(map-get($background, on-primary), 100);
     z-index: 11;
     position: fixed;
     top: 0;
@@ -169,7 +169,7 @@
  * --------------- Middle line
 ----------------------------------- */
   .container-middle-line {
-    background-color: $background--primary;
+    background-color: map-get(map-get($background, primary), 100);
     z-index: 12;
     position: fixed;
     top: 50%;
@@ -195,7 +195,7 @@
  * --------------- Bottom line
 ----------------------------------- */
   .container-bottom-line {
-    background-color: $on-background--primary;
+    background-color: map-get(map-get($background, on-primary), 100);
     z-index: 11;
     position: fixed;
     bottom: 0;
@@ -251,7 +251,7 @@
         margin-left: -64px;
         font-size: 1.25rem;
         font-family: 'Gilroy-SemiBold';
-        color: $text-color--primary;
+        color: map-get(map-get($text-color, primary), 100);
 
         @media (max-width: 1400px) {
           font-size: 1rem;
@@ -260,7 +260,7 @@
       h3 {
         margin: 0;
         text-decoration: none;
-        color: $text-color--primary;
+        color: map-get(map-get($text-color, primary), 100);
         font-family: 'Gilroy-Bold';
         font-size: 8rem;
         white-space: nowrap;
@@ -272,7 +272,7 @@
 
         @media (min-width: 1000px) {
           &:hover {
-            color: $on-text-color--primary;
+            color: map-get(map-get($text-color, on-primary), 100);
             transition: color 0.2s ease;
             cursor: pointer;
           }
@@ -283,7 +283,7 @@
         margin-left: 50%;
         width: 100%;
         font-size: 2rem;
-        color: $text-color--primary;
+        color: map-get(map-get($text-color, primary), 100);
       }
       @media (max-width: 1400px) {
         span {
