@@ -31,10 +31,10 @@
     }
 
     h3 {
-      color: map-get(map-get($text-color, on-primary), 100);
       font-family: 'Gilroy-Bold';
+      color: map-get(map-get($text-color, on-primary), 100);
       font-size: 1.5rem;
-      text-shadow: 0 0 11px map-get(map-get($background, on-primary), 25);
+      text-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
       margin: 0.5rem 0 1rem 0;
       @media (max-width: 500px) {
         width: 64vw;
@@ -119,9 +119,10 @@
       }
 
       h1 {
+        font-family: 'Gilroy-SemiBold';
         color: map-get(map-get($text-color, on-primary), 100);
-        font-family: 'Gilroy-Bold';
-        font-size: 2.25rem;
+        font-size: 2rem;
+        text-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
         @media (max-width: 1000px) {
           text-align: center;
         }
@@ -132,6 +133,7 @@
         font-family: 'Gilroy-Regular';
         margin: 0.5rem 0;
         font-size: 1rem;
+        text-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
       }
       .container-contact-button {
         @media (max-width: 1000px) {
@@ -153,17 +155,17 @@
           border-bottom: 2px solid map-get(map-get($background, secondary), 100);
           box-shadow: 0 0 32px map-get(map-get($background, on-primary), 25);
           cursor: pointer;
-          transition: background-color 0.4s, color 0.2s, border 0.2s;
+          transition: background-color 0.4s, color 0.4s, border 0.4s;
           @media (max-width: 1000px) {
             margin: 2rem 0;
           }
           &:hover {
             color: map-get(map-get($background, secondary), 100);
-            background: map-get($background, transparent);
+            background-color: map-get($background, transparent);
             border-top: 2px solid map-get(map-get($background, secondary), 100);
             border-bottom: 2px solid
               map-get(map-get($background, secondary), 100);
-            transition: background-color 0.2s, color 0.1s, border 0.1s;
+            transition: background-color 0.2s, color 0.2s, border 0.2s;
           }
         }
       }
@@ -208,21 +210,32 @@
     background: map-get(map-get($background, on-primary), 75);
     text-align: center;
     vertical-align: middle;
+    z-index: 0;
+
     .modal {
       background: map-get(map-get($background, primary), 100);
-      padding: 50px;
+      padding: 1rem 2rem;
+      margin: 0 2rem;
       display: inline-block;
-      border-radius: 3px;
-      font-weight: 300;
       position: relative;
-      h2 {
-        font-size: 25px;
-        line-height: 25px;
-        margin-bottom: 15px;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../assets/images/bg_contact_form.png);
+        background-position: center;
+        background-size: cover;
+        filter: opacity(8%);
+        z-index: -1;
       }
-      p {
-        font-size: 18px;
-        line-height: 22px;
+
+      @media (min-width: 500px) {
+        width: 350px;
       }
     }
   }

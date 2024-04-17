@@ -3,9 +3,9 @@ import imgProfilePath from '../../assets/images/profile.png';
 import iconLinkedinPath from '../../assets/icons/linkedin.svg';
 import iconGithubPath from '../../assets/icons/github.svg';
 import iconGitlabPath from '../../assets/icons/gitlab.svg';
+import ContactForm from '../contactForm/ContactForm';
 
 //* Styles
-
 import './HeaderSection.scss';
 const HeaderSection = () => {
   useEffect(() => {
@@ -28,6 +28,8 @@ const HeaderSection = () => {
      * modal function
      */
     const button = document.getElementsByClassName('contact-button')[0];
+    const closingCross =
+      document.getElementsByClassName('icon-closing-cross')[0];
     const modalContainer = document.getElementById('modal-container');
 
     button.addEventListener('click', function () {
@@ -36,8 +38,15 @@ const HeaderSection = () => {
       document.body.classList.add('modal-active');
     });
 
-    modalContainer.addEventListener('click', function () {
-      this.classList.add('out');
+    modalContainer.addEventListener('click', function (event) {
+      if (event.target.classList.contains('modal-background')) {
+        this.classList.add('out');
+        document.body.classList.remove('modal-active');
+      }
+    });
+
+    closingCross.addEventListener('click', function () {
+      modalContainer.classList.add('out');
       document.body.classList.remove('modal-active');
     });
 
@@ -75,25 +84,26 @@ const HeaderSection = () => {
               DevOps & Web and Mobile Application Developer
             </h1>
             <p>
-              Curieux, autodidacte et rigoureux, avec une solide expérience en
-              montage audio/vidéo, MAO, mapping & modding, maintenance
-              informatique, et divers domaines de l'informatique.
+              Curious, self-taught, and meticulous, with a strong background in
+              audio/video editing, music production, mapping and modding,
+              computer maintenance, and various IT domains.
             </p>
             <p>
-              En tant que développeur web junior, l'accent est mis sur
-              l'enrichissement autonome des compétences.
+              As a DevOps & Web Developer, the focus is on self-enrichment of
+              skills.
             </p>
             <p>
-              Le temps libre est consacré à l'apprentissage de nouvelles
-              technologies.
+              Free time is dedicated to learning new technologies and delving
+              deeper into DevOps and system administration concepts.
             </p>
             <p>
-              Adaptable, capable de travailler aussi bien seul qu'en équipe, et
-              toujours en quête d'innovation pour améliorer les projets.
+              Adaptable, capable of working both independently and as part of a
+              team, always seeking innovation to enhance projects and eager to
+              apply DevOps principles to development and deployment tasks.
             </p>
             <div className="container-contact-button">
               <div translate="no" className="contact-button">
-                Contact me
+                Contact Me
               </div>
             </div>
           </div>
@@ -102,8 +112,7 @@ const HeaderSection = () => {
       <div id="modal-container">
         <div className="modal-background">
           <div className="modal">
-            <h2>Contact Form</h2>
-            <p>content</p>
+            <ContactForm />
           </div>
         </div>
       </div>
