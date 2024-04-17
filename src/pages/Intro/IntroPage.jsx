@@ -3,8 +3,8 @@ import './IntroPage.scss';
 import { useNavigate } from 'react-router-dom';
 
 const IntroPage = () => {
-  const TitleData = 'Welcome';
-  const subtitleData = 'in.my.website';
+  const TitleData = ' Welcome';
+  const subtitleData = ' in.my.website';
   const navigate = useNavigate();
   const [transitionActive, setTransitionActive] = useState(false);
 

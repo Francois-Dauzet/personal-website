@@ -8,12 +8,17 @@ const TransitionPage = () => {
   const { currentPageName, currentPageRoute } = useStateStore();
   const [transitionActive, setTransitionActive] = useState(false);
 
-  const textTitleArray = currentPageName.split('');
+  const textTitleArray = currentPageName ? currentPageName.split('') : [];
   const letterItems = useRef([]);
   const timeouts = useRef([]);
 
   useEffect(() => {
     const executeAnimation = () => {
+      if (!currentPageName) {
+        navigate('/about-me');
+        return;
+      }
+
       setTransitionActive(true);
       letterItems.current.forEach((item, index) => {
         if (item) {
@@ -52,7 +57,7 @@ const TransitionPage = () => {
     };
 
     executeAnimation();
-  }, [textTitleArray.length, navigate, currentPageRoute]);
+  }, [currentPageName, currentPageRoute, navigate, textTitleArray]);
 
   const handleScreenClick = () => {
     timeouts.current.forEach((timeout) => clearTimeout(timeout));
@@ -72,7 +77,9 @@ const TransitionPage = () => {
                 transform: `translateY(-1400%) rotate(${
                   Math.floor(Math.random() * 1442) - 720
                 }deg)`,
-                fontSize: `${88 / currentPageName.length}vw`,
+                fontSize: `${
+                  88 / (currentPageName ? currentPageName.length : 1)
+                }vw`,
               }}
             >
               {item === '.' ? '\u200B \u200B' : item}

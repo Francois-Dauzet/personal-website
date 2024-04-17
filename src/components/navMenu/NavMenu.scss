@@ -12,17 +12,17 @@
     z-index: 11;
 
     .first-border {
-      border: 2px solid #666;
+      border: 2px solid map-get(map-get($background, on-primary), 50);
       border-radius: 50%;
       padding: 8px;
       transition: border 0.2s ease-out;
       transition-delay: 0.1s;
-      background-color: #fffc;
+      background-color: map-get(map-get($background, primary), 75);
 
       @media (min-width: 1000px) {
         &:hover {
           cursor: pointer;
-          border: 2px solid #0000;
+          border: 2px solid map-get($background, transparent);
           transition: border 0.2s ease;
         }
 
@@ -34,7 +34,7 @@
           transform: translate(-50%, -50%);
           width: 0;
           height: 0;
-          border: 2px solid #888;
+          border: 2px solid map-get(map-get($background, on-primary), 50);
           border-radius: 50%;
           opacity: 0;
           transition: width 0.4s ease, height 0.4s ease, opacity 0.25s ease;
@@ -42,7 +42,7 @@
         }
 
         &:hover::before {
-          background-color: #fffc;
+          background-color: map-get(map-get($background, primary), 75);
           width: 128px;
           height: 128px;
           opacity: 1;
@@ -50,11 +50,11 @@
         }
       }
       .second-border {
-        border: 4px solid #444;
+        border: 4px solid map-get(map-get($background, on-primary), 75);
         border-radius: 50%;
         display: flex;
         padding: 12px;
-        background-color: #fffc;
+        background-color: map-get(map-get($background, primary), 75);
 
         .container-burger {
           height: 55px;
@@ -251,7 +251,7 @@
         margin-left: -64px;
         font-size: 1.25rem;
         font-family: 'Gilroy-SemiBold';
-        color: map-get(map-get($text-color, primary), 100);
+        color: map-get(map-get($text-color, primary), 75);
 
         @media (max-width: 1400px) {
           font-size: 1rem;
@@ -283,7 +283,7 @@
         margin-left: 50%;
         width: 100%;
         font-size: 2rem;
-        color: map-get(map-get($text-color, primary), 100);
+        color: map-get(map-get($text-color, primary), 75);
       }
       @media (max-width: 1400px) {
         span {
@@ -305,7 +305,7 @@
     position: fixed;
     z-index: 9;
     opacity: 0;
-    background-color: #0001;
+    background-color: map-get(map-get($background, on-primary), 25);
     width: 0;
     height: 0;
     top: -50%;

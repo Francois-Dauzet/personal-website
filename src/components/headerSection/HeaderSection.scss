@@ -15,7 +15,7 @@
 
   .container-left {
     width: 33vw;
-    border-right: 1px solid #fff;
+    border-right: 1px solid map-get(map-get($background, primary), 50);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@
       background-attachment: fixed;
       background-size: cover;
       animation: levitating-effect 32s infinite alternate;
-      box-shadow: 0 0 32px #0005;
+      box-shadow: 0 0 32px map-get(map-get($background, on-primary), 25);
 
       img {
         height: 36vh;
@@ -36,7 +36,7 @@
     }
   }
   .container-right {
-    background-color: #0008;
+    background-color: map-get(map-get($background, on-primary), 75);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -52,13 +52,13 @@
       margin-right: 16%;
 
       h1 {
-        color: #fff;
+        color: map-get(map-get($text-color, on-primary), 100);
         font-family: 'Gilroy-Bold';
         font-size: 2.25rem;
       }
 
       p {
-        color: #eee;
+        color: map-get(map-get($text-color, on-primary), 75);
         font-family: 'Gilroy-Regular';
         margin: 0.5rem 0;
         font-size: 1rem;
@@ -82,12 +82,12 @@
             border-top: 2px solid map-get(map-get($background, secondary), 100);
             border-bottom: 2px solid
               map-get(map-get($background, secondary), 100);
-            box-shadow: 0 0 32px #0005;
+            box-shadow: 0 0 32px map-get(map-get($background, on-primary), 25);
             cursor: pointer;
             transition: background-color 0.4s, color 0.2s, border 0.2s;
             &:hover {
               color: map-get(map-get($background, secondary), 100);
-              background: #0000;
+              background: map-get($background, transparent);
               border-top: 2px solid
                 map-get(map-get($background, secondary), 100);
               border-bottom: 2px solid
