@@ -71,8 +71,9 @@ const HeaderSection = () => {
               Adaptable, capable de travailler aussi bien seul qu'en équipe, et
               toujours en quête d'innovation pour améliorer les projets.
             </p>
-
-            <div className="contact-button">Contact me</div>
+            <div className="container-contact-button">
+              <div className="contact-button">Contact me</div>
+            </div>
           </div>
         </div>
       </div>
