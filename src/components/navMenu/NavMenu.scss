@@ -54,7 +54,7 @@
         border-radius: 50%;
         display: flex;
         padding: 12px;
-        background-color: map-get(map-get($background, primary), 75);
+        background-color: map-get(map-get($background, primary), 100);
 
         .container-burger {
           height: 55px;
