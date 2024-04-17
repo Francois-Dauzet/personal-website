@@ -28,9 +28,8 @@ const HeaderSection = () => {
     const modalContainer = document.getElementById('modal-container');
 
     button.addEventListener('click', function () {
-      const buttonId = this.getAttribute('id');
       modalContainer.removeAttribute('class');
-      modalContainer.classList.add(buttonId);
+      modalContainer.classList.add('contact-button');
       document.body.classList.add('modal-active');
     });
 
@@ -73,11 +72,8 @@ const HeaderSection = () => {
               toujours en quête d'innovation pour améliorer les projets.
             </p>
             <div className="content">
-              <div className="buttons">
-                {/* one two five six */}
-                <div id="five" className="contact-button">
-                  Contact me
-                </div>
+              <div id="five" className="contact-button">
+                Contact me
               </div>
             </div>
           </div>

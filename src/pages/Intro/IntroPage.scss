@@ -54,7 +54,7 @@
     bottom: 2rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #3330;
+    color: map-get($background, transparent);
     animation: heart-effect 2s infinite;
     animation-delay: 1s;
     font-size: 1rem;

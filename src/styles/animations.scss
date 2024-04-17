@@ -3,13 +3,13 @@
 */
 @keyframes heart-effect {
   0% {
-    color: #3330;
+    color: map-get($background, transparent);
   }
   50% {
-    color: #3338;
+    color: map-get(map-get($text-color, secondary), 50);
   }
   100% {
-    color: #3330;
+    color: map-get($background, transparent);
   }
 }
 
@@ -18,9 +18,66 @@
 */
 @keyframes levitating-effect {
   0% {
-    background-position: 0 0; /* Début de l'animation, position initiale */
+    background-position: 0 0;
   }
   100% {
-    background-position: 0 100%; /* Fin de l'animation, position levée */
+    background-position: 0 100%;
+  }
+}
+
+/*
+* For modal form contact
+*/
+@keyframes modalFadeIn {
+  0% {
+    background: map-get($background, transparent);
+  }
+  100% {
+    background: map-get(map-get($background, on-primary), 75);
+  }
+}
+
+@keyframes modalFadeOut {
+  0% {
+    background: map-get(map-get($background, on-primary), 75);
+  }
+  100% {
+    background: map-get($background, transparent);
+  }
+}
+
+@keyframes modalQuickScaleDown {
+  0% {
+    transform: scale(1);
+  }
+  99.9% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes modalRoadRunnerIn {
+  0% {
+    transform: translateX(-1500px) skewX(30deg) scaleX(1.3);
+  }
+  70% {
+    transform: translateX(30px) skewX(0deg) scaleX(0.9);
+  }
+  100% {
+    transform: translateX(0px) skewX(0deg) scaleX(1);
+  }
+}
+
+@keyframes modalRoadRunnerOut {
+  0% {
+    transform: translateX(0px) skewX(0deg) scaleX(1);
+  }
+  30% {
+    transform: translateX(-30px) skewX(-5deg) scaleX(0.9);
+  }
+  100% {
+    transform: translateX(1500px) skewX(30deg) scaleX(1.3);
   }
 }
