@@ -64,33 +64,25 @@
         font-size: 1rem;
       }
 
-      .content {
-        min-height: 100%;
-        height: 100%;
-        position: relative;
-        z-index: 0;
-
-        .contact-button {
-          font-family: 'Gilroy-SemiBold';
-          display: inline-block;
-          text-align: center;
-          padding: 8px 16px;
-          margin-top: 2rem;
-          font-size: 1rem;
-          background-color: map-get(map-get($background, secondary), 100);
+      .contact-button {
+        font-family: 'Gilroy-SemiBold';
+        display: inline-block;
+        text-align: center;
+        padding: 8px 16px;
+        margin-top: 2rem;
+        font-size: 1rem;
+        background-color: map-get(map-get($background, secondary), 100);
+        border-top: 2px solid map-get(map-get($background, secondary), 100);
+        border-bottom: 2px solid map-get(map-get($background, secondary), 100);
+        box-shadow: 0 0 32px map-get(map-get($background, on-primary), 25);
+        cursor: pointer;
+        transition: background-color 0.4s, color 0.2s, border 0.2s;
+        &:hover {
+          color: map-get(map-get($background, secondary), 100);
+          background: map-get($background, transparent);
           border-top: 2px solid map-get(map-get($background, secondary), 100);
           border-bottom: 2px solid map-get(map-get($background, secondary), 100);
-          box-shadow: 0 0 32px map-get(map-get($background, on-primary), 25);
-          cursor: pointer;
-          transition: background-color 0.4s, color 0.2s, border 0.2s;
-          &:hover {
-            color: map-get(map-get($background, secondary), 100);
-            background: map-get($background, transparent);
-            border-top: 2px solid map-get(map-get($background, secondary), 100);
-            border-bottom: 2px solid
-              map-get(map-get($background, secondary), 100);
-            transition: background-color 0.2s, color 0.1s, border 0.1s;
-          }
+          transition: background-color 0.2s, color 0.1s, border 0.1s;
         }
       }
     }
