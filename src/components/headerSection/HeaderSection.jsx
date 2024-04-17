@@ -53,7 +53,9 @@ const HeaderSection = () => {
         </div>
         <div className="container-right">
           <div className="container-text">
-            <h1>DevOps & Web and Mobile Application Developer</h1>
+            <h1 translate="no">
+              DevOps & Web and Mobile Application Developer
+            </h1>
             <p>
               Curieux, autodidacte et rigoureux, avec une solide expérience en
               montage audio/vidéo, MAO, mapping & modding, maintenance
@@ -72,7 +74,9 @@ const HeaderSection = () => {
               toujours en quête d'innovation pour améliorer les projets.
             </p>
             <div className="container-contact-button">
-              <div className="contact-button">Contact me</div>
+              <div translate="no" className="contact-button">
+                Contact me
+              </div>
             </div>
           </div>
         </div>

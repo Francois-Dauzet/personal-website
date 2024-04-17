@@ -2,7 +2,7 @@
   // user-select: none;
   font-family: 'Gilroy-Regular', sans-serif;
   background-color: transparent;
-  color: map-get(map-get($text-color, primary), 100);
+  // color: map-get(map-get($text-color, primary), 100);
   body {
     scroll-behavior: smooth;
   }
