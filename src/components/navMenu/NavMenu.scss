@@ -330,15 +330,19 @@
   * Menu icon
   */
     .container-button {
-      top: 4%;
-      right: 8%;
+      top: 2%;
+      right: 4%;
       .first-border {
-        padding: 6px;
+        padding: 4px;
         .second-border {
-          padding: 8px;
+          padding: 6px;
           .container-burger {
-            height: 55px;
-            width: 55px;
+            height: 44px;
+            width: 44px;
+            .item-burger {
+              height: 4px;
+              width: 44px;
+            }
             &.active {
               .item-burger-1 {
                 top: 48%;
