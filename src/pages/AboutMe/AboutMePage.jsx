@@ -1,11 +1,8 @@
 import React, { useEffect } from 'react';
 import './AboutMePage.scss';
-import { useTranslation } from 'react-i18next';
 import HeaderSection from '../../components/headerSection/HeaderSection';
 
 const AboutMePage = () => {
-  const { t } = useTranslation();
-
   useEffect(() => {
     const transition = document.querySelector('.container-transition');
     setTimeout(() => {

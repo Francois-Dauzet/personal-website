@@ -1,10 +1,11 @@
 import React from 'react';
 import './NotFoundPage.scss';
+import imgProfilePath from '../../assets/images/page_not_found.png';
 
 const NotFoundPage = () => {
   return (
     <div className="container-not-found-page">
-      <h1>NotFoundPage</h1>
+      <img src={imgProfilePath} alt="" />
     </div>
   );
 };

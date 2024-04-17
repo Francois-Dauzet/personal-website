@@ -72,10 +72,10 @@ const HeaderSection = () => {
               Adaptable, capable de travailler aussi bien seul qu'en équipe, et
               toujours en quête d'innovation pour améliorer les projets.
             </p>
-            <div class="content">
-              <div class="buttons">
+            <div className="content">
+              <div className="buttons">
                 {/* one two five six */}
-                <div id="five" class="contact-button">
+                <div id="five" className="contact-button">
                   Contact me
                 </div>
               </div>
@@ -84,12 +84,12 @@ const HeaderSection = () => {
         </div>
       </div>
       <div id="modal-container">
-        <div class="modal-background">
-          <div class="modal">
+        <div className="modal-background">
+          <div className="modal">
             <h2>I'm a Modal</h2>
             <p>Hear me roar.</p>
             <svg
-              class="modal-svg"
+              className="modal-svg"
               xmlns="http://www.w3.org/2000/svg"
               width="100%"
               height="100%"
