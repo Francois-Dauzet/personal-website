@@ -10,7 +10,7 @@
 
   .background {
     z-index: 20;
-    background-color: map-get(map-get($background, secondary), 100);
+    background-color: map-get(map-get($background, primary), 100);
     position: fixed;
     top: 0;
     right: 0;
@@ -22,7 +22,8 @@
     pointer-events: none;
     &.active {
       opacity: 1;
-      transition: opacity 1s ease-in-out;
+      background-color: map-get(map-get($background, secondary), 100);
+      transition: background-color 1s ease-in-out;
       width: 150%;
       height: 200%;
       margin: -32% 0 0 0;

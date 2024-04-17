@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 import imgProfilePath from '../../assets/images/profile.png';
+import iconLinkedinPath from '../../assets/icons/linkedin.svg';
+import iconGithubPath from '../../assets/icons/github.svg';
+import iconGitlabPath from '../../assets/icons/gitlab.svg';
 
 //* Styles
 
@@ -47,8 +50,23 @@ const HeaderSection = () => {
     <section>
       <div className="container-header-section">
         <div className="container-left">
+          <h3 translate="no">François Dauzet</h3>
           <div className="container-image">
-            <img src={imgProfilePath} alt="" />
+            <img src={imgProfilePath} alt="profile picture" />
+          </div>
+          <div className="container-social-icons">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/fran%C3%A7ois-dauzet-413243226/"
+            >
+              <img src={iconLinkedinPath} alt="linkedin" />
+            </a>
+            <a target="_blank" href="https://github.com/Francois-Dauzet">
+              <img src={iconGithubPath} alt="github" />
+            </a>
+            <a target="_blank" href="https://gitlab.com/Francois-Dauzet">
+              <img src={iconGitlabPath} alt="gitlab" />
+            </a>
           </div>
         </div>
         <div className="container-right">
