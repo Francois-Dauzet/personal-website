@@ -15,9 +15,11 @@ const TransitionPage = () => {
   useEffect(() => {
     const executeAnimation = () => {
       if (!currentPageName) {
-        navigate('/about-me');
+        navigate('/' + sessionStorage.getItem('currentPageRoute'));
         return;
       }
+
+      sessionStorage.setItem('currentPageRoute', currentPageRoute);
 
       setTransitionActive(true);
       letterItems.current.forEach((item, index) => {
