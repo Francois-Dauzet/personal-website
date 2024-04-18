@@ -14,14 +14,14 @@
 }
 
 /*
-* For background profile image
+* For background profile image and background experience timeline
 */
 @keyframes rainLevitatingEffect {
   0% {
     background-position: 0 0;
   }
   100% {
-    background-position: 0 100%;
+    background-position: 0 512%;
   }
 }
 

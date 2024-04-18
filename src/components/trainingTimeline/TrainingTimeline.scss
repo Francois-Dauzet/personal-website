@@ -5,14 +5,52 @@
   * --------------- Container training timeline
   ----------------------------------- */
 
-  background-color: map-get(map-get($background, on-primary), 100);
+  background-color: map-get(map-get($background, primary), 100);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(54,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23001D3D'/%3E%3Cstop offset='1' stop-color='%23003566'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(70,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23CCA000'/%3E%3Cstop offset='1' stop-color='%23F5CC00'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='4.949999999999999'%3E%3Cpath transform='translate(-90.3 1.5999999999999996) rotate(-4.1 1409 581) scale(0.9321240000000001)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='1.6500000000000001' transform='translate(-123 72) rotate(4.6000000000000005 800 450) scale(1.001677)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(10.400000000000002 -63) rotate(29 401 736) scale(1.001677)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='1.5'%3E%3Cpath transform='translate(432 5.199999999999999) rotate(-1.2999999999999998 150 345) scale(0.994708)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='3.3000000000000003' transform='translate(-101 -197) rotate(14.400000000000006 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-241.6 62.4) rotate(2.400000000000002 1400 132) scale(0.83)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-position: left;
   background-size: cover;
-  animation: rainLevitatingEffect 32s infinite alternate;
+  animation: rainLevitatingEffect 64s infinite alternate;
   min-height: 100vh;
-  padding: 100px 15px;
+  padding: 80px 15px;
+
+  .title-section {
+    font-family: 'Gilroy-Bold';
+    font-size: 2rem;
+    margin: 2rem 0 6rem 0;
+    border-bottom: 4px solid map-get(map-get($background, on-tertiary), 100);
+    margin-left: 18rem;
+    margin-right: 18rem;
+    @media (max-width: 1000px) {
+      margin: 0 0 5rem 0;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    .first-word {
+      background-color: map-get(map-get($background, secondary), 100);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23F5CC00' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23f3ca00' href='%23s' y='2'/%3E%3Cuse fill='%23f3ca00' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f0c800' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f0c800' href='%23s'/%3E%3Cuse fill='%23eec600' href='%23s' x='2'/%3E%3Cuse fill='%23eec600' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebc400'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebc400'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23e8c200'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F5CC00'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23e6bf00'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23CCA000'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23CCA000'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23CCA000'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+      background-attachment: fixed;
+      background-size: cover;
+      animation: rainLevitatingEffect 256s infinite alternate;
+      box-shadow: 0 0 32px map-get(map-get($background, primary), 25);
+      color: map-get(map-get($background, on-primary), 100);
+      padding: 1rem;
+      margin-top: 55px;
+      position: relative;
+      top: 0;
+      left: 0rem;
+    }
+    .second-word {
+      background-color: map-get(map-get($background, on-tertiary), 100);
+      box-shadow: 0 0 11px map-get(map-get($background, on-primary), 25);
+      color: map-get(map-get($background, primary), 100);
+      padding: 1rem;
+      position: relative;
+      top: 1.5rem;
+      left: -0.5rem;
+    }
+  }
 
   .timeline-items {
     max-width: 1000px;
@@ -28,6 +66,7 @@
       height: 100%;
       background-color: map-get(map-get($background, on-tertiary), 100);
       left: calc(50% - 1px);
+      left: 7px;
     }
   }
 
@@ -41,81 +80,108 @@
     }
 
     &:nth-child(odd) {
-      padding-right: calc(50% + 30px);
-      text-align: right;
+      padding-left: 24px;
+      padding-right: 0;
+      text-align: left;
     }
 
     &:nth-child(even) {
       padding-left: calc(50% + 30px);
+      padding-left: 24px;
     }
   }
 
   .timeline-dot {
     height: 16px;
     width: 16px;
-    background-color: map-get(map-get($background, secondary), 100);
+    background-color: map-get(map-get($background, tertiary), 100);
     position: absolute;
-    left: calc(50% - 8px);
     border-radius: 50%;
     top: 10px;
+    left: 0;
   }
 
   .timeline-date {
-    font-size: 18px;
-    color: map-get(map-get($background, tertiary), 100);
-    margin: 6px 0 15px;
-    text-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
+    font-size: 1.5rem;
+    font-family: 'Gilroy-SemiBold';
+    color: map-get(map-get($text-color, primary), 100);
+    margin: 3px 0 16px 0;
+    text-shadow: 0 0 11px map-get(map-get($background, primary), 100);
   }
 
   .timeline-content {
-    background-color: map-get(map-get($background, on-secondary), 100);
-    padding: 30px;
-    box-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
-
-    h3 {
-      font-family: 'Gilroy-SemiBold';
-      color: map-get(map-get($text-color, on-primary), 100);
-      font-size: 1.5rem;
-      margin: 0 0 10px;
-      font-weight: 500;
+    background-color: map-get(map-get($background, on-tertiary), 100);
+    padding: 16px;
+    box-shadow: 0 0 11px map-get(map-get($background, primary), 50);
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid map-get(map-get($background, tertiary), 100);
+    border-right: 4px solid map-get(map-get($background, tertiary), 100);
+    margin-bottom: 1rem;
+    @media (max-width: 1000px) {
+      flex-direction: column;
     }
 
-    h4 {
-      font-family: 'Gilroy-SemiBold';
-      color: map-get(map-get($text-color, on-primary), 100);
-      font-size: 1rem;
-      margin: 0 0 10px;
-      font-weight: 500;
-    }
+    img {
+      width: 13rem;
+      height: 13rem;
+      object-fit: cover;
+      box-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
+      border-top: 4px solid map-get(map-get($background, secondary), 100);
+      border-left: 4px solid map-get(map-get($background, secondary), 100);
 
-    p {
-      font-family: 'Gilroy-regular';
-      color: map-get(map-get($text-color, on-primary), 75);
-      font-size: 1rem;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 22px;
-    }
-  }
+      @media (max-width: 1000px) {
+        width: 100%;
 
-  /* responsive */
-  @media (max-width: 1000px) {
-    .timeline-items::before {
-      left: 7px;
+        height: 12rem;
+      }
     }
+    .container-text {
+      margin-left: 2rem;
+      padding: 16px;
 
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even) {
-      padding-left: 24px;
-    }
+      @media (max-width: 1000px) {
+        margin-left: 0;
+      }
+      span {
+        position: absolute;
+        top: 32px;
+        right: -4px;
+        font-family: 'Gilroy-SemiBold';
+        font-size: 1rem;
+        color: map-get(map-get($text-color, on-primary), 100);
+        background-color: map-get(map-get($background, tertiary), 100);
+        padding: 0.25rem;
+      }
+      h3 {
+        font-family: 'Gilroy-SemiBold';
+        color: map-get(map-get($text-color, on-primary), 100);
+        font-size: 1.5rem;
+        margin: 0 0 0.25rem 0;
+        font-weight: 500;
+        text-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
+        @media (max-width: 1000px) {
+          margin: 1rem 0 0.25rem 0;
+        }
+      }
 
-    .timeline-item:nth-child(odd) {
-      padding-right: 0;
-      text-align: left;
-    }
+      h4 {
+        font-family: 'Gilroy-SemiBold';
+        color: map-get(map-get($text-color, on-primary), 100);
+        font-size: 1rem;
+        margin: 0 0 10px;
+        font-weight: 500;
+        text-shadow: 0 0 11px map-get(map-get($background, on-primary), 25);
+      }
 
-    .timeline-dot {
-      left: 0;
+      p {
+        font-family: 'Gilroy-regular';
+        color: map-get(map-get($text-color, on-primary), 75);
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 22px;
+        margin: 0.75rem 0;
+      }
     }
   }
 }

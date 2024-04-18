@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './AboutMePage.scss';
-import HeaderSection from '../../components/headerSection/HeaderSection';
+import HeaderAboutMeSection from '../../components/headerAboutMeSection/HeaderAboutMeSection';
 
 const AboutMePage = () => {
   useEffect(() => {
@@ -13,7 +13,7 @@ const AboutMePage = () => {
   return (
     <div className="container-about-me-page">
       <div className={'container-transition active'}></div>
-      <HeaderSection />
+      <HeaderAboutMeSection />
       <h1>AboutMePage</h1>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam

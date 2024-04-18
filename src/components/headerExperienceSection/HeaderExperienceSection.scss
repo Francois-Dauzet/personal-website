@@ -1,0 +1,198 @@
+@import './../../styles/theme.scss';
+
+.container-header-experience-section {
+  /* -----------------------------------
+ * --------------- Container header
+----------------------------------- */
+  background-image: url(../../assets/backgrounds/bg_header_experience.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (max-width: 1000px) {
+    background-position: bottom;
+  }
+
+  .background {
+    background-color: map-get(map-get($background, on-primary), 75);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid map-get(map-get($background, primary), 100);
+
+    .container-social-icons {
+      margin: 1rem 0 0 0;
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      height: 5rem;
+      @media (max-width: 1000px) {
+        margin: 1rem 0 0 0;
+      }
+
+      a {
+        margin: 0 2%;
+        border: none;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: map-get(map-get($background, on-tertiary), 100);
+        box-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
+        overflow: hidden;
+        @media (max-width: 1000px) {
+          margin: 0 4%;
+          width: 2rem;
+          height: 2rem;
+        }
+        &:hover {
+          background-color: map-get(map-get($background, on-secondary), 100);
+        }
+
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+          transform: rotate(0) scale(1);
+          transition: transform 0.4s;
+          @media (max-width: 1000px) {
+            width: 2rem;
+            height: 2rem;
+          }
+
+          &:hover {
+            transform: rotate(8deg) scale(1.2);
+            transition: transform 0.2s;
+          }
+        }
+      }
+    }
+
+    h1 {
+      font-family: 'Gilroy-SemiBold';
+      color: map-get(map-get($text-color, on-primary), 100);
+      text-align: center;
+      font-size: 4rem;
+      margin: 0 0 1rem 0;
+      padding-top: 0.5rem;
+      text-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
+      border-top: 4px solid map-get(map-get($background, secondary), 100);
+      @media (max-width: 1000px) {
+        font-size: 2rem;
+        margin: 2rem 0;
+        padding-top: 1rem;
+      }
+    }
+
+    p {
+      color: map-get(map-get($text-color, on-primary), 75);
+      text-align: center;
+      font-family: 'Gilroy-SemiBold';
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      text-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
+    }
+
+    .container-contact-button {
+      margin-bottom: 4rem;
+      @media (max-width: 1000px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        pointer-events: none;
+      }
+
+      .contact-button {
+        pointer-events: initial;
+        font-family: 'Gilroy-Bold';
+        display: inline-block;
+        text-align: center;
+        padding: 8px 16px;
+        margin-top: 2rem;
+        font-size: 1rem;
+        background-color: map-get(map-get($background, secondary), 100);
+        border-top: 2px solid map-get(map-get($background, secondary), 100);
+        border-bottom: 2px solid map-get(map-get($background, secondary), 100);
+        box-shadow: 0 0 32px map-get(map-get($background, on-primary), 25);
+        cursor: pointer;
+        transition: background-color 0.4s, color 0.4s, border 0.4s;
+        @media (max-width: 1000px) {
+          margin: 2rem 0 0 0;
+        }
+        &:hover {
+          color: map-get(map-get($background, secondary), 100);
+          background-color: map-get($background, transparent);
+          border-top: 2px solid map-get(map-get($background, secondary), 100);
+          border-bottom: 2px solid map-get(map-get($background, secondary), 100);
+          transition: background-color 0.2s, color 0.2s, border 0.2s;
+        }
+      }
+    }
+  }
+}
+
+#modal-container {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 11;
+
+  &.contact-button {
+    transform: scale(1);
+    .modal-background {
+      background: map-get($background, transparent);
+      animation: modalFadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+      .modal {
+        transform: translateX(-1500px);
+        animation: modalRoadRunnerIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
+          forwards;
+      }
+    }
+    &.out {
+      animation: modalQuickScaleDown 0s 0.5s linear forwards;
+      .modal-background {
+        animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+        .modal {
+          animation: modalRoadRunnerOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
+            forwards;
+        }
+      }
+    }
+  }
+
+  .modal-background {
+    display: table-cell;
+    background: map-get(map-get($background, on-primary), 75);
+    text-align: center;
+    vertical-align: middle;
+    z-index: 0;
+
+    .modal {
+      background: map-get(map-get($background, primary), 100);
+      padding: 1rem 2rem;
+      margin: 0 2rem;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../assets/images/bg_contact_form.png);
+        background-position: center;
+        background-size: cover;
+        filter: opacity(8%);
+        z-index: -1;
+      }
+
+      @media (min-width: 500px) {
+        width: 350px;
+      }
+    }
+  }
+}
