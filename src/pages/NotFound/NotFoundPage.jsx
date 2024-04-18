@@ -1,6 +1,6 @@
 import React from 'react';
 import './NotFoundPage.scss';
-import imgProfilePath from '../../assets/images/page_not_found.png';
+import imgProfilePath from '../../assets/backgrounds/bg_page_not_found.png';
 
 const NotFoundPage = () => {
   return (

@@ -4,7 +4,7 @@ import Router from './router/Router';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <nav>
         <NavMenu />
       </nav>

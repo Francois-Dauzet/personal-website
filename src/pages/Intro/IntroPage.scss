@@ -1,4 +1,4 @@
-@import './../../styles/root.scss';
+@import './../../styles/theme.scss';
 
 .container-intro-page {
   display: flex;
@@ -56,7 +56,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: map-get($background, transparent);
-    animation: heart-effect 2s infinite;
+    animation: colorFadeInOut 2s infinite;
     animation-delay: 1s;
     font-size: 1rem;
     white-space: nowrap;

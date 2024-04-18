@@ -1,7 +1,7 @@
 /*
 * For stop button animation
 */
-@keyframes heart-effect {
+@keyframes colorFadeInOut {
   0% {
     color: map-get($background, transparent);
   }
@@ -14,14 +14,14 @@
 }
 
 /*
-* For background profile image
+* For background profile image and background experience timeline
 */
-@keyframes levitating-effect {
+@keyframes rainLevitatingEffect {
   0% {
     background-position: 0 0;
   }
   100% {
-    background-position: 0 100%;
+    background-position: 0 512%;
   }
 }
 
