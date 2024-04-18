@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './ExperiencePage.scss';
+import TrainingTimeline from '../../components/trainingTimeline/TrainingTimeline';
 
 const ExperiencePage = () => {
   useEffect(() => {
@@ -12,7 +13,7 @@ const ExperiencePage = () => {
   return (
     <div className="container-experience-page">
       <div className={'container-transition active'}></div>
-      <h1>ExperiencePage</h1>
+      <TrainingTimeline />
     </div>
   );
 };
