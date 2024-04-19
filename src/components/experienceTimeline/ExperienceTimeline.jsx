@@ -23,11 +23,13 @@ const ExperienceTimeline = () => {
         <div className="timeline-items">
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <div className="timeline-date">2024 - 2025</div>
+            <div translate="no" className="timeline-date">
+              2024 - 2025
+            </div>
             <div className="timeline-content">
               <img src={iconConduentPath} alt="" />
-              <h3>Chargé de conteneurisation d'application</h3>
-              <h4>Conduent Business Solutions France</h4>
+              <h3 translate="no">Chargé de conteneurisation d'application</h3>
+              <h4 translate="no">Conduent Business Solutions France</h4>
               <p>
                 Dans mon poste actuel, , je travaille avec une variété d'outils
                 et de technologies clés pour le développement et la gestion
@@ -47,11 +49,13 @@ const ExperienceTimeline = () => {
           </div>
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <div className="timeline-date">2022 - 2023</div>
+            <div translate="no" className="timeline-date">
+              2022 - 2023
+            </div>
             <div className="timeline-content">
               <img src={iconkpinsightPath} alt="" />
-              <h3>Développeur Full Stack</h3>
-              <h4>KPInsight Analytics</h4>
+              <h3 translate="no">Développeur Full Stack</h3>
+              <h4 translate="no">KPInsight Analytics</h4>
               <p>
                 Ma mission principale était la mise en place de TAG avec Google
                 Tag Manager afin d'intégrer des scripts JavaScript pour la
@@ -71,11 +75,13 @@ const ExperienceTimeline = () => {
           </div>
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <div className="timeline-date">2016 - 2021</div>
+            <div translate="no" className="timeline-date">
+              2016 - 2021
+            </div>
             <div className="timeline-content">
               <img src={iconPolitechPath} alt="" />
-              <h3>Polisseur</h3>
-              <h4>Politech (Groupe SOFAB Orthopédie)</h4>
+              <h3 translate="no">Polisseur</h3>
+              <h4 translate="no">Politech (Groupe SOFAB Orthopédie)</h4>
               <p>
                 J'ai travaillé sur le polissage d'implants et d'ancillaires de
                 petites et moyennes séries, ainsi que sur la fabrication de
@@ -91,11 +97,15 @@ const ExperienceTimeline = () => {
           </div>
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <div className="timeline-date">2011 - 2015</div>
+            <div translate="no" className="timeline-date">
+              2011 - 2015
+            </div>
             <div className="timeline-content">
               <img src={iconApiculturePath} alt="" />
-              <h3>Apiculture</h3>
-              <h4>Philippe Dauzet apiculteur professionel depuis 1989</h4>
+              <h3 translate="no">Apiculture</h3>
+              <h4 translate="no">
+                Philippe Dauzet apiculteur professionel depuis 1989
+              </h4>
               <p>
                 Dès mon plus jeune âge, j'ai commencé à travailler aux côtés de
                 mon père.
@@ -113,11 +123,13 @@ const ExperienceTimeline = () => {
           </div>
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <div className="timeline-date">2009 - 2011</div>
+            <div translate="no" className="timeline-date">
+              2009 - 2011
+            </div>
             <div className="timeline-content">
               <img src={iconArmeeDeTerrePath} alt="" />
-              <h3>Armée de terre</h3>
-              <h4>501/503 RCC Mourmelon, 1er Spahis Valence</h4>
+              <h3 translate="no">Armée de terre</h3>
+              <h4 translate="no">501/503 RCC Mourmelon, 1er Spahis Valence</h4>
               <p>
                 En tant que Tireur de missile Milan dans l'armée de Terre sous
                 le contrat EVAT, j'ai manié cet engin à guidage filoguidé,

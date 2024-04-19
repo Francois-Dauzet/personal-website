@@ -1,8 +1,8 @@
 @import './../../styles/theme.scss';
 
-.container-experience-timeline {
+.container-skills {
   /* -----------------------------------
-  * --------------- Container training timeline
+  * --------------- Container skills
   ----------------------------------- */
 
   background-color: map-get(map-get($background, on-primary), 100);
@@ -13,6 +13,10 @@
   animation: rainLevitatingEffect 64s infinite alternate;
   min-height: 100vh;
   padding: 80px 15px;
+  padding-top: 2rem;
+  @media (max-width: 1000px) {
+    padding-top: 4rem;
+  }
 
   .title-section {
     font-family: 'Gilroy-Bold';
@@ -22,7 +26,7 @@
     margin-left: 18rem;
     margin-right: 18rem;
     @media (max-width: 1000px) {
-      margin: 0 0 6rem 0;
+      margin: 0 0 5rem 0;
       margin-left: 2rem;
       margin-right: 2rem;
     }
@@ -51,120 +55,141 @@
       left: -0.5rem;
     }
   }
-
-  .timeline-items {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 2px;
-      height: 100%;
-      background-color: map-get(map-get($background, on-tertiary), 100);
-      left: calc(50% - 1px);
-    }
-  }
-
-  .timeline-item {
-    margin-bottom: 40px;
-    width: 100%;
-    position: relative;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    &:nth-child(odd) {
-      padding-right: calc(50% + 30px);
-      text-align: right;
-    }
-
-    &:nth-child(even) {
-      padding-left: calc(50% + 30px);
-    }
-  }
-
-  .timeline-dot {
-    height: 16px;
-    width: 16px;
-    background-color: map-get(map-get($background, secondary), 100);
-    position: absolute;
-    left: calc(50% - 8px);
-    border-radius: 50%;
-    top: 10px;
-  }
-
-  .timeline-date {
-    font-size: 1.5rem;
+  .description {
+    text-align: center;
+    margin: 4rem 16% 1rem 16%;
     font-family: 'Gilroy-SemiBold';
     color: map-get(map-get($text-color, on-primary), 100);
-    margin: 3px 0 16px 0;
-    text-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
+    font-size: 1rem;
+    @media (max-width: 1000px) {
+      margin: 0 8% 2rem 8%;
+    }
   }
 
-  .timeline-content {
-    background-color: map-get(map-get($background, on-secondary), 100);
-    padding: 30px;
-    box-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
+  .container-cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 
-    img {
-      width: 100%;
-      height: 12rem;
-      object-fit: cover;
-      box-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
-      border-bottom: 4px solid map-get(map-get($background, secondary), 100);
+    .item-card {
+      width: 40%;
+      max-width: 600px;
+      margin: 2rem;
+      padding: 2rem;
+      background-color: map-get(map-get($background, on-secondary), 100);
       @media (max-width: 1000px) {
-        height: 10rem;
+        width: 88%;
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h3 {
+        font-family: 'Gilroy-SemiBold';
+        color: map-get(map-get($text-color, on-primary), 100);
+        font-size: 1.5rem;
+        margin: 0 0 0.25rem 0;
+        text-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
+      }
+
+      h4 {
+        font-family: 'Gilroy-SemiBold';
+        color: map-get(map-get($text-color, on-primary), 100);
+        font-size: 1rem;
+        margin: 0 0 10px;
+        text-shadow: 0 0 11px map-get(map-get($background, on-primary), 25);
+      }
+
+      ul {
+        list-style: none;
+        li {
+          font-family: 'Gilroy-regular';
+          color: map-get(map-get($text-color, on-primary), 75);
+          font-size: 1rem;
+          font-weight: 300;
+          line-height: 22px;
+          margin: 0.75rem 0;
+          background-image: url('../../assets/icons/dot.svg');
+          background-size: 12px 12px;
+          background-repeat: no-repeat;
+          background-position: left center;
+          padding-left: 30px;
+        }
+      }
+
+      input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+
+        &:checked ~ .item-card-content {
+          max-height: 16rem;
+        }
+      }
+      .item-card-label {
+        display: flex;
+        font-family: 'Gilroy-SemiBold';
+        color: map-get(map-get($text-color, on-primary), 100);
+        font-size: 1rem;
+        background: map-get(map-get($background, on-tertiary), 100);
+        cursor: pointer;
+        justify-content: space-between;
+        padding: 1rem;
+        &:after {
+          content: '';
+          background-image: url('../../assets/icons/arrow.svg');
+          background-size: 48px 48px;
+          background-repeat: no-repeat;
+          background-position: center;
+          color: map-get(map-get($text-color, on-secondary), 100);
+          width: 1em;
+          height: 1em;
+          text-align: center;
+          transform: rotate(-180deg);
+          transition: all 0.4s;
+        }
+      }
+      .item-card-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.4s;
+        background: map-get(map-get($background, on-primary), 100);
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .tag {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0.5rem;
+
+          p {
+            margin: 0;
+            padding: 0.25rem;
+            font-family: 'Gilroy-SemiBold';
+            color: map-get(map-get($text-color, primary), 100);
+          }
+        }
       }
     }
 
-    h3 {
-      font-family: 'Gilroy-SemiBold';
+    .item-card input:checked + .item-card-label::after {
+      transform: rotate(0);
+    }
+
+    .tab__close {
+      display: flex;
       color: map-get(map-get($text-color, on-primary), 100);
-      font-size: 1.5rem;
-      margin: 1rem 0 0.25rem 0;
-      text-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
-    }
-
-    h4 {
-      font-family: 'Gilroy-SemiBold';
-      color: map-get(map-get($text-color, on-primary), 100);
-      font-size: 1rem;
-      margin: 0 0 10px;
-      text-shadow: 0 0 11px map-get(map-get($background, on-primary), 25);
-    }
-
-    p {
-      font-family: 'Gilroy-regular';
-      color: map-get(map-get($text-color, on-primary), 75);
-      font-size: 1rem;
-      font-weight: 300;
-      line-height: 22px;
-      margin: 0.75rem 0;
-    }
-  }
-
-  @media (max-width: 1000px) {
-    .timeline-items::before {
-      left: 7px;
-    }
-
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even) {
-      padding-left: 24px;
-    }
-
-    .timeline-item:nth-child(odd) {
-      padding-right: 0;
-      text-align: left;
-    }
-
-    .timeline-dot {
-      left: 0;
+      background: map-get(map-get($background, on-secondary), 100);
+      cursor: pointer;
+      justify-content: flex-end;
+      padding: 0.5rem 1rem;
+      font-size: 0.75rem;
     }
   }
 }
