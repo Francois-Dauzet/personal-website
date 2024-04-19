@@ -5,7 +5,11 @@
   * --------------- Container skills card
   ----------------------------------- */
   width: 100%;
-  padding-top: 4rem;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+  @media (max-width: 1000px) {
+    padding-top: 4rem;
+  }
 
   .title-section {
     font-family: 'Gilroy-Bold';
@@ -26,7 +30,7 @@
       background-attachment: fixed;
       background-size: cover;
       animation: rainLevitatingEffect 256s infinite alternate;
-      box-shadow: 0 0 32px map-get(map-get($background, on-primary), 25);
+      box-shadow: 0 0 32px map-get(map-get($background, primary), 25);
       color: map-get(map-get($background, on-primary), 100);
       padding: 1rem;
       margin-top: 55px;
@@ -84,13 +88,14 @@
 
       img {
         margin-top: 1rem;
-        width: 60%;
+        width: 66%;
       }
       p {
         text-align: center;
         font-family: 'Gilroy-SemiBold';
         color: map-get(map-get($text-color, on-primary), 100);
         font-size: 1.25rem;
+        margin-top: 0.5rem;
       }
     }
   }

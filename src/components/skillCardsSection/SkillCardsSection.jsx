@@ -5,9 +5,9 @@ import iconMobilePath from '../../assets/icons/mobile.svg';
 import iconDevopsPath from '../../assets/icons/devops.svg';
 
 //* Styles
-import './SkillsCardSection.scss';
+import './SkillCardsSection.scss';
 
-const SkillsCardSection = () => {
+const SkillCardsSection = () => {
   return (
     <section>
       <div className="container-skills-card">
@@ -27,23 +27,23 @@ const SkillsCardSection = () => {
         <div className="container-cards">
           <div className="item-card">
             <img src={iconFrontendPath} alt="" />
-            <p>Frontend</p>
+            <p translate="no">Frontend</p>
           </div>
           <div className="item-card">
             <img src={iconBackendPath} alt="" />
-            <p>Backend</p>
+            <p translate="no">Backend</p>
           </div>
           <div className="item-card">
             <img src={iconMobilePath} alt="" />
-            <p>Mobile</p>
+            <p translate="no">Mobile</p>
           </div>
           <div className="item-card">
             <img src={iconDevopsPath} alt="" />
-            <p>DevOps</p>
+            <p translate="no">DevOps</p>
           </div>
         </div>
       </div>
     </section>
   );
 };
-export default SkillsCardSection;
+export default SkillCardsSection;
