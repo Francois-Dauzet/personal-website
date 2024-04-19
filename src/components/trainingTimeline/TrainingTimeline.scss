@@ -51,6 +51,17 @@
       left: -0.5rem;
     }
   }
+  .description {
+    text-align: center;
+    margin: 4rem 16% 1rem 16%;
+    font-family: 'Gilroy-SemiBold';
+    color: map-get(map-get($text-color, primary), 100);
+    text-shadow: 0 0 11px map-get(map-get($background, primary), 100);
+    font-size: 1rem;
+    @media (max-width: 1000px) {
+      margin: 0 8% 2rem 8%;
+    }
+  }
 
   .timeline-items {
     max-width: 1000px;

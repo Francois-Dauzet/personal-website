@@ -6,6 +6,10 @@ import { skillsData } from '../../data/skillsData';
 import './SkillsSection.scss';
 
 const SkillsSection = () => {
+  skillsData.forEach((skill) => {
+    skill.tools.sort((a, b) => a.name.localeCompare(b.name));
+  });
+
   return (
     <section>
       <div className="container-skills">

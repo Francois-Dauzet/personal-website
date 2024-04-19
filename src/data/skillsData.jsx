@@ -16,6 +16,11 @@ export const skillsData = [
       { name: 'CSS', background: '#1572B6', color: '#ffffff' },
       { name: 'JQuery', background: '#0168AE', color: '#ffffff' },
       { name: 'Symfony', background: '#000000', color: '#ffffff' },
+      { name: 'Vue.js', background: '#41B883', color: '#000814' },
+      { name: 'jQuery', background: '#0868AC', color: '#ffffff' },
+      { name: 'Twig', background: '#5C8525', color: '#000814' },
+      { name: 'Wordpress', background: '#32373C', color: '#ffffff' },
+      { name: 'React.js', background: '#00DCFF', color: '#000814' },
     ],
   },
   {
@@ -31,6 +36,12 @@ export const skillsData = [
     tools: [
       { name: 'MariaDB', background: '#C49A6C', color: '#000814' },
       { name: 'C#', background: '#03599C', color: '#ffffff' },
+      { name: 'FastAPI', background: '#000000', color: '#ffffff' },
+      { name: 'Python', background: '#F8C63D', color: '#000814' },
+      { name: 'Laravel', background: '#FD4F31', color: '#000814' },
+      { name: 'Symfony', background: '#000000', color: '#ffffff' },
+      { name: 'PHP', background: '#777BB3', color: '#000814' },
+      { name: 'SQL', background: '#0079D6', color: '#000814' },
     ],
   },
   {
@@ -44,8 +55,9 @@ export const skillsData = [
       'Élaborer et mettre en oeuvre des composants dans une application React Native.',
     ],
     tools: [
-      { name: 'Example', background: '#C49A6C', color: '#000814' },
-      { name: 'Example', background: '#03599C', color: '#ffffff' },
+      { name: 'React Native', background: '#00A9D9', color: '#000814' },
+      { name: 'Android Studio', background: '#2B75E8', color: '#000814' },
+      { name: 'Xcode', background: '#19ADEE', color: '#000814' },
     ],
   },
   {
@@ -53,8 +65,34 @@ export const skillsData = [
     description: 'in progress...',
     points: ['in progress...', 'in progress...', 'in progress...'],
     tools: [
-      { name: 'Example', background: '#C49A6C', color: '#000814' },
-      { name: 'Example', background: '#03599C', color: '#ffffff' },
+      { name: 'Azure DevOps', background: '#0089D6', color: '#000814' },
+      { name: 'Vagrant', background: '#127EFF', color: '#000814' },
+      { name: 'Bash', background: '#1B1B1F', color: '#ffffff' },
+      { name: 'Docker', background: '#0091E2', color: '#000814' },
+      { name: 'Git', background: '#DD4C35', color: '#000814' },
+      { name: 'Sysadmin Linux', background: '#FED21F', color: '#000814' },
+    ],
+  },
+  {
+    title: 'Workflow & Autres',
+    description: 'Ensemble de tous mes outils et environnements de travail.',
+    points: ['in progress...', 'in progress...', 'in progress...'],
+    tools: [
+      { name: 'Git', background: '#DD4C35', color: '#000814' },
+      { name: 'Google Tag Manager', background: '#89B4F8', color: '#000814' },
+      { name: 'Google Analytics', background: '#F8AC01', color: '#000814' },
+      { name: 'Firebase', background: '#FFCB2C', color: '#000814' },
+      { name: 'Postman', background: '#FF6C37', color: '#000814' },
+      { name: 'phpMyAdmin', background: '#FF9800', color: '#000814' },
+      { name: 'MySQL Workbench', background: '#26557C', color: '#ffffff' },
+      { name: 'FileZilla', background: '#B50000', color: '#ffffff' },
+      { name: 'Laragon', background: '#33A7FD', color: '#000814' },
+      { name: 'Linux', background: '#FED21F', color: '#000814' },
+      { name: 'Apple', background: '#2B2527', color: '#ffffff' },
+      { name: 'Notepad++', background: '#AAF37F', color: '#000814' },
+      { name: 'Visual Studio Code', background: '#21A1E9', color: '#000814' },
+      { name: 'Visual Studio', background: '#652076', color: '#ffffff' },
+      { name: 'Windows', background: '#087DD7', color: '#000814' },
     ],
   },
   //   {
@@ -102,18 +140,4 @@ export const skillsData = [
   //       { name: 'Example', background: '#03599C', color: '#ffffff' },
   //     ],
   //   },
-  {
-    title: 'Workflow',
-    description: 'Ensemble de tous mes outils et environnements de travail.',
-    points: [
-      "Systèmes d'exploitation : Windows, Mac OS, Linux.",
-      'Workflow : GitHub, GitLab, Laragon, FileZilla.',
-      'IDE : Visual Studio Code, Xcode, Notepad++.',
-      'Savoir-être : Travail en équipe, organisation, rigueur.',
-    ],
-    tools: [
-      { name: 'Example', background: '#C49A6C', color: '#000814' },
-      { name: 'Example', background: '#03599C', color: '#ffffff' },
-    ],
-  },
 ];
