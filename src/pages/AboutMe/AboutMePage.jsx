@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './AboutMePage.scss';
 import HeaderAboutMeSection from '../../components/headerAboutMeSection/HeaderAboutMeSection';
+import SkillsCardSection from '../../components/skillsCardSection/SkillsCardSection';
 
 const AboutMePage = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const AboutMePage = () => {
     <div className="container-about-me-page">
       <div className={'container-transition active'}></div>
       <HeaderAboutMeSection />
+      <SkillsCardSection />
       <h1>AboutMePage</h1>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam

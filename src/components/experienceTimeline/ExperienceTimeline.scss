@@ -117,7 +117,6 @@
       object-fit: cover;
       box-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
       border-bottom: 4px solid map-get(map-get($background, secondary), 100);
-      border-right: 4px solid map-get(map-get($background, secondary), 100);
       @media (max-width: 1000px) {
         height: 10rem;
       }
