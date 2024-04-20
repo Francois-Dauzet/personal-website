@@ -1,13 +1,13 @@
 export const skillsData = [
   {
-    title: 'Frontend',
+    title: 'Développement Frontend',
     description:
-      "Création et gestion d'interface utilisateur web statique & dynamique.",
+      "Conception et gestion d'interfaces utilisateur web, qu'elles soient statiques ou dynamiques.",
     points: [
-      'Maquetter une application.',
-      'Réaliser une interface utilisateur web statique et adaptable.',
-      'Développer une interface utilisateur web dynamique.',
-      'Réaliser une interface utilisateur avec une solution de contenu ou e-commerce.',
+      "Maquettage d'applications.",
+      "Création d'interfaces web statiques et adaptables.",
+      "Développement d'interfaces web dynamiques.",
+      "Création d'interfaces utilisateur pour des solutions de contenu ou e-commerce.",
     ],
     tools: [
       { name: 'React.js', background: '#f7df1e', color: '#000814' },
@@ -17,21 +17,19 @@ export const skillsData = [
       { name: 'JQuery', background: '#0168AE', color: '#ffffff' },
       { name: 'Symfony', background: '#000000', color: '#ffffff' },
       { name: 'Vue.js', background: '#41B883', color: '#000814' },
-      { name: 'jQuery', background: '#0868AC', color: '#ffffff' },
       { name: 'Twig', background: '#5C8525', color: '#000814' },
       { name: 'Wordpress', background: '#32373C', color: '#ffffff' },
-      { name: 'React.js', background: '#00DCFF', color: '#000814' },
     ],
   },
   {
-    title: 'Backend',
+    title: 'Développement Backend',
     description:
-      "Création d'une base de données et développement des composants d'accès aux données.",
+      " Création de bases de données et développement des composants d'accès aux données pour les applications web et mobiles.",
     points: [
-      'Créer une base de données.',
-      "Développer les composants d'accès aux données.",
-      "Développer la partie back-end d'une application web ou web mobile.",
-      'Élaborer et mettre en oeuvre des composants dans une application de gestion de contenu ou e-commerce.',
+      'Création de bases de données.',
+      "Développement des composants d'accès aux données.",
+      'Implémentation de la partie backend pour des applications web ou mobiles.',
+      'Intégration de composants dans des applications de gestion de contenu ou e-commerce.',
     ],
     tools: [
       { name: 'MariaDB', background: '#C49A6C', color: '#000814' },
@@ -45,14 +43,14 @@ export const skillsData = [
     ],
   },
   {
-    title: 'Mobile',
+    title: 'Développement Mobile',
     description:
-      "Développement et production d'une application pour Android & IOS.",
+      "Développement et production d'applications pour Android et iOS, avec une expertise particulière dans React Native.",
     points: [
-      'Développer et produire une application pour Android & IOS.',
-      "Gestion de Gradle et de CocaoPods au sein d'un projet.",
-      'Gestion des chemins SDK entre VSCode et Android Studio ou Xcode.',
-      'Élaborer et mettre en oeuvre des composants dans une application React Native.',
+      "Développement et production d'applications pour Android et iOS.",
+      'Gestion des outils de build tels que Gradle et Cocoapods.',
+      'Configuration des chemins SDK entre différents environnements de développement.',
+      "Utilisation de React Native pour développer des composants d'interface.",
     ],
     tools: [
       { name: 'React Native', background: '#00A9D9', color: '#000814' },
@@ -61,9 +59,15 @@ export const skillsData = [
     ],
   },
   {
-    title: 'DevOps',
-    description: 'in progress...',
-    points: ['in progress...', 'in progress...', 'in progress...'],
+    title: 'Pratiques DevOps',
+    description:
+      "Utilisation de processus et d'outils pour accélérer le développement et assurer une amélioration continue des logiciels.",
+    points: [
+      "Mise en place et gestion de pipelines d'intégration continue.",
+      'Automatisation des déploiements pour assurer une livraison continue.',
+      "Configuration et gestion d'environnements de développement et de production.",
+      "Utilisation d'outils de gestion de configuration pour assurer la cohérence des environnements.",
+    ],
     tools: [
       { name: 'Azure DevOps', background: '#0089D6', color: '#000814' },
       { name: 'Vagrant', background: '#127EFF', color: '#000814' },
@@ -74,11 +78,52 @@ export const skillsData = [
     ],
   },
   {
-    title: 'Workflow & Autres',
-    description: 'Ensemble de tous mes outils et environnements de travail.',
-    points: ['in progress...', 'in progress...', 'in progress...'],
+    title: 'Conception et Gestion de Projets',
+    description:
+      "Planification, conception et gestion de projets logiciels, depuis l'analyse des besoins jusqu'à la mise en production et la maintenance.",
+    points: [
+      'Création de cahiers des charges détaillés en collaboration avec les parties prenantes.',
+      'Élaboration de Diagrammes de Gantt pour la planification et le suivi des projets.',
+      'Utilisation de Mind Maps pour visualiser et organiser les idées et les processus.',
+      'Identification et spécification des exigences fonctionnelles et non fonctionnelles.',
+      "Établissement de l'architecture technologique et applicative.",
+      'Définition des Guidelines de conception pour garantir la cohérence et la qualité.',
+      "Création de maquettes et wireframes pour visualiser l'interface utilisateur.",
+      "Réalisation de l'inventaire des données et conception des modèles conceptuels et physiques (MLD, MCD, MPD).",
+      "Définition des exigences de sécurité et mise en place d'un plan de développement sécurisé.",
+      'Planification des phases et des itérations en utilisant des méthodologies agiles ou traditionnelles.',
+      'Mise en place du déploiement et de la maintenance des applications.',
+      'Gestion du budget du projet et suivi des coûts tout au long du cycle de vie du projet.',
+    ],
     tools: [
-      { name: 'Git', background: '#DD4C35', color: '#000814' },
+      { name: 'Coolors', background: '#08A3FD', color: '#000814' },
+      { name: 'DrawSQL', background: '#232323', color: '#ffffff' },
+      { name: 'Excalidraw', background: '#6965DB', color: '#ffffff' },
+      { name: 'Figma', background: '#F25425', color: '#000814' },
+      { name: 'Framindmap', background: '#725794', color: '#ffffff' },
+      { name: 'GanttProject', background: '#FFC008', color: '#000814' },
+      { name: 'Looping', background: '#0000FF', color: '#ffffff' },
+      { name: 'Microsoft 365', background: '#497DD2', color: '#000814' },
+      { name: 'Prezi', background: '#3685FF', color: '#000814' },
+      { name: 'Trello', background: '#087DC1', color: '#000814' },
+    ],
+  },
+  {
+    title: 'Workflow et Outils',
+    description:
+      "Ensemble d'outils et d'environnements de travail pour optimiser la productivité et la collaboration tout au long du processus de développement.",
+    points: [
+      "Gestion avancée de balises et de suivi d'événements avec Google Tag Manager.",
+      'Analyse approfondie du trafic et du comportement des utilisateurs avec Google Analytics.',
+      "Utilisation de Firebase pour le développement d'applications web et mobiles.",
+      "Test et débogage d'API avec Postman.",
+      'Administration et gestion de bases de données avec phpMyAdmin et MySQL Workbench.',
+      'Transfert de fichiers sécurisé avec FileZilla.',
+      "Configuration de l'environnement de développement avec Laragon.",
+      "Administration des systèmes d'exploitation Linux et Windows.",
+      'Développement de logiciels avec Notepad++ et Visual Studio Code.',
+    ],
+    tools: [
       { name: 'Google Tag Manager', background: '#89B4F8', color: '#000814' },
       { name: 'Google Analytics', background: '#F8AC01', color: '#000814' },
       { name: 'Firebase', background: '#FFCB2C', color: '#000814' },
@@ -95,49 +140,4 @@ export const skillsData = [
       { name: 'Windows', background: '#087DD7', color: '#000814' },
     ],
   },
-  //   {
-  //     title: 'Montage Audio & Vidéo',
-  //     description: "Réalisation d'un montage audio/vidéo complet.",
-  //     points: [
-  //       'Modifier ou créer une image avec plusieurs sources.',
-  //       'Réaliser un montage audio/vidéo complet.',
-  //       'Optimiser au maximum le rendu photo/vidéo.',
-  //       'Filmer, réaliser et produire un trailer.',
-  //     ],
-  //     tools: [
-  //       { name: 'Example', background: '#C49A6C', color: '#000814' },
-  //       { name: 'Example', background: '#03599C', color: '#ffffff' },
-  //     ],
-  //   },
-  //   {
-  //     title: 'Production de Musique',
-  //     description: "Écriture, création et production d'une musique complète.",
-  //     points: [
-  //       'Écrire ,créer et produire une musique complète.',
-  //       'Enregistrer et editer un environnement ou une voix dans un DAW.',
-  //       'Créer et utiliser des templates pour des synthetiseurs ou des pluggins.',
-  //       "Élaborer et mettre en oeuvre le mastering complet d'une bande son.",
-  //       'Création de la chaîne Youtube Tezuad pour le partage et la diffusion de mes créations.',
-  //     ],
-  //     tools: [
-  //       { name: 'Example', background: '#C49A6C', color: '#000814' },
-  //       { name: 'Example', background: '#03599C', color: '#ffffff' },
-  //     ],
-  //   },
-  //   {
-  //     title: '3D - Mapping & Modding',
-  //     description:
-  //       "Création d'une map ou d'un mod avec gestion des fichiers XML et i3d.",
-  //     points: [
-  //       'Crée une map (triggers, splines, scripts) sur Giants Editor.',
-  //       "Gérer l'entièreté des fichiers XML et i3d d'une map ou d'un mod.",
-  //       'Créé et importé des textures, script et fichier.grle dans Giants Editor.',
-  //       'Créé, animé, importer et exporter des objets de base avec Blender.',
-  //       'Création de la chaîne Youtube Namkad Production pour le partage et la diffusion de formations.',
-  //     ],
-  //     tools: [
-  //       { name: 'Example', background: '#C49A6C', color: '#000814' },
-  //       { name: 'Example', background: '#03599C', color: '#ffffff' },
-  //     ],
-  //   },
 ];

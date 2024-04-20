@@ -22,14 +22,15 @@ const SkillsSection = () => {
           </span>
         </h1>
         <p className="description">
-          Voici la liste de toutes mes compétences, du développement web et
-          mobile à la création de musique, en passant par la gestion de bases de
-          données et la réalisation de montages audio/vidéo.
+          Voici mes compétences en développement web, couvrant le frontend, le
+          backend et la gestion de bases de données. Explorez chaque section
+          pour découvrir les outils et technologies que je maîtrise dans ces
+          domaines clés.
         </p>
         <div className="container-cards">
           {skillsData.map((skill, index) => (
             <div key={index} className="item-card">
-              <h3>{skill.title}</h3>
+              <h3 translate="no">{skill.title}</h3>
               <h4>{skill.description}</h4>
               <ul>
                 {skill.points.map((point, index) => (
@@ -50,14 +51,20 @@ const SkillsSection = () => {
               <div className="item-card-content">
                 {skill.tools.map((tool, index) => (
                   <div key={index} className="tag">
-                    <p
-                      style={{
-                        backgroundColor: tool.background,
-                        color: tool.color,
-                      }}
+                    <a
+                      target="_blank"
+                      href={'https://www.google.com/search?q=' + tool.name}
                     >
-                      {tool.name}
-                    </p>
+                      <p
+                        translate="no"
+                        style={{
+                          backgroundColor: tool.background,
+                          color: tool.color,
+                        }}
+                      >
+                        {tool.name}
+                      </p>
+                    </a>
                   </div>
                 ))}
               </div>
