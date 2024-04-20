@@ -79,6 +79,8 @@
       margin: 2rem;
       padding: 2rem;
       background-color: map-get(map-get($background, on-secondary), 100);
+      border-top: 4px solid map-get(map-get($background, secondary), 100);
+
       @media (max-width: 1000px) {
         width: 88%;
         margin: 1rem;
@@ -89,7 +91,7 @@
         font-family: 'Gilroy-SemiBold';
         color: map-get(map-get($text-color, on-primary), 100);
         font-size: 1.5rem;
-        margin: 0 0 0.25rem 0;
+        margin: 0 0 0.5rem 0;
         text-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
       }
 
@@ -103,6 +105,8 @@
 
       ul {
         list-style: none;
+        padding: 0.25rem 0;
+
         li {
           font-family: 'Gilroy-regular';
           color: map-get(map-get($text-color, on-primary), 75);
@@ -167,12 +171,14 @@
           align-items: center;
           justify-content: center;
           margin: 0.5rem;
-
-          p {
-            margin: 0;
-            padding: 0.25rem;
-            font-family: 'Gilroy-SemiBold';
-            color: map-get(map-get($text-color, primary), 100);
+          a {
+            text-decoration: none;
+            p {
+              margin: 0;
+              padding: 0.25rem;
+              font-family: 'Gilroy-SemiBold';
+              color: map-get(map-get($text-color, primary), 100);
+            }
           }
         }
       }
