@@ -1,4 +1,5 @@
 import React from 'react';
+import TitleSection from '../titleSection/TitleSection';
 import iconGithubPath from '../../assets/icons/github.svg';
 import iconLinkPath from '../../assets/icons/link.svg';
 import { projectsData } from '../../data/projectsData';
@@ -14,20 +15,15 @@ const ProjectsSection = () => {
   return (
     <section>
       <div className="container-projects">
-        <h1 className="title-section">
-          <span translate="no" className="first-word">
-            #All
-          </span>
-          <span translate="no" className="second-word">
-            Projects
-          </span>
-        </h1>
-        <p className="description">
-          Explore my projects, a showcase of my development skills. Each project
+        <TitleSection
+          first="#All"
+          second="Projects"
+          description="Explore my projects, a showcase of my development skills. Each project
           represents an opportunity to innovate, create and meet technical
           challenges. Browse each project to discover the technologies used, the
-          challenges faced and the solutions brought.
-        </p>
+          challenges faced and the solutions brought."
+          color="white"
+        />
         <div className="container-cards">
           {projectsData.map((project, index) => (
             <div key={index} className="item-card">

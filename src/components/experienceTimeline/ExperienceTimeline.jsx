@@ -1,25 +1,21 @@
 import React from 'react';
 import './ExperienceTimeline.scss';
 import { experienceData } from '../../data/experienceData';
+import TitleSection from '../titleSection/TitleSection';
 
 const ExperienceTimeline = () => {
   return (
     <section>
       <div className="container-experience-timeline">
-        <h1 className="title-section">
-          <span translate="no" className="first-word">
-            #All
-          </span>
-          <span translate="no" className="second-word">
-            Experiences
-          </span>
-        </h1>
-        <p className="description">
-          From application containerization to full stack development, my
+        <TitleSection
+          first="#All"
+          second="Experiences"
+          description="From application containerization to full stack development, my
           professional experiences have been equally varied. I acquired
           expertise in areas as diverse as precision in polishing, project
-          management and even military service.
-        </p>
+          management and even military service."
+          color="white"
+        />
         <div className="timeline-items">
           {experienceData.map((experience, index) => (
             <div key={index} className="timeline-item">

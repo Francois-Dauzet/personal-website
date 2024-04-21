@@ -1,25 +1,21 @@
 import React from 'react';
 import './TrainingTimeline.scss';
 import { trainingData } from '../../data/trainingData';
+import TitleSection from '../titleSection/TitleSection';
 
 const TrainingTimeline = () => {
   return (
     <section>
       <div className="container-training-timeline">
-        <h1 className="title-section">
-          <span translate="no" className="first-word">
-            #All
-          </span>
-          <span translate="no" className="second-word">
-            Trainings
-          </span>
-        </h1>
-        <p className="description">
-          From web and mobile design to database management, my Skills extend
+        <TitleSection
+          first="#All"
+          second="Trainings"
+          description="From web and mobile design to database management, my Skills extend
           across a diversity of fields. I followed certified training in
           application development, self-taught as well as in beekeeping and
-          bodywork.
-        </p>
+          bodywork."
+          color="black"
+        />
         <div className="timeline-items">
           {trainingData.map((training, index) => (
             <div key={index} className="timeline-item">

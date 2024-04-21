@@ -5,7 +5,7 @@
  * --------------- Container header
 ----------------------------------- */
 
-  min-height: 64vh;
+  min-height: 68vh;
   width: 100%;
   display: flex;
   background-image: url(../../assets/backgrounds/bg_header_about_me.jpg);
@@ -148,7 +148,7 @@
           display: inline-block;
           text-align: center;
           padding: 8px 16px;
-          margin-top: 2rem;
+          margin-top: 1rem;
           font-size: 1rem;
           background-color: map-get(map-get($background, secondary), 100);
           border-top: 2px solid map-get(map-get($background, secondary), 100);
@@ -157,7 +157,7 @@
           cursor: pointer;
           transition: background-color 0.4s, color 0.4s, border 0.4s;
           @media (max-width: 1000px) {
-            margin: 2rem 0;
+            margin: 2rem 0 3rem 0;
           }
           &:hover {
             color: map-get(map-get($background, secondary), 100);

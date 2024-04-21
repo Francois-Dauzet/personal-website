@@ -3,6 +3,7 @@ import { skillsData } from '../../data/skillsData';
 
 //* Styles
 import './SkillsSection.scss';
+import TitleSection from '../titleSection/TitleSection';
 
 const SkillsSection = () => {
   skillsData.forEach((skill) => {
@@ -12,19 +13,14 @@ const SkillsSection = () => {
   return (
     <section>
       <div className="container-skills">
-        <h1 className="title-section">
-          <span translate="no" className="first-word">
-            #All
-          </span>
-          <span translate="no" className="second-word">
-            Skills
-          </span>
-        </h1>
-        <p className="description">
-          Here are my web development skills, covering frontend, backend and
+        <TitleSection
+          first="#All"
+          second="Skills"
+          description="Here are my web development skills, covering frontend, backend and
           database management. Explore each section to discover the tools and
-          technologies that I master in these key areas.
-        </p>
+          technologies that I master in these key areas."
+          color="white"
+        />
         <div className="container-cards">
           {skillsData.map((skill, index) => (
             <div key={index} className="item-card">
