@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
-import imgProfilePath from '../../assets/images/profile.png';
-import iconLinkedinPath from '../../assets/icons/linkedin.svg';
-import iconGithubPath from '../../assets/icons/github.svg';
-import iconGitlabPath from '../../assets/icons/gitlab.svg';
-import ContactForm from '../contactForm/ContactForm';
+import React, { useEffect } from "react";
+import imgProfilePath from "../../assets/images/profile.png";
+import iconLinkedinPath from "../../assets/icons/linkedin.svg";
+import iconGithubPath from "../../assets/icons/github.svg";
+import iconGitlabPath from "../../assets/icons/gitlab.svg";
+import ContactForm from "../contactForm/ContactForm";
 
 //* Styles
-import './HeaderPortfolioSection.scss';
+import "./HeaderPortfolioSection.scss";
 const HeaderPortfolioSection = () => {
   useEffect(() => {
     /*
@@ -15,43 +15,43 @@ const HeaderPortfolioSection = () => {
     const handleScroll = () => {
       const scrollPos = window.scrollY;
       const containerHeaderSection = document.querySelector(
-        '.container-header-experience-section'
+        ".container-header-portfolio-section"
       );
       if (containerHeaderSection) {
-        containerHeaderSection.style.backgroundPositionY = scrollPos / 2 + 'px';
+        containerHeaderSection.style.backgroundPositionY = scrollPos / 2 + "px";
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     /*
      * modal function
      */
-    const button = document.getElementsByClassName('contact-button')[0];
+    const button = document.getElementsByClassName("contact-button")[0];
     const closingCross =
-      document.getElementsByClassName('icon-closing-cross')[0];
-    const modalContainer = document.getElementById('modal-container');
+      document.getElementsByClassName("icon-closing-cross")[0];
+    const modalContainer = document.getElementById("modal-container");
 
-    button.addEventListener('click', function () {
-      modalContainer.removeAttribute('class');
-      modalContainer.classList.add('contact-button');
-      document.body.classList.add('modal-active');
+    button.addEventListener("click", function () {
+      modalContainer.removeAttribute("class");
+      modalContainer.classList.add("contact-button");
+      document.body.classList.add("modal-active");
     });
 
-    modalContainer.addEventListener('click', function (event) {
-      if (event.target.classList.contains('modal-background')) {
-        this.classList.add('out');
-        document.body.classList.remove('modal-active');
+    modalContainer.addEventListener("click", function (event) {
+      if (event.target.classList.contains("modal-background")) {
+        this.classList.add("out");
+        document.body.classList.remove("modal-active");
       }
     });
 
-    closingCross.addEventListener('click', function () {
-      modalContainer.classList.add('out');
-      document.body.classList.remove('modal-active');
+    closingCross.addEventListener("click", function () {
+      modalContainer.classList.add("out");
+      document.body.classList.remove("modal-active");
     });
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
