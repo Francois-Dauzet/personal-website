@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import './PortfolioPage.scss';
 import HeaderPortfolioSection from '../../components/headerPortfolioSection/HeaderPortfolioSection';
+import ProjectsSection from '../../components/projectsSection/ProjectsSection';
+import Footer from '../../components/footer/Footer';
 
 const PortfolioPage = () => {
   useEffect(() => {
@@ -14,6 +16,8 @@ const PortfolioPage = () => {
     <div className="container-portfolio-page">
       <div className={'container-transition active'}></div>
       <HeaderPortfolioSection />
+      <ProjectsSection />
+      <Footer />
     </div>
   );
 };

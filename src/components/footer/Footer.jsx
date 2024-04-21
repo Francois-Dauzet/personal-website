@@ -15,18 +15,12 @@ const Footer = () => {
   };
 
   return (
-    <>
+    <footer>
       <div className="container-footer">
         <h5 translate="no">francois-d.com</h5>
         <ul>
           <li translate="no" onClick={() => updateNavigate()}>
-            label
-          </li>
-          <li translate="no" onClick={() => updateNavigate()}>
-            label
-          </li>
-          <li translate="no" onClick={() => updateNavigate()}>
-            label
+            Patch Notes
           </li>
         </ul>
         <div className="line"></div>
@@ -46,7 +40,7 @@ const Footer = () => {
         </div>
         <p translate="no">Copyright © 2024 François Dauzet | francois-d.com</p>
       </div>
-    </>
+    </footer>
   );
 };
 

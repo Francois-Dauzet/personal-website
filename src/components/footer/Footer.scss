@@ -13,46 +13,14 @@
   h5 {
     text-align: center;
     font-family: 'Gilroy-Bold';
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1.5rem;
-    color: map-get(map-get($text-color, primary), 100);
+    color: map-get(map-get($text-color, tertiary), 100);
   }
   .line {
     background-color: map-get(map-get($background, on-primary), 100);
     width: 100%;
     height: 1px;
-  }
-  .container-social-icons {
-    margin: 0.25rem 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 5rem;
-
-    a {
-      margin: 0 6%;
-      border: none;
-      width: 2rem;
-      height: 2rem;
-      background-color: map-get(map-get($background, on-tertiary), 100);
-      overflow: hidden;
-      &:hover {
-        background-color: map-get(map-get($background, on-secondary), 100);
-      }
-
-      img {
-        width: 2rem;
-        height: 2rem;
-        transform: rotate(0) scale(1);
-        transition: transform 0.4s;
-
-        &:hover {
-          transform: rotate(8deg) scale(1.2);
-          transition: transform 0.2s;
-        }
-      }
-    }
   }
   ul {
     display: flex;
@@ -67,6 +35,36 @@
       font-size: 1rem;
       &:hover {
         cursor: pointer;
+      }
+    }
+  }
+  .container-social-icons {
+    margin: 0.25rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+
+    a {
+      margin: 0 6%;
+      border: none;
+      width: 2rem;
+      height: 2rem;
+      background-color: #000;
+      filter: invert(1);
+      overflow: hidden;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        transform: rotate(0) scale(1);
+        transition: transform 0.4s;
+
+        &:hover {
+          transform: rotate(8deg) scale(1.2);
+          transition: transform 0.2s;
+        }
       }
     }
   }

@@ -3,6 +3,7 @@ import './ExperiencePage.scss';
 import TrainingTimeline from '../../components/trainingTimeline/TrainingTimeline';
 import HeaderExperienceSection from '../../components/headerExperienceSection/HeaderExperienceSection';
 import ExperienceTimeline from '../../components/experienceTimeline/ExperienceTimeline';
+import Footer from '../../components/footer/Footer';
 
 const ExperiencePage = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const ExperiencePage = () => {
       <HeaderExperienceSection />
       <TrainingTimeline />
       <ExperienceTimeline />
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import React from 'react';
-import iconConduentPath from '../../assets/images/conduent_business_solutions_france.jpg';
 import { skillsData } from '../../data/skillsData';
 
 //* Styles

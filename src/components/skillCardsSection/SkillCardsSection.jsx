@@ -20,9 +20,9 @@ const SkillCardsSection = () => {
           </span>
         </h1>
         <p className="description">
-          Je suis un développeur polyvalent spécialisé dans la création
-          d'interfaces percutantes et la sécurisation des données, ainsi que
-          dans l'optimisation des processus de développement et de déploiement.
+          I am a versatile developer specialized in creating impactful
+          interfaces and securing data, as well as optimizing development and
+          deployment processes.
         </p>
         <div className="container-cards">
           <div className="item-card">
