@@ -76,14 +76,13 @@
     .item-card {
       width: 40%;
       max-width: 600px;
-      margin: 2rem;
+      margin: 1rem;
       padding: 2rem;
       background-color: map-get(map-get($background, on-secondary), 100);
       border-top: 4px solid map-get(map-get($background, secondary), 100);
 
       @media (max-width: 1000px) {
         width: 88%;
-        margin: 1rem;
         padding: 1rem;
       }
 

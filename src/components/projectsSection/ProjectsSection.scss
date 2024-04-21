@@ -1,4 +1,4 @@
-@import "./../../styles/theme.scss";
+@import './../../styles/theme.scss';
 
 .container-projects {
   /* -----------------------------------
@@ -19,7 +19,7 @@
   }
 
   .title-section {
-    font-family: "Gilroy-Bold";
+    font-family: 'Gilroy-Bold';
     font-size: 2rem;
     margin: 2rem 0 6rem 0;
     border-bottom: 4px solid map-get(map-get($background, on-tertiary), 100);
@@ -58,7 +58,7 @@
   .description {
     text-align: center;
     margin: 4rem 16% 1rem 16%;
-    font-family: "Gilroy-SemiBold";
+    font-family: 'Gilroy-SemiBold';
     color: map-get(map-get($text-color, on-primary), 100);
     font-size: 1rem;
     @media (max-width: 1000px) {
@@ -76,21 +76,20 @@
     .item-card {
       width: 40%;
       max-width: 600px;
-      margin: 2rem;
+      margin: 1rem;
       padding: 2rem;
       background-color: map-get(map-get($background, on-secondary), 100);
       border-bottom: 4px solid map-get(map-get($background, secondary), 100);
 
       @media (max-width: 1000px) {
         width: 88%;
-        margin: 1rem;
         padding: 1rem;
       }
 
       .date {
         position: absolute;
         margin: -1.75rem 0 0 -1.75rem;
-        font-family: "Gilroy-regular";
+        font-family: 'Gilroy-regular';
         color: map-get(map-get($text-color, on-primary), 50);
         font-size: 0.75rem;
 
@@ -116,7 +115,7 @@
             p {
               margin: 0;
               padding: 0.25rem;
-              font-family: "Gilroy-SemiBold";
+              font-family: 'Gilroy-SemiBold';
               color: map-get(map-get($text-color, primary), 100);
             }
           }
@@ -130,7 +129,7 @@
           height: 1.5rem;
         }
         h3 {
-          font-family: "Gilroy-SemiBold";
+          font-family: 'Gilroy-SemiBold';
           color: map-get(map-get($text-color, on-primary), 100);
           font-size: 1.5rem;
           margin: 0 0 0 0.25rem;
@@ -139,7 +138,7 @@
       }
 
       h4 {
-        font-family: "Gilroy-SemiBold";
+        font-family: 'Gilroy-SemiBold';
         color: map-get(map-get($text-color, on-primary), 100);
         font-size: 1rem;
         margin: 0.5rem 0 1.5rem 0;
@@ -151,7 +150,7 @@
         padding: 0;
 
         li {
-          font-family: "Gilroy-regular";
+          font-family: 'Gilroy-regular';
           color: map-get(map-get($text-color, on-primary), 75);
           font-size: 1rem;
           margin: 0.5rem 0 0 0;
@@ -211,7 +210,7 @@
       }
       .item-card-label {
         display: flex;
-        font-family: "Gilroy-SemiBold";
+        font-family: 'Gilroy-SemiBold';
         color: map-get(map-get($text-color, on-primary), 100);
         font-size: 1rem;
         background: map-get(map-get($background, on-tertiary), 100);
@@ -219,8 +218,8 @@
         justify-content: space-between;
         padding: 1rem;
         &:after {
-          content: "";
-          background-image: url("../../assets/icons/arrow.svg");
+          content: '';
+          background-image: url('../../assets/icons/arrow.svg');
           background-size: 48px 48px;
           background-repeat: no-repeat;
           background-position: center;
@@ -269,7 +268,8 @@
         transform: rotate(-12deg) scale(1.3) translate(0, 50px);
         object-fit: cover;
         z-index: 1;
-        transition: transform 0.4s;
+        filter: grayscale(0.5);
+        transition: transform 0.4s, box-shadow 0s, filter 0.4s;
 
         @media (max-width: 1000px) {
           transform: rotate(-8deg) scale(1.3) translate(10%, 50px);
@@ -282,8 +282,9 @@
         @media (min-width: 1300px) {
           &:hover {
             transform: rotate(0deg) scale(1) translate(1rem, 0);
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.8s, filter 0.2s;
             box-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
+            filter: grayscale(0);
           }
         }
       }
@@ -293,7 +294,8 @@
         transform: rotate(-12deg) scale(1.1) translate(0, 64px);
         object-fit: cover;
         margin-left: -0.5rem;
-        transition: transform 0.4s;
+        transition: transform 0.4s, box-shadow 0s, filter 0.4s;
+        filter: grayscale(0.5);
 
         @media (max-width: 1000px) {
           transform: rotate(-8deg) scale(1.2) translate(2rem, 50px);
@@ -303,8 +305,9 @@
           &:hover {
             transform: rotate(0deg) scale(1) translate(0, 0);
             z-index: 1;
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.8s, filter 0.2s;
             box-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
+            filter: grayscale(0);
           }
         }
       }
