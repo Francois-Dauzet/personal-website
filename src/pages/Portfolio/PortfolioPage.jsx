@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import './PortfolioPage.scss';
 import HeaderPortfolioSection from '../../components/headerPortfolioSection/HeaderPortfolioSection';
 import ProjectsSection from '../../components/projectsSection/ProjectsSection';
 import Footer from '../../components/footer/Footer';
+import './PortfolioPage.scss';
 
 const PortfolioPage = () => {
   useEffect(() => {

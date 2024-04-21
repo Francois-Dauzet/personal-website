@@ -1,6 +1,6 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import { routeConfig } from "./../config/routes";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { routeConfig } from './../config/routes';
 
 const Router = () => {
   return (

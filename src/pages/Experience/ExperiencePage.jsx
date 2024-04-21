@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import './ExperiencePage.scss';
 import TrainingTimeline from '../../components/trainingTimeline/TrainingTimeline';
 import HeaderExperienceSection from '../../components/headerExperienceSection/HeaderExperienceSection';
 import ExperienceTimeline from '../../components/experienceTimeline/ExperienceTimeline';
 import Footer from '../../components/footer/Footer';
+import './ExperiencePage.scss';
 
 const ExperiencePage = () => {
   useEffect(() => {

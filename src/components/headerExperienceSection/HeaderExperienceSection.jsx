@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import imgProfilePath from '../../assets/images/profile.png';
 import iconLinkedinPath from '../../assets/icons/linkedin.svg';
 import iconGithubPath from '../../assets/icons/github.svg';
 import iconGitlabPath from '../../assets/icons/gitlab.svg';

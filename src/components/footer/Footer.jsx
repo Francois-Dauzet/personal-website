@@ -1,11 +1,11 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import iconLinkedinPath from "../../assets/icons/linkedin.svg";
-import iconGithubPath from "../../assets/icons/github.svg";
-import iconGitlabPath from "../../assets/icons/gitlab.svg";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import iconLinkedinPath from '../../assets/icons/linkedin.svg';
+import iconGithubPath from '../../assets/icons/github.svg';
+import iconGitlabPath from '../../assets/icons/gitlab.svg';
 
 //* Styles
-import "./Footer.scss";
+import './Footer.scss';
 
 const Footer = () => {
   const navigate = useNavigate();

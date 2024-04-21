@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import './AboutMePage.scss';
 import HeaderAboutMeSection from '../../components/headerAboutMeSection/HeaderAboutMeSection';
 import SkillCardsSection from '../../components/skillCardsSection/SkillCardsSection';
 import SkillsSection from '../../components/skillsSection/SkillsSection';
 import Footer from '../../components/footer/Footer';
+import './AboutMePage.scss';
 
 const AboutMePage = () => {
   useEffect(() => {

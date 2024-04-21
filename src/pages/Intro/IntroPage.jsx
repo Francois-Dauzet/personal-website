@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './IntroPage.scss';
 import { useNavigate } from 'react-router-dom';
+import './IntroPage.scss';
 
 const IntroPage = () => {
   const TitleData = ' Welcome';
