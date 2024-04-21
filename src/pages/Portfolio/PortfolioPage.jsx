@@ -3,6 +3,7 @@ import HeaderPortfolioSection from '../../components/headerPortfolioSection/Head
 import ProjectsSection from '../../components/projectsSection/ProjectsSection';
 import Footer from '../../components/footer/Footer';
 import './PortfolioPage.scss';
+import BestProjectSection from '../../components/bestProjectSection/BestProjectSection';
 
 const PortfolioPage = () => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const PortfolioPage = () => {
     <div className="container-portfolio-page">
       <div className={'container-transition active'}></div>
       <HeaderPortfolioSection />
+      <BestProjectSection />
       <ProjectsSection />
       <Footer />
     </div>
