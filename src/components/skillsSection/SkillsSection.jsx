@@ -21,10 +21,9 @@ const SkillsSection = () => {
           </span>
         </h1>
         <p className="description">
-          Voici mes compétences en développement web, couvrant le frontend, le
-          backend et la gestion de bases de données. Explorez chaque section
-          pour découvrir les outils et technologies que je maîtrise dans ces
-          domaines clés.
+          Here are my web development skills, covering frontend, backend and
+          database management. Explore each section to discover the tools and
+          technologies that I master in these key areas.
         </p>
         <div className="container-cards">
           {skillsData.map((skill, index) => (
@@ -42,10 +41,11 @@ const SkillsSection = () => {
                 id={skill.title.toLowerCase()}
               />
               <label
+                translate="no"
                 htmlFor={skill.title.toLowerCase()}
                 className="item-card-label"
               >
-                Outils & Technologies
+                Tools & Technologies
               </label>
               <div className="item-card-content">
                 {skill.tools.map((tool, index) => (

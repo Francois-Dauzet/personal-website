@@ -32,7 +32,7 @@ export const trainingData = [
   },
   {
     date: '2019 - 2021',
-    certification: 'Autodidacte',
+    certification: 'Self-taught',
     title: 'Formations HTML, CSS, JS et SQL',
     subtitle: 'Sololearn, Pierre Giraud, Mimo...',
     description: 'in progress....',

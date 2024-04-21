@@ -15,10 +15,10 @@ const TrainingTimeline = () => {
           </span>
         </h1>
         <p className="description">
-          De la conception web et mobile à la gestion de bases de données, mes
-          compétences s'étendent à travers une diversité de domaines. J'ai suivi
-          des formations certifiées en développement d'applications, en
-          autodidacte ainsi qu'en apiculture et en carrosserie.
+          From web and mobile design to database management, my Skills extend
+          across a diversity of fields. I followed certified training in
+          application development, self-taught as well as in beekeeping and
+          bodywork.
         </p>
         <div className="timeline-items">
           {trainingData.map((training, index) => (
@@ -28,7 +28,7 @@ const TrainingTimeline = () => {
                 {training.date}
               </div>
               <div className="timeline-content">
-                <img src={training.imagePath} alt="" />
+                <img src={training.imagePath} alt={training.title} />
                 <div className="container-text">
                   <span translate="no">{training.certification}</span>
                   <h3 translate="no">{training.title}</h3>

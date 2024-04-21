@@ -10,7 +10,7 @@ export const experienceData = [
     position: "Chargé de conteneurisation d'application",
     company: 'Conduent Business Solutions France',
     description:
-      "Dans mon poste actuel, je travaille avec une variété d'outils et de technologies clés pour le développement et la gestion d'applications. J'utilise Docker, Rancher et Kubernetes pour la conteneurisation des applications, garantissant une gestion efficace des environnements. Parallèlement, j'utilise Azure DevOps comme plateforme centrale pour gérer les droits, les déploiements, les builds et toutes les autres exigences du cycle de vie des applications.",
+      'In my current position, I work with a variety of key tools and technologies for application development and management. I use Docker, Rancher, and Kubernetes for application containerization, ensuring efficient management of environments. Additionally, I utilize Azure DevOps as the central platform to manage permissions, deployments, builds, and all other application lifecycle requirements.',
     imagePath: iconConduentPath,
   },
   {
@@ -18,7 +18,7 @@ export const experienceData = [
     position: 'Développeur Full Stack',
     company: 'KPInsight Analytics',
     description:
-      "Ma mission principale était la mise en place de TAG avec Google Tag Manager afin d'intégrer des scripts JavaScript pour la modification ou la création de nouvelles fonctionnalités. J'ai également été chargé de déployer des balises Google Analytics pour assurer un suivi précis de l'utilisateur sur les sites web. Parallèlement, j'ai eu l'occasion d'utiliser React Native pour le développement d'applications mobiles iOS et Android, ainsi que PHP pour la gestion du back office de certains clients.",
+      'My main task was setting up TAG with Google Tag Manager to integrate JavaScript scripts for modifying or creating new features. I was also responsible for deploying Google Analytics tags to ensure accurate user tracking on websites. Concurrently, I had the opportunity to use React Native for iOS and Android mobile app development, as well as PHP for managing the back office for some clients.',
     imagePath: iconkpinsightPath,
   },
   {
@@ -26,7 +26,7 @@ export const experienceData = [
     position: 'Polisseur',
     company: 'Politech (Groupe SOFAB Orthopédie)',
     description:
-      "J'ai travaillé sur le polissage d'implants et d'ancillaires de petites et moyennes séries, ainsi que sur la fabrication de pièces orthopédiques avec une précision au dixième de millimètre. Mes tâches comprenaient le corindonnage, le microbillage et le polissage de matériaux tels que l'Inox, le Titane, le Chrome et le Cobalt.",
+      'I worked on polishing implants and ancillaries in small to medium series, as well as manufacturing orthopedic parts with precision to the tenth of a millimeter. My tasks included corundum grinding, microblasting, and polishing materials such as Stainless Steel, Titanium, Chrome, and Cobalt.',
     imagePath: iconPolitechPath,
   },
   {
@@ -34,7 +34,7 @@ export const experienceData = [
     position: 'Apiculture',
     company: 'Philippe Dauzet apiculteur professionel depuis 1989',
     description:
-      "Dès mon plus jeune âge, j'ai commencé à travailler aux côtés de mon père. J'ai été impliqué dans la branche de l'agriculture spécialisée dans l'élevage d'abeilles pour la production de miel. Mon rôle consistait à exploiter les produits de la ruche, notamment le miel, mais aussi la cire, la gelée royale, le pollen et la propolis.",
+      'From a young age, I began working alongside my father. I was involved in agriculture specializing in beekeeping for honey production. My role involved managing hive products, including honey, wax, royal jelly, pollen, and propolis.',
     imagePath: iconApiculturePath,
   },
   {
@@ -42,7 +42,7 @@ export const experienceData = [
     position: 'Armée de terre',
     company: '501/503 RCC Mourmelon, 1er Spahis Valence',
     description:
-      "En tant que Tireur de missile Milan dans l'armée de Terre sous le contrat EVAT, j'ai manié cet engin à guidage filoguidé, réalisant des tirs de jour comme de nuit grâce au guidage infrarouge. J'ai ainsi participé à diverses opérations, développant mes compétences techniques et ma capacité à travailler en équipe dans des environnements exigeants.",
+      'As a Milan missile shooter in the army under the EVAT contract, I operated this wire-guided missile, conducting day and night shots using infrared guidance. I participated in various operations, developing my technical skills and ability to work in teams in demanding environments.',
     imagePath: iconArmeeDeTerrePath,
   },
 ];

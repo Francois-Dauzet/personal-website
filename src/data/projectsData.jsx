@@ -12,12 +12,12 @@ export const projectsData = [
     ],
     title: 'Personal Website',
     subtitle: 'Website to introduce myself',
-    description: [
-      'Ceci est mon site web personnel, une plateforme conçue pour vous donner un aperçu détaillé de qui je suis et de ce que je peux faire.',
-      'Parcourez les différentes sections pour découvrir mes compétences, mes formations, ainsi que mon parcours professionnel.',
-      ' Chaque expérience y est soigneusement répertoriée, mettant en lumière mes réalisations et mes expertises.',
-      'Naviguez à travers les projets terminés pour avoir un aperçu de mes réalisations concrètes et de mon engagement dans chaque initiative.',
-      "Ce site est une fenêtre sur mon parcours et mon évolution professionnelle, reflétant l'importance que j'accorde à chaque étape de ma carrière.",
+    descriptions: [
+      'This is my personal website, a platform designed to give you a detailed insight into who I am and what I can do.',
+      'Browse through the different sections to discover my skills, education, as well as my professional journey.',
+      'Each experience is carefully listed here, highlighting my achievements and expertise.',
+      'Navigate through completed projects to get a glimpse of my tangible accomplishments and my dedication to each initiative.',
+      'This site serves as a window into my career path and professional growth, reflecting the importance I place on every stage of my career.',
     ],
     links: {
       site: 'https://francois-d.com/',
@@ -38,10 +38,10 @@ export const projectsData = [
     title: 'Study Projects',
     subtitle: 'Collection of projects from my learning journey',
     description: [
-      "Voici mon portfolio d'étude, une vitrine des réalisations que j'ai développée tout au long de mes formations.",
-      "À travers ces pages, je vous invite à découvrir la diversité des projets que j'ai entrepris durant mon parcours d'apprentissage.",
-      "Chacun d'eux incarne une étape essentielle dans mon développement et met en lumière mes compétences acquises.",
-      'Bien que ce portfolio puisse sembler modeste, il regroupe avec importance tous les projets qui y sont présentés, reflétant ainsi mon engagement et ma progression.',
+      'Here is my study portfolio, showcasing the accomplishments I have developed throughout my education.',
+      'Through these pages, I invite you to explore the diversity of projects I have undertaken during my learning journey.',
+      'Each of them represents an essential step in my development and highlights the skills I have acquired.',
+      'While this portfolio may seem modest, it gathers with importance all the projects presented, reflecting my commitment and progression.',
     ],
     links: {
       site: 'https://study-projects.francois-d.com/index.html',

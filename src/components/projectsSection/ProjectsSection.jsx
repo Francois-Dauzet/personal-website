@@ -23,16 +23,17 @@ const ProjectsSection = () => {
           </span>
         </h1>
         <p className="description">
-          Explorez mes projets, une vitrine de mes compétences en développement.
-          Chaque projet représente une opportunité d'innover, de créer et de
-          relever des défis techniques. Parcourez chaque projet pour découvrir
-          les technologies utilisées, les défis relevés et les solutions
-          apportées.
+          Explore my projects, a showcase of my development skills. Each project
+          represents an opportunity to innovate, create and meet technical
+          challenges. Browse each project to discover the technologies used, the
+          challenges faced and the solutions brought.
         </p>
         <div className="container-cards">
           {projectsData.map((project, index) => (
             <div key={index} className="item-card">
-              <span className="date">{project.date}</span>
+              <span translate="no" className="date">
+                {project.date}
+              </span>
               <div className="container-tags">
                 {project.technologies.map((technology, index) => (
                   <div key={index} className="tag">
@@ -63,6 +64,7 @@ const ProjectsSection = () => {
                 id={project.title.toLowerCase()}
               />
               <label
+                translate="no"
                 htmlFor={project.title.toLowerCase()}
                 className="item-card-label"
               >
@@ -91,12 +93,12 @@ const ProjectsSection = () => {
                 <img
                   className="mobile-image"
                   src={project.images.mobile}
-                  alt=""
+                  alt="mobile image"
                 />
                 <img
                   className="desktop-image"
                   src={project.images.desktop}
-                  alt=""
+                  alt="dasktop image"
                 />
               </div>
             </div>
