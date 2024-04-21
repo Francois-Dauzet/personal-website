@@ -1,4 +1,4 @@
-@import './../../styles/theme.scss';
+@import "./../../styles/theme.scss";
 
 .container-projects {
   /* -----------------------------------
@@ -19,7 +19,7 @@
   }
 
   .title-section {
-    font-family: 'Gilroy-Bold';
+    font-family: "Gilroy-Bold";
     font-size: 2rem;
     margin: 2rem 0 6rem 0;
     border-bottom: 4px solid map-get(map-get($background, on-tertiary), 100);
@@ -58,7 +58,7 @@
   .description {
     text-align: center;
     margin: 4rem 16% 1rem 16%;
-    font-family: 'Gilroy-SemiBold';
+    font-family: "Gilroy-SemiBold";
     color: map-get(map-get($text-color, on-primary), 100);
     font-size: 1rem;
     @media (max-width: 1000px) {
@@ -90,7 +90,7 @@
       .date {
         position: absolute;
         margin: -1.75rem 0 0 -1.75rem;
-        font-family: 'Gilroy-regular';
+        font-family: "Gilroy-regular";
         color: map-get(map-get($text-color, on-primary), 50);
         font-size: 0.75rem;
 
@@ -116,26 +116,33 @@
             p {
               margin: 0;
               padding: 0.25rem;
-              font-family: 'Gilroy-SemiBold';
+              font-family: "Gilroy-SemiBold";
               color: map-get(map-get($text-color, primary), 100);
             }
           }
         }
       }
-
-      h3 {
-        font-family: 'Gilroy-SemiBold';
-        color: map-get(map-get($text-color, on-primary), 100);
-        font-size: 1.5rem;
-        margin: 0 0 0.5rem 0;
-        text-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
+      .container-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        img {
+          height: 1.5rem;
+        }
+        h3 {
+          font-family: "Gilroy-SemiBold";
+          color: map-get(map-get($text-color, on-primary), 100);
+          font-size: 1.5rem;
+          margin: 0 0 0 0.25rem;
+          text-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
+        }
       }
 
       h4 {
-        font-family: 'Gilroy-SemiBold';
+        font-family: "Gilroy-SemiBold";
         color: map-get(map-get($text-color, on-primary), 100);
         font-size: 1rem;
-        margin: 0 0 1.5rem 0;
+        margin: 0.5rem 0 1.5rem 0;
         text-shadow: 0 0 11px map-get(map-get($background, on-primary), 25);
       }
 
@@ -144,7 +151,7 @@
         padding: 0;
 
         li {
-          font-family: 'Gilroy-regular';
+          font-family: "Gilroy-regular";
           color: map-get(map-get($text-color, on-primary), 75);
           font-size: 1rem;
           margin: 0.5rem 0 0 0;
@@ -204,7 +211,7 @@
       }
       .item-card-label {
         display: flex;
-        font-family: 'Gilroy-SemiBold';
+        font-family: "Gilroy-SemiBold";
         color: map-get(map-get($text-color, on-primary), 100);
         font-size: 1rem;
         background: map-get(map-get($background, on-tertiary), 100);
@@ -212,8 +219,8 @@
         justify-content: space-between;
         padding: 1rem;
         &:after {
-          content: '';
-          background-image: url('../../assets/icons/arrow.svg');
+          content: "";
+          background-image: url("../../assets/icons/arrow.svg");
           background-size: 48px 48px;
           background-repeat: no-repeat;
           background-position: center;

@@ -1,10 +1,10 @@
-import React from 'react';
-import iconGithubPath from '../../assets/icons/github.svg';
-import iconLinkPath from '../../assets/icons/link.svg';
-import { projectsData } from '../../data/projectsData';
+import React from "react";
+import iconGithubPath from "../../assets/icons/github.svg";
+import iconLinkPath from "../../assets/icons/link.svg";
+import { projectsData } from "../../data/projectsData";
 
 //* Styles
-import './ProjectsSection.scss';
+import "./ProjectsSection.scss";
 
 const ProjectsSection = () => {
   projectsData.forEach((project) => {
@@ -40,7 +40,7 @@ const ProjectsSection = () => {
                     <a
                       target="_blank"
                       href={
-                        'https://www.google.com/search?q=' + technology.name
+                        "https://www.google.com/search?q=" + technology.name
                       }
                     >
                       <p
@@ -56,7 +56,10 @@ const ProjectsSection = () => {
                   </div>
                 ))}
               </div>
-              <h3 translate="no">{project.title}</h3>
+              <div className="container-title">
+                <img src={project.icon} alt={project.title} />
+                <h3 translate="no">{project.title}</h3>
+              </div>
               <h4>{project.subtitle}</h4>
               <input
                 type="radio"

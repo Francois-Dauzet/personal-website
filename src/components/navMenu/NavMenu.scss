@@ -1,4 +1,4 @@
-@import './../../styles/theme.scss';
+@import "./../../styles/theme.scss";
 
 .container-nav-menu {
   /* -----------------------------------
@@ -27,7 +27,7 @@
         }
 
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           top: 50%;
           left: 50%;
@@ -250,7 +250,7 @@
         position: absolute;
         margin-left: -64px;
         font-size: 1.25rem;
-        font-family: 'Gilroy-SemiBold';
+        font-family: "Gilroy-SemiBold";
         color: map-get(map-get($text-color, primary), 75);
 
         @media (max-width: 1400px) {
@@ -261,8 +261,8 @@
         margin: 0;
         text-decoration: none;
         color: map-get(map-get($text-color, primary), 100);
-        font-family: 'Gilroy-Bold';
-        font-size: 8rem;
+        font-family: "Gilroy-Bold";
+        font-size: 6rem;
         white-space: nowrap;
         transition: color 0.4s ease;
 
