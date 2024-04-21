@@ -70,25 +70,24 @@ const BestProjectSection = () => {
                 alt="dasktop image"
               />
             </div>
-            <div className="item-card-content">
-              <div className="container-links-icons">
-                {project.links.site && (
-                  <a target="_blank" href={project.links.site}>
-                    <img src={iconLinkPath} alt="link" />
-                  </a>
-                )}
-                {project.links.git && (
-                  <a target="_blank" href={project.links.git}>
-                    <img src={iconGithubPath} alt="github" />
-                  </a>
-                )}
-              </div>
-              <ul>
-                {project.description.map((paragraph, index) => (
-                  <li key={index}>{paragraph}</li>
-                ))}
-              </ul>
+
+            <div className="container-links-icons">
+              {project.links.site && (
+                <a target="_blank" href={project.links.site}>
+                  <img src={iconLinkPath} alt="link" />
+                </a>
+              )}
+              {project.links.git && (
+                <a target="_blank" href={project.links.git}>
+                  <img src={iconGithubPath} alt="github" />
+                </a>
+              )}
             </div>
+            <ul>
+              {project.description.map((paragraph, index) => (
+                <li key={index}>{paragraph}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
