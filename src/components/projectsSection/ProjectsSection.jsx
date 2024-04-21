@@ -32,6 +32,7 @@ const ProjectsSection = () => {
         <div className="container-cards">
           {projectsData.map((project, index) => (
             <div key={index} className="item-card">
+              <span className="date">{project.date}</span>
               <div className="container-tags">
                 {project.technologies.map((technology, index) => (
                   <div key={index} className="tag">

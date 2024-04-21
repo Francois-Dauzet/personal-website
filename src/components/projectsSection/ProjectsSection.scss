@@ -11,8 +11,8 @@
   background-position: left;
   background-size: cover;
   animation: rainLevitatingEffect 64s infinite alternate;
-  min-height: 100vh;
-  padding: 80px 15px;
+  min-height: 80vh;
+  padding: 2rem 2rem 4rem 2rem;
   padding-top: 2rem;
   @media (max-width: 1000px) {
     padding-top: 4rem;
@@ -86,6 +86,19 @@
         margin: 1rem;
         padding: 1rem;
       }
+
+      .date {
+        position: absolute;
+        margin: -1.75rem 0 0 -1.75rem;
+        font-family: 'Gilroy-regular';
+        color: map-get(map-get($text-color, on-primary), 50);
+        font-size: 0.75rem;
+
+        @media (max-width: 1000px) {
+          margin: -0.75rem 0 0 -0.75rem;
+        }
+      }
+
       .container-tags {
         display: flex;
         flex-wrap: nowrap;

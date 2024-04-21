@@ -5,6 +5,7 @@ import imageStudyProjectsDesktopPath from './../assets/images/projects/study_pro
 
 export const projectsData = [
   {
+    date: '18/04/2024',
     technologies: [
       { name: 'React.js', background: '#f7df1e', color: '#000814' },
       { name: 'SCSS', background: '#1572B6', color: '#ffffff' },
@@ -28,6 +29,7 @@ export const projectsData = [
     },
   },
   {
+    date: '14/04/2024',
     technologies: [
       { name: 'Javascript', background: '#80DEF8', color: '#000814' },
       { name: 'HTML', background: '#E56947', color: '#000814' },
