@@ -12,7 +12,7 @@ export const projectsData = [
     ],
     title: 'Personal Website',
     subtitle: 'Website to introduce myself',
-    descriptions: [
+    description: [
       'This is my personal website, a platform designed to give you a detailed insight into who I am and what I can do.',
       'Browse through the different sections to discover my skills, education, as well as my professional journey.',
       'Each experience is carefully listed here, highlighting my achievements and expertise.',

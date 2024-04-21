@@ -57,7 +57,7 @@ const ProjectsSection = () => {
                 ))}
               </div>
               <h3 translate="no">{project.title}</h3>
-              <h4 translate="no">{project.subtitle}</h4>
+              <h4>{project.subtitle}</h4>
               <input
                 type="radio"
                 name="projects"
