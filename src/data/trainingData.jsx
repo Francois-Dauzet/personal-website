@@ -1,9 +1,9 @@
-import imageCarrosseriePath from './../assets/images/carrosserie.jpg';
-import imageApicultureGroupPath from './../assets/images/apiculture_group.jpg';
-import imageFormationsPath from './../assets/images/formations.jpg';
-import imageSimplonPath from './../assets/images/simplon.jpg';
-import imageEcoleNumeriqueArdechoisePath from './../assets/images/ecole_numerique_ardechoise.jpg';
-import imageDatascientestPath from './../assets/images/datascientest.jpg';
+import imageCarrosseriePath from './../assets/images/trainings/carrosserie.jpg';
+import imageApicultureGroupPath from './../assets/images/trainings/apiculture_group.jpg';
+import imageFormationsPath from './../assets/images/trainings/formations.jpg';
+import imageSimplonPath from './../assets/images/trainings/simplon.jpg';
+import imageEcoleNumeriqueArdechoisePath from './../assets/images/trainings/ecole_numerique_ardechoise.jpg';
+import imageDatascientestPath from './../assets/images/trainings/datascientest.jpg';
 
 export const trainingData = [
   {
@@ -32,7 +32,7 @@ export const trainingData = [
   },
   {
     date: '2019 - 2021',
-    certification: 'Autodidacte',
+    certification: 'Self-taught',
     title: 'Formations HTML, CSS, JS et SQL',
     subtitle: 'Sololearn, Pierre Giraud, Mimo...',
     description: 'in progress....',

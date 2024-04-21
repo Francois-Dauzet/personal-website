@@ -1,13 +1,13 @@
 export const skillsData = [
   {
-    title: 'Développement Frontend',
+    title: 'Frontend Development',
     description:
-      "Conception et gestion d'interfaces utilisateur web, qu'elles soient statiques ou dynamiques.",
+      'Design and management of web user interfaces, whether static or dynamic.',
     points: [
-      "Maquettage d'applications.",
-      "Création d'interfaces web statiques et adaptables.",
-      "Développement d'interfaces web dynamiques.",
-      "Création d'interfaces utilisateur pour des solutions de contenu ou e-commerce.",
+      'Prototyping applications.',
+      'Creating static and responsive web interfaces.',
+      'Developing dynamic web interfaces.',
+      'Creating user interfaces for content or e-commerce solutions.',
     ],
     tools: [
       { name: 'React.js', background: '#f7df1e', color: '#000814' },
@@ -22,14 +22,14 @@ export const skillsData = [
     ],
   },
   {
-    title: 'Développement Backend',
+    title: 'Backend Development',
     description:
-      " Création de bases de données et développement des composants d'accès aux données pour les applications web et mobiles.",
+      'Creation of databases and development of data access components for web and mobile applications.',
     points: [
-      'Création de bases de données.',
-      "Développement des composants d'accès aux données.",
-      'Implémentation de la partie backend pour des applications web ou mobiles.',
-      'Intégration de composants dans des applications de gestion de contenu ou e-commerce.',
+      'Creating databases.',
+      'Developing data access components.',
+      'Implementing backend for web or mobile applications.',
+      'Integration of components into content or e-commerce management applications.',
     ],
     tools: [
       { name: 'MariaDB', background: '#C49A6C', color: '#000814' },
@@ -43,14 +43,14 @@ export const skillsData = [
     ],
   },
   {
-    title: 'Développement Mobile',
+    title: 'Mobile Development',
     description:
-      "Développement et production d'applications pour Android et iOS, avec une expertise particulière dans React Native.",
+      'Development and production of applications for Android and iOS, with particular expertise in React Native.',
     points: [
-      "Développement et production d'applications pour Android et iOS.",
-      'Gestion des outils de build tels que Gradle et Cocoapods.',
-      'Configuration des chemins SDK entre différents environnements de développement.',
-      "Utilisation de React Native pour développer des composants d'interface.",
+      'Development and production of applications for Android and iOS.',
+      'Management of build tools such as Gradle and Cocoapods.',
+      'Configuration of SDK paths between different development environments.',
+      'Using React Native to develop interface components.',
     ],
     tools: [
       { name: 'React Native', background: '#00A9D9', color: '#000814' },
@@ -59,14 +59,14 @@ export const skillsData = [
     ],
   },
   {
-    title: 'Pratiques DevOps',
+    title: 'DevOps Practices',
     description:
-      "Utilisation de processus et d'outils pour accélérer le développement et assurer une amélioration continue des logiciels.",
+      'Use of processes and tools to speed up development and ensure continuous improvement of software.',
     points: [
-      "Mise en place et gestion de pipelines d'intégration continue.",
-      'Automatisation des déploiements pour assurer une livraison continue.',
-      "Configuration et gestion d'environnements de développement et de production.",
-      "Utilisation d'outils de gestion de configuration pour assurer la cohérence des environnements.",
+      'Setting up and managing continuous integration pipelines.',
+      'Automation of deployments to ensure continuous delivery.',
+      'Configuration and management of development and production environments.',
+      'Using configuration management tools to ensure environment consistency.',
     ],
     tools: [
       { name: 'Azure DevOps', background: '#0089D6', color: '#000814' },
@@ -74,26 +74,26 @@ export const skillsData = [
       { name: 'Bash', background: '#1B1B1F', color: '#ffffff' },
       { name: 'Docker', background: '#0091E2', color: '#000814' },
       { name: 'Git', background: '#DD4C35', color: '#000814' },
-      { name: 'Sysadmin Linux', background: '#FED21F', color: '#000814' },
+      { name: 'Linux Sysadmin', background: '#FED21F', color: '#000814' },
     ],
   },
   {
-    title: 'Conception et Gestion de Projets',
+    title: 'Project Design and Management',
     description:
-      "Planification, conception et gestion de projets logiciels, depuis l'analyse des besoins jusqu'à la mise en production et la maintenance.",
+      'Planning, designing, and managing software projects, from needs analysis to production and maintenance.',
     points: [
-      'Création de cahiers des charges détaillés en collaboration avec les parties prenantes.',
-      'Élaboration de Diagrammes de Gantt pour la planification et le suivi des projets.',
-      'Utilisation de Mind Maps pour visualiser et organiser les idées et les processus.',
-      'Identification et spécification des exigences fonctionnelles et non fonctionnelles.',
-      "Établissement de l'architecture technologique et applicative.",
-      'Définition des Guidelines de conception pour garantir la cohérence et la qualité.',
-      "Création de maquettes et wireframes pour visualiser l'interface utilisateur.",
-      "Réalisation de l'inventaire des données et conception des modèles conceptuels et physiques (MLD, MCD, MPD).",
-      "Définition des exigences de sécurité et mise en place d'un plan de développement sécurisé.",
-      'Planification des phases et des itérations en utilisant des méthodologies agiles ou traditionnelles.',
-      'Mise en place du déploiement et de la maintenance des applications.',
-      'Gestion du budget du projet et suivi des coûts tout au long du cycle de vie du projet.',
+      'Creating detailed specifications in collaboration with stakeholders.',
+      'Developing Gantt Charts for project planning and tracking.',
+      'Using Mind Maps to visualize and organize ideas and processes.',
+      'Identifying and specifying functional and non-functional requirements.',
+      'Establishing technological and application architecture.',
+      'Defining Design Guidelines to ensure consistency and quality.',
+      'Creating mockups and wireframes to visualize the user interface.',
+      'Data inventory and conceptual and physical model design (ERD, ERD, PDM).',
+      'Defining security requirements and implementing a secure development plan.',
+      'Planning phases and iterations using agile or traditional methodologies.',
+      'Setting up deployment and application maintenance.',
+      'Project budget management and cost tracking throughout the project lifecycle.',
     ],
     tools: [
       { name: 'Coolors', background: '#08A3FD', color: '#000814' },
@@ -109,19 +109,19 @@ export const skillsData = [
     ],
   },
   {
-    title: 'Workflow et Outils',
+    title: 'Workflow and Tools',
     description:
-      "Ensemble d'outils et d'environnements de travail pour optimiser la productivité et la collaboration tout au long du processus de développement.",
+      'Set of tools and work environments to optimize productivity and collaboration throughout the development process.',
     points: [
-      "Gestion avancée de balises et de suivi d'événements avec Google Tag Manager.",
-      'Analyse approfondie du trafic et du comportement des utilisateurs avec Google Analytics.',
-      "Utilisation de Firebase pour le développement d'applications web et mobiles.",
-      "Test et débogage d'API avec Postman.",
-      'Administration et gestion de bases de données avec phpMyAdmin et MySQL Workbench.',
-      'Transfert de fichiers sécurisé avec FileZilla.',
-      "Configuration de l'environnement de développement avec Laragon.",
-      "Administration des systèmes d'exploitation Linux et Windows.",
-      'Développement de logiciels avec Notepad++ et Visual Studio Code.',
+      'Advanced tag management and event tracking with Google Tag Manager.',
+      'In-depth analysis of traffic and user behavior with Google Analytics.',
+      'Using Firebase for web and mobile app development.',
+      'Testing and debugging APIs with Postman.',
+      'Database administration and management with phpMyAdmin and MySQL Workbench.',
+      'Secure file transfer with FileZilla.',
+      'Configuring development environment with Laragon.',
+      'Administration of Linux and Windows operating systems.',
+      'Software development with Notepad++ and Visual Studio Code.',
     ],
     tools: [
       { name: 'Google Tag Manager', background: '#89B4F8', color: '#000814' },

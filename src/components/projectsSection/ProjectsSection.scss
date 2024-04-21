@@ -1,8 +1,8 @@
 @import './../../styles/theme.scss';
 
-.container-skills {
+.container-projects {
   /* -----------------------------------
-  * --------------- Container skills
+  * --------------- Container projects
   ----------------------------------- */
 
   background-color: map-get(map-get($background, on-primary), 100);
@@ -11,8 +11,8 @@
   background-position: left;
   background-size: cover;
   animation: rainLevitatingEffect 64s infinite alternate;
-  min-height: 100vh;
-  padding: 80px 15px;
+  min-height: 80vh;
+  padding: 2rem 2rem 4rem 2rem;
   padding-top: 2rem;
   @media (max-width: 1000px) {
     padding-top: 4rem;
@@ -79,12 +79,48 @@
       margin: 2rem;
       padding: 2rem;
       background-color: map-get(map-get($background, on-secondary), 100);
-      border-top: 4px solid map-get(map-get($background, secondary), 100);
+      border-bottom: 4px solid map-get(map-get($background, secondary), 100);
 
       @media (max-width: 1000px) {
         width: 88%;
         margin: 1rem;
         padding: 1rem;
+      }
+
+      .date {
+        position: absolute;
+        margin: -1.75rem 0 0 -1.75rem;
+        font-family: 'Gilroy-regular';
+        color: map-get(map-get($text-color, on-primary), 50);
+        font-size: 0.75rem;
+
+        @media (max-width: 1000px) {
+          margin: -0.75rem 0 0 -0.75rem;
+        }
+      }
+
+      .container-tags {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-end;
+
+        .tag {
+          margin: 0 0.5rem 0.5rem 0.5rem;
+
+          @media (max-width: 1000px) {
+            margin: 0.25rem 0.5rem 0.75rem 0.5rem;
+          }
+          a {
+            text-decoration: none;
+            p {
+              margin: 0;
+              padding: 0.25rem;
+              font-family: 'Gilroy-SemiBold';
+              color: map-get(map-get($text-color, primary), 100);
+            }
+          }
+        }
       }
 
       h3 {
@@ -99,25 +135,61 @@
         font-family: 'Gilroy-SemiBold';
         color: map-get(map-get($text-color, on-primary), 100);
         font-size: 1rem;
-        margin: 0 0 10px;
+        margin: 0 0 1.5rem 0;
         text-shadow: 0 0 11px map-get(map-get($background, on-primary), 25);
       }
 
       ul {
         list-style: none;
-        padding: 0.25rem 0;
+        padding: 0;
 
         li {
           font-family: 'Gilroy-regular';
           color: map-get(map-get($text-color, on-primary), 75);
           font-size: 1rem;
-          line-height: 22px;
-          margin: 0.75rem 0;
-          background-image: url('../../assets/icons/dot.svg');
-          background-size: 12px 12px;
-          background-repeat: no-repeat;
-          background-position: left center;
-          padding-left: 30px;
+          margin: 0.5rem 0 0 0;
+        }
+      }
+
+      .container-links-icons {
+        margin: 1.5rem 0 0 0;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        height: 3rem;
+        @media (max-width: 1000px) {
+          margin: 1rem 0 0 0;
+        }
+
+        a {
+          margin: 0 2%;
+          border: none;
+          width: 2.5rem;
+          height: 2.5rem;
+          overflow: hidden;
+
+          @media (max-width: 1000px) {
+            margin: 0 4%;
+            width: 2rem;
+            height: 2rem;
+          }
+
+          img {
+            width: 2.5rem;
+            height: 2.5rem;
+            transform: rotate(0) scale(1);
+            transition: transform 0.4s;
+            @media (max-width: 1000px) {
+              width: 2rem;
+              height: 2rem;
+            }
+
+            &:hover {
+              transform: rotate(8deg) scale(1.2);
+              transition: transform 0.2s;
+            }
+          }
         }
       }
 
@@ -127,7 +199,7 @@
         z-index: -1;
 
         &:checked ~ .item-card-content {
-          max-height: 16rem;
+          max-height: 64rem;
         }
       }
       .item-card-label {
@@ -157,26 +229,7 @@
         max-height: 0;
         overflow: hidden;
         transition: all 0.4s;
-        background: map-get(map-get($background, on-primary), 100);
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
         width: 100%;
-
-        .tag {
-          margin: 0.5rem;
-          a {
-            text-decoration: none;
-            p {
-              margin: 0;
-              padding: 0.25rem;
-              font-family: 'Gilroy-SemiBold';
-              color: map-get(map-get($text-color, primary), 100);
-            }
-          }
-        }
       }
     }
 
@@ -192,6 +245,62 @@
       justify-content: flex-end;
       padding: 0.5rem 1rem;
       font-size: 0.75rem;
+    }
+    .container-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin: 1rem -2rem -2rem -2rem;
+
+      @media (max-width: 1000px) {
+        margin: 0 -1rem -1rem -1rem;
+      }
+
+      .mobile-image {
+        height: 256px;
+        transform: rotate(-12deg) scale(1.3) translate(0, 50px);
+        object-fit: cover;
+        z-index: 1;
+        transition: transform 0.4s;
+
+        @media (max-width: 1000px) {
+          transform: rotate(-8deg) scale(1.3) translate(10%, 50px);
+        }
+
+        @media (max-width: 500px) {
+          display: none;
+        }
+
+        @media (min-width: 1300px) {
+          &:hover {
+            transform: rotate(0deg) scale(1) translate(1rem, 0);
+            transition: transform 0.2s;
+            box-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
+          }
+        }
+      }
+
+      .desktop-image {
+        height: 256px;
+        transform: rotate(-12deg) scale(1.1) translate(0, 64px);
+        object-fit: cover;
+        margin-left: -0.5rem;
+        transition: transform 0.4s;
+
+        @media (max-width: 1000px) {
+          transform: rotate(-8deg) scale(1.2) translate(2rem, 50px);
+        }
+
+        @media (min-width: 1300px) {
+          &:hover {
+            transform: rotate(0deg) scale(1) translate(0, 0);
+            z-index: 1;
+            transition: transform 0.2s;
+            box-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
+          }
+        }
+      }
     }
   }
 }

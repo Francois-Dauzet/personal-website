@@ -15,10 +15,10 @@ const ExperienceTimeline = () => {
           </span>
         </h1>
         <p className="description">
-          De la conteneurisation d'applications au développement full stack, mes
-          expériences professionnelles ont été tout aussi variées. J'ai acquis
-          une expertise dans des domaines aussi divers que la précision dans le
-          polissage, la gestion de projets et même le service militaire.
+          From application containerization to full stack development, my
+          professional experiences have been equally varied. I acquired
+          expertise in areas as diverse as precision in polishing, project
+          management and even military service.
         </p>
         <div className="timeline-items">
           {experienceData.map((experience, index) => (
@@ -28,7 +28,7 @@ const ExperienceTimeline = () => {
                 {experience.date}
               </div>
               <div className="timeline-content">
-                <img src={experience.imagePath} alt="" />
+                <img src={experience.imagePath} alt={experience.company} />
                 <h3 translate="no">{experience.position}</h3>
                 <h4 translate="no">{experience.company}</h4>
                 <p>{experience.description}</p>
