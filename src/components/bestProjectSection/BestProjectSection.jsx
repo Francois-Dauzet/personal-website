@@ -71,6 +71,11 @@ const BestProjectSection = () => {
               />
             </div>
 
+            <ul>
+              {project.description.map((paragraph, index) => (
+                <li key={index}>{paragraph}</li>
+              ))}
+            </ul>
             <div className="container-links-icons">
               {project.links.site && (
                 <a target="_blank" href={project.links.site}>
@@ -83,11 +88,6 @@ const BestProjectSection = () => {
                 </a>
               )}
             </div>
-            <ul>
-              {project.description.map((paragraph, index) => (
-                <li key={index}>{paragraph}</li>
-              ))}
-            </ul>
           </div>
         </div>
       </div>

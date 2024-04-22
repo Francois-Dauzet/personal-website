@@ -42,7 +42,7 @@
         margin: -1.75rem 0 0 -1.75rem;
         font-family: 'Gilroy-regular';
         color: map-get(map-get($text-color, on-primary), 50);
-        font-size: 0.75rem;
+        font-size: 1rem;
 
         @media (max-width: 1024px) {
           margin: -0.75rem 0 0 -0.75rem;
@@ -95,30 +95,37 @@
         font-size: 1rem;
         margin: 0.5rem 0 1.5rem 0;
         text-shadow: 0 0 11px map-get(map-get($background, on-secondary), 25);
+
+        @media (max-width: 500px) {
+          margin-bottom: 0;
+        }
       }
 
       ul {
         list-style: none;
         padding: 0;
+        margin-top: 4rem;
 
         li {
-          font-family: 'Gilroy-regular';
+          font-family: 'Gilroy-SemiBold';
           color: map-get(map-get($text-color, on-primary), 75);
           font-size: 1rem;
-          margin: 0.5rem 0 0 0;
+          margin: 1rem 0 0 0;
+          text-shadow: 0 0 11px map-get(map-get($background, on-secondary), 100);
+        }
+
+        @media (max-width: 1024px) {
+          margin-top: 2.5rem;
         }
       }
 
       .container-links-icons {
-        margin: 3rem 0 0 0;
+        margin: 1.25rem 0 0 0;
         width: 100%;
         display: flex;
-        align-items: start;
-        justify-content: start;
+        align-items: center;
+        justify-content: center;
         height: 3rem;
-        @media (max-width: 1024px) {
-          // margin: 1rem 0 0 0;
-        }
 
         a {
           margin: 0 2%;
