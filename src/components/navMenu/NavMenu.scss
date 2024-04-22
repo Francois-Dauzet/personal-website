@@ -284,6 +284,7 @@
         width: 100%;
         font-size: 2rem;
         color: map-get(map-get($text-color, primary), 75);
+        font-family: 'Gilroy-regular';
       }
       @media (max-width: 1400px) {
         span {

@@ -71,6 +71,8 @@
   p {
     text-align: center;
     color: map-get(map-get($text-color, primary), 100);
+    font-family: 'Gilroy-regular';
+    font-size: 1rem;
     margin-bottom: 1.5rem;
   }
 }

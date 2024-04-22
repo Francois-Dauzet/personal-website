@@ -11,7 +11,7 @@ const Footer = () => {
   const navigate = useNavigate();
 
   const updateNavigate = () => {
-    // navigate('/about-me');
+    navigate('/patch-notes');
   };
 
   return (

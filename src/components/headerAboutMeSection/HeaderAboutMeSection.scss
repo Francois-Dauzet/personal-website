@@ -134,7 +134,7 @@
       p {
         color: map-get(map-get($text-color, on-primary), 75);
         font-family: 'Gilroy-SemiBold';
-        margin: 0.5rem 0;
+        margin: 0.5rem 1rem;
         font-size: 1rem;
         text-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
       }
