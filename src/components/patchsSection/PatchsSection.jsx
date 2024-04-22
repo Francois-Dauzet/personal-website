@@ -33,7 +33,7 @@ const PatchsSection = () => {
                 <div>
                   <div className="container-title">
                     <img src={iconToolsPath} alt="tools" />
-                    <h3 translate="no">{patch.version}</h3>
+                    <h3 translate="no">{'Update ' + patch.version}</h3>
                   </div>
                 </div>
               </label>

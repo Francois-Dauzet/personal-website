@@ -1,13 +1,14 @@
 export const patchsData = [
   {
-    date: '18/04/2024',
+    date: '22/04/2024',
     version: '1.0',
     description: [
-      'This is my personal website, a platform designed to give you a detailed insight into who I am and what I can do.',
-      'Browse the different sections to discover my skills, my training completed, as well as my professional career.',
-      'Each experience is carefully listed here, highlighting my achievements and expertise.',
-      'Navigate through completed projects to get a glimpse of my tangible accomplishments and my dedication to each initiative.',
-      'This site serves as a window into my career path and professional growth, reflecting the importance I place on every stage of my career.',
+      'I am pleased to present to you the first version of my website, which serves as an online CV.',
+      'I designed and developed this site from A to Z, focusing on a clear interface and intuitive navigation.',
+      'The basic features are in place to effectively present my skills and experience.',
+      'After thorough testing, the site is now live and accessible to everyone.',
+      'Please note that the management system for sending emails via the contact form is not yet functional; this will be one of the priorities for the next update.',
+      'I will continue to improve and adapt it over time.',
     ],
   },
 ];
