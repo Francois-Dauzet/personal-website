@@ -5,6 +5,7 @@
  * --------------- Container header
 ----------------------------------- */
   background-image: url(../../assets/backgrounds/bg_header_patch_notes.jpg);
+  background-color: map-get(map-get($background, on-primary), 75);
   background-size: cover;
   background-repeat: no-repeat;
 

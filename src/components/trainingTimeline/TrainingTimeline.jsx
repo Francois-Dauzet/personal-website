@@ -27,7 +27,7 @@ const TrainingTimeline = () => {
                 <img src={training.imagePath} alt={training.title} />
                 <div className="container-text">
                   <span translate="no">{training.certification}</span>
-                  <h3 translate="no">{training.title}</h3>
+                  <h3>{training.title}</h3>
                   <h4 translate="no">{training.subtitle}</h4>
                   <p>{training.description}</p>
                 </div>
