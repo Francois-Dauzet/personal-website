@@ -1,4 +1,4 @@
-@import "./../../styles/theme.scss";
+@import './../../styles/theme.scss';
 
 .container-nav-menu {
   /* -----------------------------------
@@ -19,7 +19,7 @@
       transition-delay: 0.1s;
       background-color: map-get(map-get($background, primary), 75);
 
-      @media (min-width: 1000px) {
+      @media (min-width: 1024px) {
         &:hover {
           cursor: pointer;
           border: 2px solid map-get($background, transparent);
@@ -27,7 +27,7 @@
         }
 
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           top: 50%;
           left: 50%;
@@ -243,14 +243,14 @@
       @media (max-width: 1400px) {
         padding: 8% 8px;
       }
-      @media (max-width: 1000px) {
+      @media (max-width: 1024px) {
         margin: 8% 0;
       }
       p {
         position: absolute;
         margin-left: -64px;
         font-size: 1.25rem;
-        font-family: "Gilroy-SemiBold";
+        font-family: 'Gilroy-SemiBold';
         color: map-get(map-get($text-color, primary), 75);
 
         @media (max-width: 1400px) {
@@ -261,7 +261,7 @@
         margin: 0;
         text-decoration: none;
         color: map-get(map-get($text-color, primary), 100);
-        font-family: "Gilroy-Bold";
+        font-family: 'Gilroy-Bold';
         font-size: 6rem;
         white-space: nowrap;
         transition: color 0.4s ease;
@@ -270,7 +270,7 @@
           font-size: 5rem;
         }
 
-        @media (min-width: 1000px) {
+        @media (min-width: 1024px) {
           &:hover {
             color: map-get(map-get($text-color, on-primary), 100);
             transition: color 0.2s ease;
@@ -290,7 +290,7 @@
           font-size: 1.5rem;
         }
       }
-      @media (max-width: 1000px) {
+      @media (max-width: 1024px) {
         span {
           font-size: 1rem;
         }
@@ -325,7 +325,7 @@
   /* -----------------------------------
  * --------------- Media query
 ----------------------------------- */
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     /*
   * Menu icon
   */

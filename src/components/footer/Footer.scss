@@ -1,4 +1,4 @@
-@import "./../../styles/theme.scss";
+@import './../../styles/theme.scss';
 
 .container-footer {
   /* -----------------------------------
@@ -6,13 +6,13 @@
 ----------------------------------- */
   min-height: 8rem;
   padding: 0 16%;
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     padding: 0 8%;
   }
 
   h5 {
     text-align: center;
-    font-family: "Gilroy-Bold";
+    font-family: 'Gilroy-Bold';
     font-size: 2rem;
     margin: 1.5rem;
     color: map-get(map-get($text-color, tertiary), 100);
@@ -30,7 +30,7 @@
     padding: 0;
     li {
       text-align: center;
-      font-family: "Gilroy-SemiBold";
+      font-family: 'Gilroy-SemiBold';
       color: map-get(map-get($text-color, primary), 75);
       font-size: 1rem;
       &:hover {

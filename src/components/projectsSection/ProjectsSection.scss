@@ -8,7 +8,7 @@
   padding: 0 1rem;
   padding-bottom: 3rem;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1024px) {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(54,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23001D3D'/%3E%3Cstop offset='1' stop-color='%23003566'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(70,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23CCA000'/%3E%3Cstop offset='1' stop-color='%23F5CC00'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='4.949999999999999'%3E%3Cpath transform='translate(-90.3 1.5999999999999996) rotate(-4.1 1409 581) scale(0.9321240000000001)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='1.6500000000000001' transform='translate(-123 72) rotate(4.6000000000000005 800 450) scale(1.001677)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(10.400000000000002 -63) rotate(29 401 736) scale(1.001677)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='1.5'%3E%3Cpath transform='translate(432 5.199999999999999) rotate(-1.2999999999999998 150 345) scale(0.994708)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='3.3000000000000003' transform='translate(-101 -197) rotate(14.400000000000006 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-241.6 62.4) rotate(2.400000000000002 1400 132) scale(0.83)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-position: left;
@@ -31,7 +31,7 @@
       background-color: map-get(map-get($background, on-secondary), 100);
       border-bottom: 4px solid map-get(map-get($background, secondary), 100);
 
-      @media (max-width: 1000px) {
+      @media (max-width: 1024px) {
         width: 88%;
         padding: 1rem;
       }
@@ -43,7 +43,7 @@
         color: map-get(map-get($text-color, on-primary), 50);
         font-size: 0.75rem;
 
-        @media (max-width: 1000px) {
+        @media (max-width: 1024px) {
           margin: -0.75rem 0 0 -0.75rem;
         }
       }
@@ -57,7 +57,7 @@
         .tag {
           margin: 0 0.5rem 0.5rem 0.5rem;
 
-          @media (max-width: 1000px) {
+          @media (max-width: 1024px) {
             margin: 0.25rem 0.5rem 0.75rem 0.5rem;
           }
           a {
@@ -114,7 +114,7 @@
         align-items: start;
         justify-content: start;
         height: 3rem;
-        @media (max-width: 1000px) {
+        @media (max-width: 1024px) {
           margin: 1rem 0 0 0;
         }
 
@@ -125,7 +125,7 @@
           height: 2.5rem;
           overflow: hidden;
 
-          @media (max-width: 1000px) {
+          @media (max-width: 1024px) {
             margin: 0 4%;
             width: 2rem;
             height: 2rem;
@@ -136,7 +136,7 @@
             height: 2.5rem;
             transform: rotate(0) scale(1);
             transition: transform 0.4s;
-            @media (max-width: 1000px) {
+            @media (max-width: 1024px) {
               width: 2rem;
               height: 2rem;
             }
@@ -209,7 +209,7 @@
       overflow: hidden;
       margin: 1rem -2rem -2rem -2rem;
 
-      @media (max-width: 1000px) {
+      @media (max-width: 1024px) {
         margin: 0 -1rem -1rem -1rem;
       }
 
@@ -221,7 +221,7 @@
         filter: grayscale(0.5);
         transition: transform 0.4s, box-shadow 0s, filter 0.4s;
 
-        @media (max-width: 1000px) {
+        @media (max-width: 1024px) {
           transform: rotate(-8deg) scale(1.3) translate(10%, 50px);
         }
 
@@ -247,7 +247,7 @@
         transition: transform 0.4s, box-shadow 0s, filter 0.4s;
         filter: grayscale(0.5);
 
-        @media (max-width: 1000px) {
+        @media (max-width: 1024px) {
           transform: rotate(-8deg) scale(1.2) translate(2rem, 50px);
         }
 
