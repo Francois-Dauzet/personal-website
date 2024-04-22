@@ -1,23 +1,18 @@
-# Command for the project
+# Personal Website
 
-[Github repository](https://github.com/Francois-Dauzet/francois-d)
+#### This is my personal website, a platform designed to give you a detailed insight into who I am and what I can do.
 
-## The basics
+#### Browse the different sections to discover my skills, my training completed, as well as my professional career.
 
-**Creation of the application with Vite**: `npm init vite@latest francois-d --template react`
+#### Each experience is carefully listed here, highlighting my achievements and expertise.
 
-**Installing dependencies**: `npm install`
+#### Navigate through completed projects to get a glimpse of my tangible accomplishments and my dedication to each initiative.
 
-**Launching the application**: `npm run dev`
+#### This site serves as a window into my career path and professional growth, reflecting the importance I place on every stage of my career.
 
-## Development
+## Informations
 
-**Launch the application for development**: `npm run dev`
-
-## Production
-
-**Build the application for production**: `npm run build`
-
-# Command Git
-
-**Remove file from index**: `git rm --cached -r <PATH_FILE>`
+- **Date**: 22/04/2024
+- **Author**: François Dauzet
+- **Description**: Website to introduce myself
+- **Technologies**: React.js, SCSS
