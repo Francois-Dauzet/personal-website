@@ -1,7 +1,7 @@
 export const patchsData = [
   {
     date: '22/04/2024',
-    version: '1.0',
+    version: '0.0.0',
     description: [
       'I am pleased to present to you the first version of my website, which serves as an online CV.',
       'I designed and developed this site from A to Z, focusing on a clear interface and intuitive navigation.',

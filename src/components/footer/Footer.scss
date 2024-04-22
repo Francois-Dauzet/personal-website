@@ -13,9 +13,16 @@
   h5 {
     text-align: center;
     font-family: 'Gilroy-Bold';
-    font-size: 2rem;
-    margin: 1.5rem;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0.25rem 0;
     color: map-get(map-get($text-color, tertiary), 100);
+  }
+  .version {
+    margin-top: 0;
+    text-align: center;
+    color: map-get(map-get($text-color, primary), 50);
+    font-family: 'Gilroy-SemiBold';
+    font-size: 1rem;
   }
   .line {
     background-color: map-get(map-get($background, on-primary), 100);

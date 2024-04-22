@@ -14,5 +14,5 @@
 
 - **Date**: 22/04/2024
 - **Author**: François Dauzet
-- **Description**: Website to introduce myself
+- **Description**: Welcome to my presentation site. Discover my projects, training, professional experiences and skills in the field of web development and much more.
 - **Technologies**: React.js, SCSS
