@@ -119,7 +119,7 @@
       margin-left: 8%;
       margin-right: 16%;
       @media (max-width: 1024px) {
-        margin: 0 8%;
+        margin: 0 1rem;
       }
 
       h1 {
@@ -140,7 +140,7 @@
         text-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
 
         @media (max-width: 1024px) {
-          margin: 0.5rem 1rem;
+          margin: 0.5rem 0;
         }
       }
       .container-contact-button {
