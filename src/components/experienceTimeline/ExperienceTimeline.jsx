@@ -25,7 +25,7 @@ const ExperienceTimeline = () => {
               </div>
               <div className="timeline-content">
                 <img src={experience.imagePath} alt={experience.company} />
-                <h3>{experience.title}</h3>
+                <h3 translate="no">{experience.title}</h3>
                 <h4 translate="no">{experience.company}</h4>
                 <p>{experience.description}</p>
               </div>
