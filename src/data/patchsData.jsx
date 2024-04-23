@@ -9,6 +9,7 @@ export const patchsData = [
       'Removing text shadows from experience page cards.',
       'Updated date position for project cards on the portfolio page.',
       'Updated the size of the project card icon in the portfolio page.',
+      'Added a hover effect to all tags on all pages.',
     ],
   },
   {

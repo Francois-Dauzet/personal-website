@@ -56,6 +56,15 @@
 
         .tag {
           margin: 0 0 0.5rem 0.5rem;
+          transform: rotate(0) scale(1);
+          transition: transform 0.2s, box-shadow 0.2s;
+
+          &:hover {
+            transform: rotate(8deg) scale(1.2);
+            box-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
+            transition: transform 0.1s, box-shadow 0.2s;
+            z-index: 1;
+          }
 
           @media (max-width: 1024px) {
             margin: 0.25rem 0 0.75rem 0.5rem;
@@ -232,7 +241,7 @@
         @media (min-width: 1300px) {
           &:hover {
             transform: rotate(0deg) scale(1) translate(1rem, 0);
-            transition: transform 0.2s, box-shadow 0.8s, filter 0.2s;
+            transition: transform 0.2s, box-shadow 0.4s, filter 0.2s;
             box-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
             filter: grayscale(0);
           }
@@ -255,7 +264,7 @@
           &:hover {
             transform: rotate(0deg) scale(1) translate(0, 0);
             z-index: 1;
-            transition: transform 0.2s, box-shadow 0.8s, filter 0.2s;
+            transition: transform 0.2s, box-shadow 0.4s, filter 0.2s;
             box-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
             filter: grayscale(0);
           }
