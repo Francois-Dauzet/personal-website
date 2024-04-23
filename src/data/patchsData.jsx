@@ -2,7 +2,10 @@ export const patchsData = [
   {
     date: '24/04/2024',
     version: '0.0.2',
-    description: ['Reducing the weight of images to improve site performance.'],
+    description: [
+      'Reducing the weight of images to improve site performance.',
+      'Updated several tag colors which were not correct in relation to the name',
+    ],
   },
   {
     date: '23/04/2024',
