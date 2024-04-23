@@ -24,7 +24,6 @@
 
     .first-word {
       background-color: map-get(map-get($background, secondary), 100);
-      box-shadow: 0 0 32px map-get(map-get($background, on-primary), 25);
       color: map-get(map-get($background, on-primary), 100);
       padding: 1rem;
       margin-top: 55px;
