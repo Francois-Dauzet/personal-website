@@ -4,7 +4,7 @@ export const patchsData = [
     version: '0.0.1',
     description: [
       'Added automation of current year for copyright in footer.',
-      'Added current year automation to footer.',
+      'Updated the alignment of the text in the header of the about me page.',
     ],
   },
   {
