@@ -35,9 +35,7 @@ const ProjectsSection = () => {
                   <div key={index} className="tag">
                     <a
                       target="_blank"
-                      href={
-                        'https://www.google.com/search?q=' + technology.name
-                      }
+                      href={`https://www.google.com/search?q=${technology.name}`}
                     >
                       <p
                         translate="no"
