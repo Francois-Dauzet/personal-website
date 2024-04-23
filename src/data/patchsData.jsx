@@ -8,6 +8,7 @@ export const patchsData = [
       'Updated the scroll problem when loading the patch notes page.',
       'Removing text shadows from experience page cards.',
       'Updated date position for project cards on the portfolio page.',
+      'Updated the size of the project card icon in the portfolio page.',
     ],
   },
   {
