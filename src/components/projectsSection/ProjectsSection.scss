@@ -5,7 +5,7 @@
   * --------------- Container projects
   ----------------------------------- */
   background-color: map-get(map-get($background, on-primary), 100);
-  padding: 0 1rem;
+  padding: 0;
   padding-bottom: 3rem;
 
   @media (min-width: 1024px) {
@@ -32,7 +32,7 @@
       border-bottom: 4px solid map-get(map-get($background, secondary), 100);
 
       @media (max-width: 1024px) {
-        width: 88%;
+        width: 84%;
         padding: 1rem;
       }
 

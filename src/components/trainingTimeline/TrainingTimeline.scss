@@ -16,6 +16,19 @@
     animation: rainLevitatingEffect 64s infinite alternate;
   }
 
+  @media (max-width: 1024px) {
+    .container-title-section {
+      h1 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      p {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
   .timeline-items {
     max-width: 1024px;
     margin: auto;
