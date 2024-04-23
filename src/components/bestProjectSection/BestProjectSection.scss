@@ -41,7 +41,7 @@
         position: absolute;
         margin: -1.75rem 0 0 -1.75rem;
         font-family: 'Gilroy-regular';
-        color: map-get(map-get($text-color, on-primary), 50);
+        color: map-get(map-get($text-color, on-primary), 75);
         font-size: 1rem;
 
         @media (max-width: 1024px) {

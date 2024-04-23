@@ -7,6 +7,7 @@ export const patchsData = [
       'Updated the alignment of the text in the header of the about me page.',
       'Updated the scroll problem when loading the patch notes page.',
       'Removing text shadows from experience page cards.',
+      'Updated date position for project cards on the portfolio page.',
     ],
   },
   {
