@@ -1,7 +1,7 @@
 import iconConduentPath from './../assets/images/experiences/conduent_business_solutions_france.jpg';
 import iconkpinsightPath from './../assets/images/experiences/kpinsight_analytics.jpg';
 import iconPolitechPath from './../assets/images/experiences/politech.jpg';
-import iconApiculturePath from './../assets/images/experiences/apiculture.jpg';
+import iconApiculturePath from './../assets/images/experiences/apiculture.png';
 import iconArmeeDeTerrePath from './../assets/images/experiences/armee_de_terre.jpg';
 
 export const experienceData = [

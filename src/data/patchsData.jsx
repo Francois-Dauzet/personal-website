@@ -1,5 +1,10 @@
 export const patchsData = [
   {
+    date: '24/04/2024',
+    version: '0.0.2',
+    description: ['Reducing the weight of images to improve site performance.'],
+  },
+  {
     date: '23/04/2024',
     version: '0.0.1',
     description: [
