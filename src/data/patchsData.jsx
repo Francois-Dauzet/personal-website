@@ -1,5 +1,13 @@
 export const patchsData = [
   {
+    date: '23/04/2024',
+    version: '0.0.1',
+    description: [
+      'Added automation of current year for copyright in footer.',
+      'Added current year automation to footer.',
+    ],
+  },
+  {
     date: '22/04/2024',
     version: '0.0.0',
     description: [

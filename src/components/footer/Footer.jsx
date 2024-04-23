@@ -10,6 +10,7 @@ import './Footer.scss';
 
 const Footer = () => {
   const navigate = useNavigate();
+  const currentYear = new Date().getFullYear();
 
   const updateNavigate = () => {
     navigate('/patch-notes');
@@ -42,7 +43,7 @@ const Footer = () => {
             <img src={iconGitlabPath} alt="gitlab" />
           </a>
         </div>
-        <p translate="no">Copyright © 2024 François Dauzet</p>
+        <p translate="no">Copyright © {currentYear} François Dauzet</p>
       </div>
     </footer>
   );
