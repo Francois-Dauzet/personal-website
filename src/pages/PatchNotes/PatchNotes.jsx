@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import Footer from '../../components/footer/Footer';
-import './PatchNotes.scss';
-import HeaderPatchNotesSection from '../../components/headerPatchNotesSection/HeaderPatchNotesSection';
 import PatchsSection from '../../components/patchsSection/PatchsSection';
+import HeaderPatchNotesSection from '../../components/headerPatchNotesSection/HeaderPatchNotesSection';
+import './PatchNotes.scss';
 
 const PatchNotes = () => {
   useEffect(() => {
@@ -17,6 +17,7 @@ const PatchNotes = () => {
       <div className={'container-transition'}></div>
       <HeaderPatchNotesSection />
       <PatchsSection />
+      <Footer />
     </div>
   );
 };

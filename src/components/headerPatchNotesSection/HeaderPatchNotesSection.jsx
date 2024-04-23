@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import iconLinkedinPath from '../../assets/icons/linkedin.svg';
 import iconGithubPath from '../../assets/icons/github.svg';
 import iconGitlabPath from '../../assets/icons/gitlab.svg';
-import ContactForm from '../contactForm/ContactForm';
 
 //* Styles
 import './HeaderPatchNotesSection.scss';
@@ -11,6 +10,7 @@ const HeaderPatchNotesSection = () => {
     /*
      * vertical parallax effect
      */
+    window.scrollTo(0, 0);
     const handleScroll = () => {
       const scrollPos = window.scrollY;
       const containerHeaderSection = document.querySelector(
