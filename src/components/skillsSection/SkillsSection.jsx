@@ -1,5 +1,6 @@
 import React from 'react';
 import { skillsData } from '../../data/skillsData';
+import iconFrontendPath from '../../assets/icons/frontend.svg';
 
 //* Styles
 import './SkillsSection.scss';
@@ -24,7 +25,10 @@ const SkillsSection = () => {
         <div className="container-cards">
           {skillsData.map((skill, index) => (
             <div key={index} className="item-card">
-              <h3 translate="no">{skill.title}</h3>
+              <div className="title">
+                <img src={skill.icon} alt="" />
+                <h3 translate="no">{skill.title}</h3>
+              </div>
               <h4>{skill.description}</h4>
               <ul>
                 {skill.points.map((point, index) => (

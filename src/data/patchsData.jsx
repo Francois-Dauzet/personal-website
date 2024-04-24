@@ -7,6 +7,7 @@ export const patchsData = [
       'Updated several tag colors which were not correct in relation to the name.',
       'Updated the shadow for section titles which was too pronounced.',
       'Updated all horizontal margins for all sections.',
+      'Add icons for skill cards on the about me page.',
     ],
   },
   {

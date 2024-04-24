@@ -1,5 +1,13 @@
+import iconFrontendPath from './../assets/icons/frontend.svg';
+import iconBackendPath from './../assets/icons/backend.svg';
+import iconMobilePath from './../assets/icons/mobile.svg';
+import iconDevopsPath from './../assets/icons/devops.svg';
+import iconFolderPath from './../assets/icons/folder.svg';
+import iconToolsPath from './../assets/icons/tools.svg';
+
 export const skillsData = [
   {
+    icon: iconFrontendPath,
     title: 'Frontend Development',
     description:
       'Design and management of web user interfaces, whether static or dynamic.',
@@ -22,6 +30,7 @@ export const skillsData = [
     ],
   },
   {
+    icon: iconBackendPath,
     title: 'Backend Development',
     description:
       'Creation of databases and development of data access components for web and mobile applications.',
@@ -43,6 +52,7 @@ export const skillsData = [
     ],
   },
   {
+    icon: iconMobilePath,
     title: 'Mobile Development',
     description:
       'Development and production of applications for Android and iOS, with particular expertise in React Native.',
@@ -59,6 +69,7 @@ export const skillsData = [
     ],
   },
   {
+    icon: iconDevopsPath,
     title: 'DevOps Practices',
     description:
       'Use of processes and tools to speed up development and ensure continuous improvement of software.',
@@ -78,6 +89,7 @@ export const skillsData = [
     ],
   },
   {
+    icon: iconFolderPath,
     title: 'Project Design and Management',
     description:
       'Planning, designing, and managing software projects, from needs analysis to production and maintenance.',
@@ -109,6 +121,7 @@ export const skillsData = [
     ],
   },
   {
+    icon: iconToolsPath,
     title: 'Workflow and Tools',
     description:
       'Set of tools and work environments to optimize productivity and collaboration throughout the development process.',
