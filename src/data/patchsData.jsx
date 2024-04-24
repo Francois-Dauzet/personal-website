@@ -8,6 +8,7 @@ export const patchsData = [
       'Updated the shadow for section titles which was too pronounced.',
       'Updated all horizontal margins for all sections.',
       'Add icons for skill cards on the about me page.',
+      'Setting up apple touch icons and Open Graph metadata.',
     ],
   },
   {
