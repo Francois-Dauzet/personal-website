@@ -9,8 +9,8 @@ export const projectsData = [
   {
     date: '18/04/2024',
     technologies: [
-      { name: 'React.js', background: '#f7df1e', color: '#000814' },
-      { name: 'SCSS', background: '#1572B6', color: '#ffffff' },
+      { name: 'React.js', background: '#087A9F', color: '#ffffff' },
+      { name: 'SCSS', background: '#C66394', color: '#000814' },
     ],
     icon: iconPersonalWebsitePath,
     title: 'Personal Website',
@@ -34,9 +34,9 @@ export const projectsData = [
   {
     date: '14/04/2024',
     technologies: [
-      { name: 'Javascript', background: '#80DEF8', color: '#000814' },
-      { name: 'HTML', background: '#E56947', color: '#000814' },
-      { name: 'CSS', background: '#1572B6', color: '#ffffff' },
+      { name: 'Javascript', background: '#EFD81D', color: '#000814' },
+      { name: 'HTML', background: '#DD4B25', color: '#000814' },
+      { name: 'CSS', background: '#254BDD', color: '#ffffff' },
     ],
     icon: iconStudyProjectsPath,
     title: 'Study Projects',
