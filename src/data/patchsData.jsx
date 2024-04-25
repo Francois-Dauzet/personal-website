@@ -6,13 +6,15 @@ export const patchsData = [
       'Adding the Google Tag Manager tag to the site.',
       'Changing the Apple tag name in macOS.',
       'Blocking multiple texts to avoid user selection.',
+      'Updated all meta and link tags and added the manifest.',
+      'Added a hover effect to the card skills, projects and patch notes tabs.',
     ],
   },
   {
     date: '24/04/2024',
     version: '0.0.2',
     description: [
-      'Reducing the weight of images to improve site performance.',
+      'Optimization of image weight to improve site performance.',
       'Updated several tag colors which were not correct in relation to the name.',
       'Updated the shadow for section titles which was too pronounced.',
       'Updated all horizontal margins for all sections.',
