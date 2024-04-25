@@ -146,7 +146,7 @@ export const skillsData = [
       { name: 'FileZilla', background: '#B50000', color: '#ffffff' },
       { name: 'Laragon', background: '#33A7FD', color: '#000814' },
       { name: 'Linux', background: '#FED21F', color: '#000814' },
-      { name: 'Apple', background: '#2B2527', color: '#ffffff' },
+      { name: 'macOS', background: '#4E4E4E', color: '#ffffff' },
       { name: 'Notepad++', background: '#AAF37F', color: '#000814' },
       { name: 'Visual Studio Code', background: '#21A1E9', color: '#000814' },
       { name: 'Visual Studio', background: '#652076', color: '#ffffff' },

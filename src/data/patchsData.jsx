@@ -1,5 +1,13 @@
 export const patchsData = [
   {
+    date: '25/04/2024',
+    version: '0.0.3',
+    description: [
+      'Adding the Google Tag Manager tag to the site.',
+      'Changing the Apple tag name in macOS.',
+    ],
+  },
+  {
     date: '24/04/2024',
     version: '0.0.2',
     description: [
