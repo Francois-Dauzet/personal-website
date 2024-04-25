@@ -27,12 +27,12 @@ const HeaderAboutMeSection = () => {
     /*
      * modal function
      */
-    const button = document.getElementsByClassName('contact-button')[0];
+    const contactButton = document.getElementsByClassName('contact-button')[0];
     const closingCross =
       document.getElementsByClassName('icon-closing-cross')[0];
     const modalContainer = document.getElementById('modal-container');
 
-    button.addEventListener('click', function () {
+    contactButton.addEventListener('click', function () {
       modalContainer.removeAttribute('class');
       modalContainer.classList.add('contact-button');
       document.body.classList.add('modal-active');

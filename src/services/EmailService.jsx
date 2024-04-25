@@ -11,6 +11,7 @@ const EmailService = {
           publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
         }
       );
+
       return response;
     } catch (error) {
       throw new Error('Failed to send email: ' + error);
