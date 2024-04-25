@@ -14,6 +14,7 @@
     position: absolute;
     top: -1rem;
     left: -1rem;
+    user-select: none;
   }
 
   .icon-closing-cross {
@@ -23,18 +24,22 @@
     right: 0.75rem;
     transform: rotate(0) scale(1);
     transition: transform 0.4s;
+    user-select: none;
+
     &:hover {
       cursor: pointer;
       transform: rotate(180deg) scale(1.1);
       transition: transform 0.2s;
     }
   }
+
   h1 {
     font-family: 'Gilroy-Bold';
     font-size: 2rem;
     color: map-get(map-get($text-color, primary), 100);
     text-shadow: 0 0 11px map-get(map-get($background, primary), 100);
   }
+
   p {
     font-family: 'Gilroy-SemiBold';
     font-size: 1rem;
@@ -42,6 +47,7 @@
     color: map-get(map-get($text-color, primary), 75);
     text-shadow: 0 0 11px map-get(map-get($background, primary), 100);
   }
+
   .form-group {
     display: flex;
     flex-direction: column;
@@ -80,6 +86,7 @@
     border-bottom: 2px solid map-get(map-get($background, secondary), 100);
     cursor: pointer;
     transition: background-color 0.4s, color 0.4s, border 0.4s;
+    user-select: none;
 
     &:hover {
       color: map-get(map-get($background, on-primary), 75);
