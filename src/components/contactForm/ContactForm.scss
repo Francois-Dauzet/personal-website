@@ -48,6 +48,11 @@
     text-shadow: 0 0 11px map-get(map-get($background, primary), 100);
   }
 
+  .icon-check {
+    width: 12rem;
+    margin-bottom: 1rem;
+  }
+
   .form-group {
     display: flex;
     flex-direction: column;
@@ -72,7 +77,7 @@
     }
   }
 
-  button {
+  .submit-button {
     pointer-events: initial;
     font-family: 'Gilroy-SemiBold';
     display: inline-block;
@@ -95,5 +100,9 @@
       border-bottom: 2px solid map-get(map-get($background, secondary), 100);
       transition: background-color 0.2s, color 0.2s, border 0.2s;
     }
+  }
+
+  .bottom-space {
+    height: 1.75rem;
   }
 }
