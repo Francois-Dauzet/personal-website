@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import EmailService from '../../services/EmailService';
 import closingCrossPath from '../../assets/icons/closing_cross.svg';
 import iconContactPath from '../../assets/icons/contact.svg';
 import './ContactForm.scss';
@@ -7,21 +8,10 @@ import './ContactForm.scss';
 const ContactForm = () => {
   const form = useRef();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm('service_0ytma2i', 'template_7im40gs', form.current, {
-        publicKey: 'NFmuo9c5p85BRQ8nk',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!', form.current);
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        }
-      );
+    await EmailService.sendEmail(form.current);
   };
 
   return (
