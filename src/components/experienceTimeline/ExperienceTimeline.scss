@@ -22,6 +22,7 @@
         margin-left: 1rem;
         margin-right: 1rem;
       }
+
       p {
         margin-left: 0;
         margin-right: 0;
@@ -81,6 +82,7 @@
     color: map-get(map-get($text-color, on-primary), 100);
     margin: 3px 0 16px 0;
     text-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
+    user-select: none;
   }
 
   .timeline-content {
@@ -94,6 +96,8 @@
       object-fit: cover;
       box-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
       border-bottom: 4px solid map-get(map-get($background, secondary), 100);
+      user-select: none;
+
       @media (max-width: 1024px) {
         height: 10rem;
       }

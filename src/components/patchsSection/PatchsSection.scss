@@ -42,15 +42,18 @@
         color: map-get(map-get($text-color, primary), 75);
         font-size: 1rem;
         margin-bottom: 0.5rem;
+        user-select: none;
       }
 
       .container-title {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+
         img {
           height: 2rem;
         }
+
         h3 {
           font-family: 'Gilroy-SemiBold';
           color: map-get(map-get($text-color, on-primary), 100);
@@ -77,48 +80,6 @@
         }
       }
 
-      .container-links-icons {
-        margin: 1.5rem 0 0 0;
-        width: 100%;
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        height: 3rem;
-        @media (max-width: 1024px) {
-          margin: 1rem 0 0 0;
-        }
-
-        a {
-          margin: 0 2%;
-          border: none;
-          width: 2.5rem;
-          height: 2.5rem;
-          overflow: hidden;
-
-          @media (max-width: 1024px) {
-            margin: 0 4%;
-            width: 2rem;
-            height: 2rem;
-          }
-
-          img {
-            width: 2.5rem;
-            height: 2.5rem;
-            transform: rotate(0) scale(1);
-            transition: transform 0.4s;
-            @media (max-width: 1024px) {
-              width: 2rem;
-              height: 2rem;
-            }
-
-            &:hover {
-              transform: rotate(8deg) scale(1.2);
-              transition: transform 0.2s;
-            }
-          }
-        }
-      }
-
       input {
         position: absolute;
         opacity: 0;
@@ -128,6 +89,7 @@
           max-height: 64rem;
         }
       }
+
       .item-card-label {
         display: flex;
         font-family: 'Gilroy-SemiBold';
@@ -137,6 +99,8 @@
         cursor: pointer;
         justify-content: space-between;
         padding: 1rem;
+        user-select: none;
+
         &:after {
           content: '';
           background-image: url('../../assets/icons/arrow.svg');
@@ -151,6 +115,7 @@
           transition: all 0.4s;
         }
       }
+
       .item-card-content {
         max-height: 0;
         overflow: hidden;

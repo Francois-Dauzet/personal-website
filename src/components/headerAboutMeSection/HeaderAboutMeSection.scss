@@ -12,6 +12,7 @@
   background-color: map-get(map-get($background, on-primary), 75);
   background-size: cover;
   background-repeat: no-repeat;
+
   @media (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
@@ -25,6 +26,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    user-select: none;
+
     @media (max-width: 1024px) {
       border-right: none;
       margin: 4rem 0 2rem 0;
@@ -37,6 +40,7 @@
       font-size: 1.5rem;
       text-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
       margin: 0.5rem 0 1rem 0;
+
       @media (max-width: 500px) {
         width: 64vw;
         margin: 0.5rem 0 1rem 0;
@@ -82,6 +86,7 @@
         background-color: map-get(map-get($background, on-tertiary), 100);
         box-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
         overflow: hidden;
+
         &:hover {
           background-color: map-get(map-get($background, on-secondary), 100);
         }
@@ -106,6 +111,7 @@
     align-items: center;
     justify-content: flex-start;
     width: 67vw;
+
     @media (max-width: 1024px) {
       width: 100%;
     }
@@ -118,6 +124,7 @@
       border-top: 4px solid map-get(map-get($background, secondary), 100);
       margin-left: 8%;
       margin-right: 16%;
+
       @media (max-width: 1024px) {
         margin: 0 1rem;
       }
@@ -127,6 +134,7 @@
         color: map-get(map-get($text-color, on-primary), 100);
         font-size: 2rem;
         text-shadow: 0 0 11px map-get(map-get($background, on-primary), 100);
+
         @media (max-width: 1024px) {
           text-align: center;
         }
@@ -144,12 +152,15 @@
         }
       }
       .container-contact-button {
+        user-select: none;
+
         @media (max-width: 1024px) {
           width: 100%;
           display: flex;
           justify-content: center;
           pointer-events: none;
         }
+
         .contact-button {
           pointer-events: initial;
           font-family: 'Gilroy-Bold';
@@ -164,9 +175,11 @@
           box-shadow: 0 0 32px map-get(map-get($background, on-primary), 25);
           cursor: pointer;
           transition: background-color 0.4s, color 0.4s, border 0.4s;
+
           @media (max-width: 1024px) {
             margin: 2rem 0 3rem 0;
           }
+
           &:hover {
             color: map-get(map-get($background, secondary), 100);
             background-color: map-get($background, transparent);
@@ -180,6 +193,7 @@
     }
   }
 }
+
 #modal-container {
   position: fixed;
   display: table;
@@ -192,19 +206,24 @@
 
   &.contact-button {
     transform: scale(1);
+
     .modal-background {
-      background: map-get($background, transparent);
+      background-color: map-get($background, transparent);
       animation: modalFadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+
       .modal {
         transform: translateX(-1500px);
         animation: modalRoadRunnerIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
           forwards;
       }
     }
+
     &.out {
       animation: modalQuickScaleDown 0s 0.5s linear forwards;
+
       .modal-background {
         animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+
         .modal {
           animation: modalRoadRunnerOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
             forwards;

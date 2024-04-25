@@ -4,6 +4,8 @@
   /* -----------------------------------
  * --------------- Menu icon
 ----------------------------------- */
+  user-select: none;
+
   .container-button {
     position: fixed;
     right: 2%;
@@ -49,6 +51,7 @@
           transition: width 0.4s ease, height 0.4s ease, opacity 0.35s ease;
         }
       }
+
       .second-border {
         border: 4px solid map-get(map-get($background, on-primary), 75);
         border-radius: 50%;
@@ -68,11 +71,13 @@
             transform: translate(-50%, -50%);
             border-radius: 16px;
           }
+
           .item-burger-1 {
             top: 40%;
             left: 50%;
             transition: top 0.4s, left 0.4s, transform 0.4s;
           }
+
           .item-burger-2 {
             top: 50%;
             left: 50%;
@@ -80,11 +85,13 @@
             transition: opacity 0.4s;
             transition-delay: 0.8s;
           }
+
           .item-burger-3 {
             top: 60%;
             left: 50%;
             transition: top 0.4s, left 0.4s, transform 0.4s;
           }
+
           &.active {
             .item-burger-1 {
               top: 48%;
@@ -93,10 +100,12 @@
               transition: top 0.4s, left 0.4s, transform 0.4s;
               transition-delay: 0.8s;
             }
+
             .item-burger-2 {
               opacity: 0;
               transition: opacity 0.4s;
             }
+
             .item-burger-3 {
               top: 48%;
               left: 24%;
@@ -240,12 +249,15 @@
 
     li {
       padding: 4% 8px;
+
       @media (max-width: 1400px) {
         padding: 8% 8px;
       }
+
       @media (max-width: 1024px) {
         margin: 8% 0;
       }
+
       p {
         position: absolute;
         margin-left: -64px;
@@ -257,6 +269,7 @@
           font-size: 1rem;
         }
       }
+
       h3 {
         margin: 0;
         text-decoration: none;
@@ -278,6 +291,7 @@
           }
         }
       }
+
       span {
         position: absolute;
         margin-left: 50%;
@@ -286,11 +300,13 @@
         color: map-get(map-get($text-color, primary), 75);
         font-family: 'Gilroy-regular';
       }
+
       @media (max-width: 1400px) {
         span {
           font-size: 1.5rem;
         }
       }
+
       @media (max-width: 1024px) {
         span {
           font-size: 1rem;
@@ -333,22 +349,28 @@
     .container-button {
       top: 2%;
       right: 4%;
+
       .first-border {
         padding: 4px;
+
         .second-border {
           padding: 6px;
+
           .container-burger {
             height: 44px;
             width: 44px;
+
             .item-burger {
               height: 4px;
               width: 44px;
             }
+
             &.active {
               .item-burger-1 {
                 top: 48%;
                 left: 21%;
               }
+
               .item-burger-3 {
                 top: 48%;
                 left: 21%;
@@ -370,6 +392,7 @@
       height: 100%;
       transition: width 0.8s, height 0.8s, opacity 0.8s, margin 0.8s;
       transition-delay: 0.8s;
+
       &.active {
         margin: -64% -16% 0 0;
         transition: width 0.8s, height 0.8s, opacity 0.2s;
@@ -389,11 +412,14 @@
     .container-list {
       transform: translate(-50%, -50%);
       left: 50%;
+
       li {
         padding: 32px 8px;
+
         p {
           display: none;
         }
+
         h3 {
           font-size: 3rem;
         }

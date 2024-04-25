@@ -5,6 +5,7 @@ export const patchsData = [
     description: [
       'Adding the Google Tag Manager tag to the site.',
       'Changing the Apple tag name in macOS.',
+      'Blocking multiple texts to avoid user selection.',
     ],
   },
   {

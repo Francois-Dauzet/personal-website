@@ -5,20 +5,17 @@
   * --------------- Container skills card
   ----------------------------------- */
   width: 100%;
-  // padding: 0;
-  // margin: 0;
   margin-bottom: 2rem;
-  @media (max-width: 1024px) {
-    // padding-top: 4rem;
-  }
 
   .container-cards {
+    user-select: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 84%;
     margin: 0 8%;
+
     @media (max-width: 1024px) {
       width: 100%;
       margin: 0;
@@ -34,6 +31,7 @@
       margin: 2rem 1rem;
       background-color: map-get(map-get($background, on-tertiary), 100);
       box-shadow: 0 0 11px map-get(map-get($background, primary), 50);
+
       @media (max-width: 1024px) {
         width: 144px;
         height: 156px;
@@ -44,6 +42,7 @@
         margin-top: 1rem;
         width: 66%;
       }
+
       p {
         text-align: center;
         font-family: 'Gilroy-SemiBold';

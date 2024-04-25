@@ -5,6 +5,7 @@
 ----------------------------------- */
   padding-top: 3rem;
   margin-bottom: 2rem;
+
   @media (max-width: 1024px) {
     margin-bottom: 1rem;
   }
@@ -16,6 +17,8 @@
     border-bottom: 4px solid map-get(map-get($background, on-tertiary), 100);
     margin-left: 16rem;
     margin-right: 16rem;
+    user-select: none;
+
     @media (max-width: 1024px) {
       margin: 0 0 5rem 0;
       margin-left: 2rem;
@@ -38,6 +41,7 @@
         animation: rainLevitatingEffect 256s infinite alternate;
       }
     }
+
     .second-word {
       background-color: map-get(map-get($background, on-tertiary), 100);
       box-shadow: 0 0 11px map-get(map-get($background, on-primary), 25);
@@ -48,15 +52,18 @@
       left: -0.5rem;
     }
   }
+
   .description {
     text-align: center;
     margin: 4rem 16% 1rem 16%;
     font-family: 'Gilroy-SemiBold';
     font-size: 1rem;
+
     @media (max-width: 1024px) {
       margin: 0 1rem 2rem 1rem;
     }
   }
+
   .black {
     color: map-get(map-get($text-color, primary), 100);
     text-shadow: 0 0 32px map-get(map-get($background, primary), 100);
