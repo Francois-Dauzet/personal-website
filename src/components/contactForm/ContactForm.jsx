@@ -1,34 +1,27 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import closingCrossPath from '../../assets/icons/closing_cross.svg';
 import iconContactPath from '../../assets/icons/contact.svg';
 import './ContactForm.scss';
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    email: '',
-    subject: '',
-    message: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
+  const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(formData);
-    alert('Email service not connected');
-
-    setFormData({
-      email: '',
-      subject: '',
-      message: '',
-    });
+    emailjs
+      .sendForm('service_0ytma2i', 'template_7im40gs', form.current, {
+        publicKey: 'NFmuo9c5p85BRQ8nk',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!', form.current);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        }
+      );
   };
 
   return (
@@ -50,14 +43,12 @@ const ContactForm = () => {
           soon as possible.
         </p>
         <p>Hope to hear from you soon!</p>
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={handleSubmit}>
           <div className="form-group">
             <input
               type="email"
               id="email"
               name="email"
-              value={formData.email}
-              onChange={handleChange}
               placeholder="Email"
               required
             />
@@ -67,8 +58,6 @@ const ContactForm = () => {
               type="text"
               id="subject"
               name="subject"
-              value={formData.subject}
-              onChange={handleChange}
               placeholder="Subject"
               required
             />
@@ -78,15 +67,11 @@ const ContactForm = () => {
               id="message"
               name="message"
               rows="4"
-              value={formData.message}
-              onChange={handleChange}
               placeholder="Message"
               required
             ></textarea>
           </div>
-          <button translate="no" type="submit">
-            Submit
-          </button>
+          <input className="submit-button" type="submit" value="Send Message" />
         </form>
       </div>
     </article>
