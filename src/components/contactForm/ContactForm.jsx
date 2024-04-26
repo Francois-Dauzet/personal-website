@@ -7,7 +7,7 @@ import './ContactForm.scss';
 
 const ContactForm = () => {
   const form = useRef();
-  const [sendEmail, setSendEmail] = useState(false);
+  const [sendEmail, setSendEmail] = useState(true);
 
   useEffect(() => {
     const emailStorage = sessionStorage.getItem('sendEmail');
@@ -96,8 +96,8 @@ const ContactForm = () => {
             />
             <h1 translate="no">Thank you</h1>
             <img className="icon-check" src={iconCheckPath} alt="check" />
-            <p>Your message has been successfully sent.</p>
-            <p>See you soon!</p>
+            <p>Your message has been successfully sent, see you soon!</p>
+            {/* <p>See you soon!</p> */}
             <div className="bottom-space"></div>
           </>
         )}
