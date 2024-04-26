@@ -5,6 +5,7 @@ export const patchsData = [
     description: [
       'Updating the window for sending a successful email.',
       'Added an error return when sending a failed email.',
+      'Added a loading button during the email service request',
     ],
   },
   {
