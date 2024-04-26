@@ -8,6 +8,8 @@ import './ContactForm.scss';
 const ContactForm = () => {
   const form = useRef();
   const [sendEmail, setSendEmail] = useState(false);
+  const [sendError, setSendError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const emailStorage = sessionStorage.getItem('sendEmail');
@@ -18,12 +20,31 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await EmailService.sendEmail(form.current);
 
-    if (response.status === 200) {
-      sessionStorage.setItem('sendEmail', true);
-      setSendEmail(true);
+    setIsLoading(true);
+    const { email, subject, message } = form.current;
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const isEmailValid = emailRegex.test(email.value.trim());
+
+    if (
+      email.value.trim() !== '' &&
+      subject.value.trim() !== '' &&
+      message.value.trim() !== '' &&
+      isEmailValid
+    ) {
+      const response = await EmailService.sendEmail(form.current);
+
+      if (response.status === 200) {
+        sessionStorage.setItem('sendEmail', true);
+        setSendEmail(true);
+      } else {
+        setSendError(true);
+      }
+    } else {
+      setSendError(true);
     }
+    setIsLoading(false);
   };
 
   return (
@@ -74,12 +95,22 @@ const ContactForm = () => {
                   placeholder="Message"
                   required
                 ></textarea>
+                {sendError && <span>An error has occurred</span>}
               </div>
-              <input
-                className="submit-button"
-                type="submit"
-                value="Send Message"
-              />
+              {!isLoading ? (
+                <input
+                  className="submit-button"
+                  type="submit"
+                  value="Send Message"
+                />
+              ) : (
+                <input
+                  className="submit-button"
+                  type="submit"
+                  value="Sending..."
+                  disabled
+                />
+              )}
             </form>
           </>
         ) : (

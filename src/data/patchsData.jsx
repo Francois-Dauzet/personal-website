@@ -2,7 +2,10 @@ export const patchsData = [
   {
     date: '26/04/2024',
     version: '0.2.1',
-    description: ['Updating the window for sending a successful email.'],
+    description: [
+      'Updating the window for sending a successful email.',
+      'Added an error return when sending a failed email.',
+    ],
   },
   {
     date: '26/04/2024',
