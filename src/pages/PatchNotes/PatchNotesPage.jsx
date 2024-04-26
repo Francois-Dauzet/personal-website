@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import Footer from '../../components/footer/Footer';
 import PatchsSection from '../../components/patchsSection/PatchsSection';
 import HeaderPatchNotesSection from '../../components/headerPatchNotesSection/HeaderPatchNotesSection';
-import './PatchNotes.scss';
+import './PatchNotesPage.scss';
 
-const PatchNotes = () => {
+const PatchNotesPage = () => {
   useEffect(() => {
     const transition = document.querySelector('.container-transition');
     setTimeout(() => {
@@ -13,7 +13,7 @@ const PatchNotes = () => {
   }, []);
 
   return (
-    <div className="container-about-me-page">
+    <div className="container-patch-notes-page">
       <div className={'container-transition'}></div>
       <HeaderPatchNotesSection />
       <PatchsSection />
@@ -22,4 +22,4 @@ const PatchNotes = () => {
   );
 };
 
-export default PatchNotes;
+export default PatchNotesPage;

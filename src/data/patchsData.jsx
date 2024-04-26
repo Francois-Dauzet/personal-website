@@ -1,5 +1,12 @@
 export const patchsData = [
   {
+    date: '26/04/2024',
+    version: '0.2.0',
+    description: [
+      'Adding of the privacy policy page in accordance with GDPR regulations.',
+    ],
+  },
+  {
     date: '25/04/2024',
     version: '0.1.0',
     description: [

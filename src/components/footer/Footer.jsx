@@ -12,8 +12,11 @@ const Footer = () => {
   const navigate = useNavigate();
   const currentYear = new Date().getFullYear();
 
-  const updateNavigate = () => {
+  const patchNotesNavigate = () => {
     navigate('/patch-notes');
+  };
+  const privacyNavigate = () => {
+    navigate('/privacy');
   };
 
   return (
@@ -24,8 +27,11 @@ const Footer = () => {
           {packageJson.version}
         </p>
         <ul>
-          <li translate="no" onClick={() => updateNavigate()}>
+          <li translate="no" onClick={() => patchNotesNavigate()}>
             Patch Notes
+          </li>
+          <li translate="no" onClick={() => privacyNavigate()}>
+            Privacy Policy
           </li>
         </ul>
         <div className="line"></div>
