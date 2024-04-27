@@ -8,6 +8,10 @@
 
 **width**: `1200`
 
+## Certificate
+
+**width**: `800`
+
 ## Experience
 
 **width**: `1200`
