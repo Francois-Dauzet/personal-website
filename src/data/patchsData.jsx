@@ -1,5 +1,12 @@
 export const patchsData = [
   {
+    date: '27/04/2024',
+    version: '0.3.0',
+    description: [
+      'Integration of the feature allowing display of obtained diploma certificates.',
+    ],
+  },
+  {
     date: '26/04/2024',
     version: '0.2.1',
     description: [

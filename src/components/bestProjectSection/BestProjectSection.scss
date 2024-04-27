@@ -115,7 +115,7 @@
         margin: 0.5rem 0 1.5rem 0;
         text-shadow: 0 0 11px map-get(map-get($background, on-secondary), 25);
 
-        @media (max-width: 500px) {
+        @media (max-width: 512px) {
           margin-bottom: 0;
         }
       }
@@ -201,7 +201,7 @@
         filter: grayscale(0.5);
         transition: transform 0.4s, box-shadow 0s, filter 0.4s;
 
-        @media (max-width: 500px) {
+        @media (max-width: 512px) {
           display: none;
         }
 

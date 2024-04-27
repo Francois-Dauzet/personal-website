@@ -207,13 +207,11 @@
       flex-direction: column;
       align-items: center;
       overflow-y: auto;
-      background-color: map-get(map-get($background, on-primary), 75);
       width: 80%;
       max-height: 76%;
-      max-width: 1024px;
-      box-shadow: 0 0 32px map-get(map-get($background, on-primary), 25);
+      max-width: 768px;
 
-      @media (max-width: 500px) {
+      @media (max-width: 768px) {
         width: 92%;
       }
 

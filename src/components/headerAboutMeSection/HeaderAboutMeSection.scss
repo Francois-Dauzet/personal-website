@@ -41,7 +41,7 @@
       text-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
       margin: 0.5rem 0 1rem 0;
 
-      @media (max-width: 500px) {
+      @media (max-width: 512px) {
         width: 64vw;
         margin: 0.5rem 0 1rem 0;
       }
@@ -261,7 +261,7 @@
         z-index: -1;
       }
 
-      @media (min-width: 500px) {
+      @media (min-width: 512px) {
         width: 350px;
       }
     }

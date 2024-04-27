@@ -56,14 +56,12 @@ const TrainingTimeline = () => {
                   <h3 translate="no">{training.title}</h3>
                   <h4 translate="no">{training.subtitle}</h4>
                   <p>{training.description}</p>
-                  {training.certifications.length > 0 && (
+                  {training.certificates.length > 0 && (
                     <button
                       className="certificate-button"
-                      onClick={() =>
-                        toggleCertificates(training.certifications)
-                      }
+                      onClick={() => toggleCertificates(training.certificates)}
                     >
-                      {training.certifications.length > 1
+                      {training.certificates.length > 1
                         ? 'View Certificates'
                         : 'View Certificate'}
                     </button>
