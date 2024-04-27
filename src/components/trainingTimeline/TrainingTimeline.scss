@@ -163,6 +163,7 @@
       }
 
       .certificate-button {
+        user-select: none;
         pointer-events: initial;
         font-family: 'Gilroy-Bold';
         display: inline-block;

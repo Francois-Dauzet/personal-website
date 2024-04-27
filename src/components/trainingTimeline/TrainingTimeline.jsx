@@ -58,6 +58,7 @@ const TrainingTimeline = () => {
                   <p>{training.description}</p>
                   {training.certificates.length > 0 && (
                     <button
+                      translate="no"
                       className="certificate-button"
                       onClick={() => toggleCertificates(training.certificates)}
                     >
@@ -79,6 +80,7 @@ const TrainingTimeline = () => {
               ))}
             </div>
             <button
+              translate="no"
               className="close-button"
               onClick={() => setShowCertificates(false)}
             >
