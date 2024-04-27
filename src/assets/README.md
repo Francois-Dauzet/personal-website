@@ -10,7 +10,7 @@
 
 ## Certificate
 
-**width**: `800`
+**width**: `1280`
 
 ## Experience
 
