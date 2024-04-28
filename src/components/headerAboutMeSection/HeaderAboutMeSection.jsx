@@ -4,6 +4,7 @@ import iconLinkedinPath from '../../assets/icons/linkedin.svg';
 import iconGithubPath from '../../assets/icons/github.svg';
 import iconGitlabPath from '../../assets/icons/gitlab.svg';
 import ContactForm from '../contactForm/ContactForm';
+import pdfPath from '../../assets/CV - François Dauzet.pdf';
 
 //* Styles
 import './HeaderAboutMeSection.scss';
@@ -55,6 +56,15 @@ const HeaderAboutMeSection = () => {
     };
   }, []);
 
+  const handleDownloadPdf = () => {
+    const link = document.createElement('a');
+    link.href = pdfPath;
+    link.setAttribute('download', 'CV - François Dauzet.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section>
       <div className="container-header-section">
@@ -104,6 +114,13 @@ const HeaderAboutMeSection = () => {
             <div className="container-contact-button">
               <div translate="no" className="contact-button">
                 Contact Me
+              </div>
+              <div
+                translate="no"
+                className="pdf-button"
+                onClick={handleDownloadPdf}
+              >
+                Download PDF
               </div>
             </div>
           </div>

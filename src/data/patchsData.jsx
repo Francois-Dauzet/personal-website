@@ -1,5 +1,10 @@
 export const patchsData = [
   {
+    date: '28/04/2024',
+    version: '0.4.0',
+    description: ['Adding the functionality to download the CV as a PDF.'],
+  },
+  {
     date: '27/04/2024',
     version: '0.3.0',
     description: [

@@ -153,6 +153,7 @@
       }
       .container-contact-button {
         user-select: none;
+        width: 100%;
 
         @media (max-width: 1024px) {
           width: 100%;
@@ -177,7 +178,7 @@
           transition: background-color 0.4s, color 0.4s, border 0.4s;
 
           @media (max-width: 1024px) {
-            margin: 2rem 0 3rem 0;
+            margin: 2rem 4% 3rem 0;
           }
 
           &:hover {
@@ -186,6 +187,37 @@
             border-top: 2px solid map-get(map-get($background, secondary), 100);
             border-bottom: 2px solid
               map-get(map-get($background, secondary), 100);
+            transition: background-color 0.2s, color 0.2s, border 0.2s;
+          }
+        }
+
+        .pdf-button {
+          pointer-events: initial;
+          font-family: 'Gilroy-Bold';
+          display: inline-block;
+          text-align: center;
+          padding: 8px 16px;
+          margin-top: 2rem;
+          margin-left: 8%;
+          font-size: 1rem;
+          background-color: map-get(map-get($background, tertiary), 100);
+          color: map-get(map-get($text-color, on-primary), 100);
+          border-top: 2px solid map-get(map-get($background, tertiary), 100);
+          border-bottom: 2px solid map-get(map-get($background, tertiary), 100);
+          box-shadow: 0 0 32px map-get(map-get($background, on-primary), 25);
+          cursor: pointer;
+          transition: background-color 0.4s, color 0.4s, border 0.4s;
+
+          @media (max-width: 1024px) {
+            margin: 2rem 0 3rem 4%;
+          }
+
+          &:hover {
+            color: map-get(map-get($background, tertiary), 100);
+            background-color: map-get($background, transparent);
+            border-top: 2px solid map-get(map-get($background, tertiary), 100);
+            border-bottom: 2px solid
+              map-get(map-get($background, tertiary), 100);
             transition: background-color 0.2s, color 0.2s, border 0.2s;
           }
         }
