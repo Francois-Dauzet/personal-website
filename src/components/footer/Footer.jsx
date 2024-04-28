@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { WebsiteCarbonBadge } from 'react-websitecarbon-badge';
 import packageJson from '../../../package.json';
 import iconLinkedinPath from '../../assets/icons/linkedin.svg';
 import iconGithubPath from '../../assets/icons/github.svg';
@@ -49,6 +50,7 @@ const Footer = () => {
             <img src={iconGitlabPath} alt="gitlab" />
           </a>
         </div>
+        <WebsiteCarbonBadge dark={false} co2="0.18" percentage="82" />
         <p translate="no">Copyright © {currentYear} François Dauzet</p>
       </div>
     </footer>
