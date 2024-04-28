@@ -30,7 +30,7 @@ const HeaderPrivacySection = () => {
   }, []);
 
   return (
-    <section>
+    <header>
       <div className="container-header-privacy-section">
         <div className="background">
           <div className="container-social-icons">
@@ -54,7 +54,7 @@ const HeaderPrivacySection = () => {
           </p>
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 export default HeaderPrivacySection;

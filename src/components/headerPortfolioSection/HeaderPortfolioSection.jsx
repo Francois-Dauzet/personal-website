@@ -55,7 +55,7 @@ const HeaderPortfolioSection = () => {
   }, []);
 
   return (
-    <section>
+    <header>
       <div className="container-header-portfolio-section">
         <div className="background">
           <div className="container-social-icons">
@@ -100,7 +100,7 @@ const HeaderPortfolioSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 export default HeaderPortfolioSection;

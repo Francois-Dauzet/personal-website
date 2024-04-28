@@ -55,7 +55,7 @@ const HeaderExperienceSection = () => {
   }, []);
 
   return (
-    <section>
+    <header>
       <div className="container-header-experience-section">
         <div className="background">
           <div className="container-social-icons">
@@ -100,7 +100,7 @@ const HeaderExperienceSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 export default HeaderExperienceSection;

@@ -29,7 +29,7 @@ const HeaderPatchNotesSection = () => {
   }, []);
 
   return (
-    <section>
+    <header>
       <div className="container-header-patch-notes-section">
         <div className="background">
           <div className="container-social-icons">
@@ -58,7 +58,7 @@ const HeaderPatchNotesSection = () => {
           </p>
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 export default HeaderPatchNotesSection;

@@ -66,7 +66,7 @@ const HeaderAboutMeSection = () => {
   };
 
   return (
-    <section>
+    <header>
       <div className="container-header-section">
         <div className="container-left">
           <h3 translate="no">François Dauzet</h3>
@@ -133,7 +133,7 @@ const HeaderAboutMeSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 export default HeaderAboutMeSection;
