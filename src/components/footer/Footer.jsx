@@ -50,7 +50,9 @@ const Footer = () => {
             <img src={iconGitlabPath} alt="gitlab" />
           </a>
         </div>
-        <WebsiteCarbonBadge dark={false} co2="0.18" percentage="82" />
+        <div translate="no">
+          <WebsiteCarbonBadge dark={false} co2="0.18" percentage="82" />
+        </div>
         <p translate="no">Copyright © {currentYear} François Dauzet</p>
       </div>
     </footer>
