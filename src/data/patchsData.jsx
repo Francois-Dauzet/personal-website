@@ -1,6 +1,15 @@
 export const patchsData = [
   {
     date: '28/04/2024',
+    version: '0.4.1',
+    description: [
+      'Revision of all the contents of the skills cards.',
+      'Incorporation of the badge displaying results from the "Website Carbon"',
+      'Minor corrections throughout the entire website.',
+    ],
+  },
+  {
+    date: '28/04/2024',
     version: '0.4.0',
     description: ['Adding the functionality to download the CV as a PDF.'],
   },

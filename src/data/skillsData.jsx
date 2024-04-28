@@ -12,10 +12,14 @@ export const skillsData = [
     description:
       'Design and management of web user interfaces, whether static or dynamic.',
     points: [
-      'Prototyping applications.',
-      'Creating static and responsive web interfaces.',
-      'Developing dynamic web interfaces.',
-      'Creating user interfaces for content or e-commerce solutions.',
+      'Development of interactive web applications.',
+      'Integration of responsive and static designs.',
+      'Creation of smooth and intuitive user experiences.',
+      'Development of dynamic features for web applications.',
+      'Customization and integration of themes for content and e-commerce platforms.',
+      'Optimization of performance and accessibility of web interfaces.',
+      'Effective collaboration within development teams to achieve project objectives.',
+      'Constant technological watch to stay up-to-date with the latest trends and practices in web development.',
     ],
     tools: [
       { name: 'React.js', background: '#087A9F', color: '#ffffff' },
@@ -35,10 +39,14 @@ export const skillsData = [
     description:
       'Creation of databases and development of data access components for web and mobile applications.',
     points: [
-      'Creating databases.',
-      'Developing data access components.',
-      'Implementing backend for web or mobile applications.',
-      'Integration of components into content or e-commerce management applications.',
+      'Design and creation of relational databases.',
+      'Development of data access components to ensure efficient data manipulation.',
+      'Backend implementation for web and mobile applications.',
+      'Integration of backend components into content management or e-commerce applications.',
+      'Management of data flows between different parts of an application.',
+      'Optimization of performance and security of backend applications.',
+      'Collaboration with frontend teams to ensure smooth integration between frontend and backend.',
+      'Maintenance and continuous improvement of backend functionalities to meet evolving user and business needs.',
     ],
     tools: [
       { name: 'MariaDB', background: '#BA7257', color: '#000814' },
@@ -57,10 +65,10 @@ export const skillsData = [
     description:
       'Development and production of applications for Android and iOS, with particular expertise in React Native.',
     points: [
-      'Development and production of applications for Android and iOS.',
-      'Management of build tools such as Gradle and Cocoapods.',
-      'Configuration of SDK paths between different development environments.',
-      'Using React Native to develop interface components.',
+      'Development and deployment of applications for Android and iOS platforms.',
+      'Management of build processes to automate application creation.',
+      'Configuration of development environments to ensure smooth integration.',
+      'Development of effective and responsive user interfaces.',
     ],
     tools: [
       { name: 'React Native', background: '#00A4D2', color: '#000814' },
@@ -74,10 +82,10 @@ export const skillsData = [
     description:
       'Use of processes and tools to speed up development and ensure continuous improvement of software.',
     points: [
-      'Setting up and managing continuous integration pipelines.',
-      'Automation of deployments to ensure continuous delivery.',
-      'Configuration and management of development and production environments.',
-      'Using configuration management tools to ensure environment consistency.',
+      'Setting up and managing continuous integration pipelines to automate testing and deployment.',
+      'Use of configuration management tools to maintain environment consistency.',
+      'Proficiency in Shell scripting for task automation and system process management.',
+      'Use of version control systems for collaborative management of source code.',
     ],
     tools: [
       { name: 'Azure DevOps', background: '#0089D6', color: '#000814' },
@@ -94,17 +102,17 @@ export const skillsData = [
     description:
       'Planning, designing, and managing software projects, from needs analysis to production and maintenance.',
     points: [
-      'Creating detailed specifications in collaboration with stakeholders.',
-      'Developing Gantt Charts for project planning and tracking.',
-      'Using Mind Maps to visualize and organize ideas and processes.',
-      'Identifying and specifying functional and non-functional requirements.',
-      'Establishing technological and application architecture.',
-      'Defining Design Guidelines to ensure consistency and quality.',
-      'Creating mockups and wireframes to visualize the user interface.',
-      'Data inventory and conceptual and physical model design (ERD, ERD, PDM).',
-      'Defining security requirements and implementing a secure development plan.',
-      'Planning phases and iterations using agile or traditional methodologies.',
-      'Setting up deployment and application maintenance.',
+      'Creation of detailed specifications in collaboration with stakeholders.',
+      'Development of Gantt charts for project planning and tracking.',
+      'Use of mind maps to visualize and organize ideas and processes.',
+      'Identification and specification of functional and non-functional requirements.',
+      'Establishment of technological and application architecture.',
+      'Definition of design guidelines to ensure consistency and quality.',
+      'Creation of mockups and wireframes to visualize the user interface.',
+      'Design and rapid prototyping of user interfaces.',
+      'Data inventory and design of conceptual and physical models.',
+      'Definition of security requirements and implementation of a secure development plan.',
+      'Planning project phases and iterations using agile or traditional methodologies.',
       'Project budget management and cost tracking throughout the project lifecycle.',
     ],
     tools: [
@@ -126,15 +134,14 @@ export const skillsData = [
     description:
       'Set of tools and work environments to optimize productivity and collaboration throughout the development process.',
     points: [
-      'Advanced tag management and event tracking with Google Tag Manager.',
-      'In-depth analysis of traffic and user behavior with Google Analytics.',
-      'Using Firebase for web and mobile app development.',
-      'Testing and debugging APIs with Postman.',
-      'Database administration and management with phpMyAdmin and MySQL Workbench.',
-      'Secure file transfer with FileZilla.',
-      'Configuring development environment with Laragon.',
-      'Administration of Linux and Windows operating systems.',
-      'Software development with Notepad++ and Visual Studio Code.',
+      'Advanced tag management and event tracking for web data analysis.',
+      'In-depth analysis of traffic and user behavior to make decisions based on precise data.',
+      'Development of web and mobile applications with cloud feature integration.',
+      'Testing and debugging of APIs to ensure proper operation of web services.',
+      'Administration and management of databases to maintain and optimize data.',
+      'Secure file transfer to ensure data integrity during transfers.',
+      'Configuration of development environment to facilitate the development process.',
+      'Administration of operating systems to ensure efficient operation of infrastructures.',
     ],
     tools: [
       { name: 'Google Tag Manager', background: '#89B4F8', color: '#000814' },
