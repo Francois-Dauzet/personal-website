@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import imgProfilePath from '../../assets/images/profile.png';
 import iconLinkedinPath from '../../assets/icons/linkedin.svg';
 import iconGithubPath from '../../assets/icons/github.svg';
@@ -9,6 +9,8 @@ import pdfPath from '../../assets/CV - François Dauzet.pdf';
 //* Styles
 import './HeaderAboutMeSection.scss';
 const HeaderAboutMeSection = () => {
+  const [age, setAge] = useState(0);
+
   useEffect(() => {
     /*
      * vertical parallax effect
@@ -50,6 +52,19 @@ const HeaderAboutMeSection = () => {
       modalContainer.classList.add('out');
       document.body.classList.remove('modal-active');
     });
+
+    /*
+     * calculate age
+     */
+    function calculateAge(birthday) {
+      const diff = Date.now() - new Date(birthday).getTime();
+      const ageDate = new Date(diff);
+      return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+
+    const calculatedAge = calculateAge('1991-10-03');
+
+    setAge(calculatedAge);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -94,9 +109,10 @@ const HeaderAboutMeSection = () => {
               DevOps & Web and Mobile Application Developer
             </h1>
             <p>
-              Curious, self-taught, and meticulous, with a strong background in
-              audio/video editing, music production, mapping and modding,
-              computer maintenance, and various IT domains.
+              Currently aged {age} years old, I am curious, self-taught, and
+              meticulous, with a strong background in audio/video editing, music
+              production, mapping and modding, computer maintenance, and various
+              IT domains.
             </p>
             <p>
               As a DevOps & Web Developer, the focus is on self-enrichment of

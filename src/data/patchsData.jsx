@@ -4,7 +4,7 @@ export const patchsData = [
     version: '0.4.2',
     description: [
       'Project cards have been modified to include a new “Challenges Encountered” section and to permanently display link icons.',
-      'I',
+      'Inclusion of my date of birth in the "About Me" page presentation.',
       'M.',
     ],
   },
