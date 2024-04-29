@@ -220,6 +220,25 @@
         overflow: hidden;
         transition: all 0.4s;
         width: 100%;
+
+        .title {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin: 1.5rem 0 0.5rem 0;
+
+          img {
+            height: 2rem;
+            width: auto;
+          }
+
+          h3 {
+            font-family: 'Gilroy-SemiBold';
+            color: map-get(map-get($text-color, on-primary), 100);
+            font-size: 1.25rem;
+            margin: 0 0.5rem;
+          }
+        }
       }
     }
 

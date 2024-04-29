@@ -1,8 +1,10 @@
 import React from 'react';
 import TitleSection from '../titleSection/TitleSection';
+import { projectsData } from '../../data/projectsData';
 import iconGithubPath from '../../assets/icons/github.svg';
 import iconLinkPath from '../../assets/icons/link.svg';
-import { projectsData } from '../../data/projectsData';
+import iconRobotPath from '../../assets/icons/robot.svg';
+import iconIdeaPath from '../../assets/icons/idea.svg';
 
 //* Styles
 import './ProjectsSection.scss';
@@ -68,23 +70,36 @@ const ProjectsSection = () => {
                 More information
               </label>
               <div className="item-card-content">
+                <div className="title">
+                  <img src={iconRobotPath} alt="project description" />
+                  <h3>Project Description</h3>
+                </div>
                 <ul>
                   {project.description.map((paragraph, index) => (
                     <li key={index}>{paragraph}</li>
                   ))}
                 </ul>
-                <div className="container-links-icons">
-                  {project.links.site && (
-                    <a target="_blank" href={project.links.site}>
-                      <img src={iconLinkPath} alt="link" />
-                    </a>
-                  )}
-                  {project.links.git && (
-                    <a target="_blank" href={project.links.git}>
-                      <img src={iconGithubPath} alt="github" />
-                    </a>
-                  )}
+                <div className="title">
+                  <img src={iconIdeaPath} alt="challenges encountered" />
+                  <h3>Challenges Encountered</h3>
                 </div>
+                <ul>
+                  {project.Challenges.map((paragraph, index) => (
+                    <li key={index}>{paragraph}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="container-links-icons">
+                {project.links.site && (
+                  <a target="_blank" href={project.links.site}>
+                    <img src={iconLinkPath} alt="link" />
+                  </a>
+                )}
+                {project.links.git && (
+                  <a target="_blank" href={project.links.git}>
+                    <img src={iconGithubPath} alt="github" />
+                  </a>
+                )}
               </div>
               <div className="container-image">
                 <img

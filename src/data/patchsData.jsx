@@ -1,5 +1,14 @@
 export const patchsData = [
   {
+    date: '29/04/2024',
+    version: '0.4.2',
+    description: [
+      'Project cards have been modified to include a new “Challenges Encountered” section and to permanently display link icons.',
+      'I',
+      'M.',
+    ],
+  },
+  {
     date: '28/04/2024',
     version: '0.4.1',
     description: [

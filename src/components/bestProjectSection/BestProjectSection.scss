@@ -130,7 +130,7 @@
           color: map-get(map-get($text-color, on-primary), 75);
           font-size: 1rem;
           margin: 1rem 0 0 0;
-          text-shadow: 0 0 11px map-get(map-get($background, on-secondary), 100);
+          text-shadow: 0 0 11px map-get(map-get($background, on-tertiary), 100);
         }
 
         @media (max-width: 1024px) {
