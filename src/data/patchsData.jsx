@@ -3,9 +3,10 @@ export const patchsData = [
     date: '29/04/2024',
     version: '0.4.2',
     description: [
-      'Project cards have been modified to include a new “Challenges Encountered” section and to permanently display link icons.',
-      'Inclusion of my date of birth in the "About Me" page presentation.',
-      'M.',
+      'A big thanks to my colleague Z for the insightful ideas ;)',
+      'Project sheets have been modified to include a new “Challenges Encountered” section and links are now permanently displayed.',
+      'Implementation of my date of birth in my presentation on the “About me” page.',
+      'In the next update, I plan to add usage levels to the tool tags on the “Skills” section.',
     ],
   },
   {
