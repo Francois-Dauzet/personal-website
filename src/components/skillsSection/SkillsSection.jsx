@@ -1,6 +1,7 @@
 import React from 'react';
 import { skillsData } from '../../data/skillsData';
 import iconFrontendPath from '../../assets/icons/frontend.svg';
+import ProgressBar from '@ramonak/react-progress-bar';
 
 //* Styles
 import './SkillsSection.scss';
@@ -49,22 +50,24 @@ const SkillsSection = () => {
               </label>
               <div className="item-card-content">
                 {skill.tools.map((tool, index) => (
-                  <div key={index} className="tag">
-                    <a
-                      target="_blank"
-                      href={'https://www.google.com/search?q=' + tool.name}
-                    >
-                      <p
-                        translate="no"
-                        style={{
-                          backgroundColor: tool.background,
-                          color: tool.color,
-                        }}
-                      >
-                        {tool.name}
-                      </p>
-                    </a>
-                  </div>
+                  <a
+                    translate="no"
+                    target="_blank"
+                    href={'https://www.google.com/search?q=' + tool.name}
+                  >
+                    <ProgressBar
+                      className="progress-bar"
+                      height="auto"
+                      borderRadius="0"
+                      bgColor={tool.background}
+                      baseBgColor={tool.background + '90'}
+                      labelColor={tool.color}
+                      completed={tool.value}
+                      customLabel={tool.name}
+                      transitionDuration="3s"
+                      labelAlignment="left"
+                    />
+                  </a>
                 ))}
               </div>
             </div>

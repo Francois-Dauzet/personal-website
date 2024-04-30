@@ -1,5 +1,13 @@
 export const patchsData = [
   {
+    date: '30/04/2024',
+    version: '0.4.3',
+    description: [
+      'Fixed margin issue for About Me page header.',
+      'Replaced tags with progress bars in the skills section.',
+    ],
+  },
+  {
     date: '29/04/2024',
     version: '0.4.2',
     description: [

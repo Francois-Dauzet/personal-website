@@ -5,8 +5,8 @@
  * --------------- Container header
 ----------------------------------- */
 
-  min-height: 68vh;
   width: 100%;
+  height: auto;
   display: flex;
   background-image: url(../../assets/backgrounds/bg_header_about_me.jpg);
   background-color: map-get(map-get($background, on-primary), 75);
@@ -81,8 +81,8 @@
       a {
         margin: 0 6%;
         border: none;
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
         background-color: map-get(map-get($background, on-tertiary), 100);
         box-shadow: 0 0 11px map-get(map-get($background, on-primary), 50);
         overflow: hidden;
@@ -92,8 +92,8 @@
         }
 
         img {
-          width: 3rem;
-          height: 3rem;
+          width: 2.5rem;
+          height: 2.5rem;
           transform: rotate(0) scale(1);
           transition: transform 0.4s;
 
@@ -111,9 +111,11 @@
     align-items: center;
     justify-content: flex-start;
     width: 67vw;
+    padding: 3rem 0;
 
     @media (max-width: 1024px) {
       width: 100%;
+      padding: 0;
     }
 
     .container-text {
