@@ -7,6 +7,10 @@ const TrainingTimeline = () => {
   const [showCertificates, setShowCertificates] = useState(false);
   const [certificateImages, setCertificateImages] = useState([]);
 
+  trainingData.forEach((training) => {
+    training.certificates.sort((a, b) => a.localeCompare(b));
+  });
+
   useEffect(() => {
     if (showCertificates) {
       document.body.style.overflow = 'hidden'; // Bloque le défilement de la page arrière lorsque le carrousel est affiché

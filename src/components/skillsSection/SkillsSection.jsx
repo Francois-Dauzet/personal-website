@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { skillsData } from '../../data/skillsData';
-import iconFrontendPath from '../../assets/icons/frontend.svg';
 import ProgressBar from '@ramonak/react-progress-bar';
-
-//* Styles
 import './SkillsSection.scss';
 import TitleSection from '../titleSection/TitleSection';
 
 const SkillsSection = () => {
+  const [selectedSkillIndex, setSelectedSkillIndex] = useState(null);
+
   skillsData.forEach((skill) => {
     skill.tools.sort((a, b) => a.name.localeCompare(b.name));
   });
+
+  const handleSkillSelect = (skillIndex) => {
+    setSelectedSkillIndex(skillIndex);
+  };
 
   return (
     <section>
@@ -24,8 +27,8 @@ const SkillsSection = () => {
           color="white"
         />
         <div className="container-cards">
-          {skillsData.map((skill, index) => (
-            <div key={index} className="item-card">
+          {skillsData.map((skill, skillIndex) => (
+            <div key={skillIndex} className="item-card">
               <div className="title">
                 <img src={skill.icon} alt="" />
                 <h3 translate="no">{skill.title}</h3>
@@ -40,6 +43,7 @@ const SkillsSection = () => {
                 type="radio"
                 name="skills"
                 id={skill.title.toLowerCase()}
+                onChange={() => handleSkillSelect(skillIndex)}
               />
               <label
                 translate="no"
@@ -49,8 +53,9 @@ const SkillsSection = () => {
                 Tools & Technologies
               </label>
               <div className="item-card-content">
-                {skill.tools.map((tool, index) => (
+                {skill.tools.map((tool, toolIndex) => (
                   <a
+                    key={toolIndex}
                     translate="no"
                     target="_blank"
                     href={'https://www.google.com/search?q=' + tool.name}
@@ -62,9 +67,11 @@ const SkillsSection = () => {
                       bgColor={tool.background}
                       baseBgColor={tool.background + '90'}
                       labelColor={tool.color}
-                      completed={tool.value}
+                      completed={
+                        selectedSkillIndex === skillIndex ? tool.value : 0
+                      }
                       customLabel={tool.name}
-                      transitionDuration="3s"
+                      transitionDuration="1s"
                       labelAlignment="left"
                     />
                   </a>

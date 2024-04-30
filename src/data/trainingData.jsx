@@ -28,6 +28,7 @@ import imageSimplonWebAndMobileDeveloperPath from './../assets/images/certificat
 import imageMimoSqlPath from './../assets/images/certificates/mimo_sql.jpg';
 import imageSololearnCssPath from './../assets/images/certificates/sololearn_css.jpg';
 import imageSololearnHtmlPath from './../assets/images/certificates/sololearn_html.jpg';
+import imageSololearnResponsiveWebDesignPath from './../assets/images/certificates/sololearn_responsive_web_design.jpg';
 
 // BPREA Beekeeping
 import imageCfppaBpreaBeekeepingPath from './../assets/images/certificates/cfppa_bprea_beekeeping.jpg';
@@ -82,6 +83,7 @@ export const trainingData = [
     certificates: [
       imageSololearnHtmlPath,
       imageSololearnCssPath,
+      imageSololearnResponsiveWebDesignPath,
       imageMimoSqlPath,
     ],
   },
