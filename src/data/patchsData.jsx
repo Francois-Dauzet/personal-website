@@ -5,6 +5,7 @@ export const patchsData = [
     description: [
       'Fixed margin issue for About Me page header.',
       'Replaced tags with progress bars in the skills section.',
+      'Changed the size of the social icons in the about me page header.',
     ],
   },
   {
