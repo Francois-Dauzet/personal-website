@@ -27,9 +27,11 @@
     justify-content: center;
     flex-direction: column;
     user-select: none;
+    padding: 2rem 0;
 
     @media (max-width: 1024px) {
       border-right: none;
+      padding: 0;
       margin: 4rem 0 2rem 0;
       width: 100%;
     }
