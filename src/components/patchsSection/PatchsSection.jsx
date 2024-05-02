@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import iconToolsPath from '../../assets/icons/tools.svg';
 import { patchsData } from '../../data/patchsData';
 
@@ -6,12 +6,20 @@ import { patchsData } from '../../data/patchsData';
 import './PatchsSection.scss';
 
 const PatchsSection = () => {
+  const [selectedPatchIndex, setSelectedPatchIndex] = useState(null);
+
   const sortedPatchsData = [...patchsData].sort((b, a) => {
     return a.version.localeCompare(b.version, undefined, {
       numeric: true,
       sensitivity: 'base',
     });
   });
+
+  const handlePatchToggle = (patchIndex) => {
+    setSelectedPatchIndex((prevIndex) =>
+      prevIndex === patchIndex ? null : patchIndex
+    );
+  };
 
   return (
     <section>
@@ -21,12 +29,13 @@ const PatchsSection = () => {
             <div key={index} className="item-card">
               <p className="date">{patch.date}</p>
               <input
-                type="radio"
-                name="patchs"
+                type="checkbox"
                 id={patch.version.toLowerCase()}
+                checked={selectedPatchIndex === index}
+                onChange={() => handlePatchToggle(index)}
+                className="hidden-checkbox"
               />
               <label
-                translate="no"
                 htmlFor={patch.version.toLowerCase()}
                 className="item-card-label"
               >

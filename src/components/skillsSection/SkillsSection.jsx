@@ -11,8 +11,10 @@ const SkillsSection = () => {
     skill.tools.sort((a, b) => a.name.localeCompare(b.name));
   });
 
-  const handleSkillSelect = (skillIndex) => {
-    setSelectedSkillIndex(skillIndex);
+  const handleSkillToggle = (skillIndex) => {
+    setSelectedSkillIndex((prevIndex) =>
+      prevIndex === skillIndex ? null : skillIndex
+    );
   };
 
   return (
@@ -40,13 +42,13 @@ const SkillsSection = () => {
                 ))}
               </ul>
               <input
-                type="radio"
-                name="skills"
+                type="checkbox"
                 id={skill.title.toLowerCase()}
-                onChange={() => handleSkillSelect(skillIndex)}
+                checked={selectedSkillIndex === skillIndex}
+                onChange={() => handleSkillToggle(skillIndex)}
+                className="hidden-checkbox"
               />
               <label
-                translate="no"
                 htmlFor={skill.title.toLowerCase()}
                 className="item-card-label"
               >

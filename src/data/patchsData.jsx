@@ -6,6 +6,7 @@ export const patchsData = [
       'Added page scroll blocking when opening the contact form.',
       'Added page scroll blocking when opening navigation.',
       'Limiting text box height for message when sending an email.',
+      'Added functionality to close an open map by clicking on it again.',
     ],
   },
   {

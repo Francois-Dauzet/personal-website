@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TitleSection from '../titleSection/TitleSection';
 import { projectsData } from '../../data/projectsData';
 import iconGithubPath from '../../assets/icons/github.svg';
@@ -10,9 +10,17 @@ import iconIdeaPath from '../../assets/icons/idea.svg';
 import './ProjectsSection.scss';
 
 const ProjectsSection = () => {
+  const [selectedProjectIndex, setSelectedProjectIndex] = useState(null);
+
   projectsData.forEach((project) => {
     project.technologies.sort((a, b) => a.name.localeCompare(b.name));
   });
+
+  const handleProjectToggle = (projectIndex) => {
+    setSelectedProjectIndex((prevIndex) =>
+      prevIndex === projectIndex ? null : projectIndex
+    );
+  };
 
   return (
     <section>
@@ -58,12 +66,13 @@ const ProjectsSection = () => {
               </div>
               <h4>{project.subtitle}</h4>
               <input
-                type="radio"
-                name="projects"
+                type="checkbox"
                 id={project.title.toLowerCase()}
+                checked={selectedProjectIndex === index}
+                onChange={() => handleProjectToggle(index)}
+                className="hidden-checkbox"
               />
               <label
-                translate="no"
                 htmlFor={project.title.toLowerCase()}
                 className="item-card-label"
               >
