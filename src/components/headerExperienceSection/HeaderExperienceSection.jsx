@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import iconLinkedinPath from '../../assets/icons/linkedin.svg';
 import iconGithubPath from '../../assets/icons/github.svg';
 import iconGitlabPath from '../../assets/icons/gitlab.svg';
-import ContactForm from '../contactForm/ContactForm';
+import FormContact from '../formContact/FormContact';
 
 //* Styles
 import './HeaderExperienceSection.scss';
@@ -110,7 +110,7 @@ const HeaderExperienceSection = () => {
       <div id="modal-container">
         <div className="modal-background">
           <div className="modal">
-            <ContactForm />
+            <FormContact />
           </div>
         </div>
       </div>

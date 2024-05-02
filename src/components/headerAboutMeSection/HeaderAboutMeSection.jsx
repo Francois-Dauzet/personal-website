@@ -3,7 +3,7 @@ import imgProfilePath from '../../assets/images/profile.png';
 import iconLinkedinPath from '../../assets/icons/linkedin.svg';
 import iconGithubPath from '../../assets/icons/github.svg';
 import iconGitlabPath from '../../assets/icons/gitlab.svg';
-import ContactForm from '../contactForm/ContactForm';
+import FormContact from '../formContact/FormContact';
 import pdfPath from '../../assets/CV - François Dauzet.pdf';
 
 //* Styles
@@ -159,7 +159,7 @@ const HeaderAboutMeSection = () => {
       <div id="modal-container">
         <div className="modal-background">
           <div className="modal">
-            <ContactForm />
+            <FormContact />
           </div>
         </div>
       </div>

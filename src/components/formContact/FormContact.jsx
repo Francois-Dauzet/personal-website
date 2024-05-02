@@ -3,9 +3,9 @@ import EmailService from '../../services/EmailService';
 import closingCrossPath from '../../assets/icons/closing_cross.svg';
 import iconContactPath from '../../assets/icons/contact.svg';
 import iconCheckPath from '../../assets/icons/check.svg';
-import './ContactForm.scss';
+import './FormContact.scss';
 
-const ContactForm = () => {
+const FormContact = () => {
   const form = useRef();
   const [sendEmail, setSendEmail] = useState(false);
   const [sendError, setSendError] = useState(false);
@@ -136,4 +136,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default FormContact;
