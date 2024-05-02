@@ -35,7 +35,7 @@ const NavMenu = () => {
         !isItemSelected && setScrollPosition(window.scrollY);
 
         setTimeout(() => {
-          setShowNavigation(!showNavigation);
+          setShowNavigation(true);
           setClickBlocked(false);
         }, 800);
       }
