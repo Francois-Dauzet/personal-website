@@ -18,7 +18,6 @@ const NavMenu = () => {
   const [showNavigation, setShowNavigation] = useState(false);
 
   const toggleOverlay = (isItemSelected) => {
-    setShowNavigation(!showNavigation);
     if (!clickBlocked) {
       setClickBlocked(true);
 
@@ -36,6 +35,7 @@ const NavMenu = () => {
         !isItemSelected && setScrollPosition(window.scrollY);
 
         setTimeout(() => {
+          setShowNavigation(!showNavigation);
           setClickBlocked(false);
         }, 800);
       }
