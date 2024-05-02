@@ -13,9 +13,9 @@ const TrainingTimeline = () => {
 
   useEffect(() => {
     if (showCertificates) {
-      document.body.style.overflow = 'hidden'; // Bloque le défilement de la page arrière lorsque le carrousel est affiché
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = ''; // Rétablit le défilement de la page lorsque le carrousel est fermé
+      document.body.style.overflow = '';
     }
   }, [showCertificates]);
 
@@ -31,7 +31,7 @@ const TrainingTimeline = () => {
   };
 
   const handleCarouselClick = (event) => {
-    event.stopPropagation(); // Empêche la propagation du clic à l'overlay
+    event.stopPropagation();
   };
 
   return (

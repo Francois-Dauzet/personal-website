@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import iconLinkedinPath from '../../assets/icons/linkedin.svg';
 import iconGithubPath from '../../assets/icons/github.svg';
 import iconGitlabPath from '../../assets/icons/gitlab.svg';
@@ -7,6 +7,8 @@ import ContactForm from '../contactForm/ContactForm';
 //* Styles
 import './HeaderPortfolioSection.scss';
 const HeaderPortfolioSection = () => {
+  const [showFormContact, setShowFormContact] = useState(false);
+
   useEffect(() => {
     /*
      * vertical parallax effect
@@ -24,35 +26,48 @@ const HeaderPortfolioSection = () => {
     window.addEventListener('scroll', handleScroll);
 
     /*
-     * modal function
+     * Modal form contact
      */
-    const button = document.getElementsByClassName('contact-button')[0];
+    const contactButton = document.getElementsByClassName('contact-button')[0];
     const closingCross =
       document.getElementsByClassName('icon-closing-cross')[0];
     const modalContainer = document.getElementById('modal-container');
 
-    button.addEventListener('click', function () {
+    // Open form contact
+    contactButton.addEventListener('click', function () {
       modalContainer.removeAttribute('class');
       modalContainer.classList.add('contact-button');
       document.body.classList.add('modal-active');
+      setShowFormContact(!showFormContact);
     });
 
+    // Close form contact by background click
     modalContainer.addEventListener('click', function (event) {
       if (event.target.classList.contains('modal-background')) {
         this.classList.add('out');
         document.body.classList.remove('modal-active');
+        setShowFormContact(false);
       }
     });
 
+    // Close form contact by closing cross click
     closingCross.addEventListener('click', function () {
       modalContainer.classList.add('out');
       document.body.classList.remove('modal-active');
+      setShowFormContact(false);
     });
+
+    // Block scroll if form contact open
+    if (showFormContact) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [showFormContact]);
 
   return (
     <header>

@@ -9,6 +9,7 @@ import pdfPath from '../../assets/CV - François Dauzet.pdf';
 //* Styles
 import './HeaderAboutMeSection.scss';
 const HeaderAboutMeSection = () => {
+  const [showFormContact, setShowFormContact] = useState(false);
   const [age, setAge] = useState(0);
 
   useEffect(() => {
@@ -28,30 +29,43 @@ const HeaderAboutMeSection = () => {
     window.addEventListener('scroll', handleScroll);
 
     /*
-     * modal function
+     * Modal form contact
      */
     const contactButton = document.getElementsByClassName('contact-button')[0];
     const closingCross =
       document.getElementsByClassName('icon-closing-cross')[0];
     const modalContainer = document.getElementById('modal-container');
 
+    // Open form contact
     contactButton.addEventListener('click', function () {
       modalContainer.removeAttribute('class');
       modalContainer.classList.add('contact-button');
       document.body.classList.add('modal-active');
+      setShowFormContact(!showFormContact);
     });
 
+    // Close form contact by background click
     modalContainer.addEventListener('click', function (event) {
       if (event.target.classList.contains('modal-background')) {
         this.classList.add('out');
         document.body.classList.remove('modal-active');
+        setShowFormContact(false);
       }
     });
 
+    // Close form contact by closing cross click
     closingCross.addEventListener('click', function () {
       modalContainer.classList.add('out');
       document.body.classList.remove('modal-active');
+      setShowFormContact(false);
     });
+
+    // Block scroll if form contact open
+    if (showFormContact) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
 
     /*
      * calculate age
@@ -69,7 +83,7 @@ const HeaderAboutMeSection = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [showFormContact]);
 
   const handleDownloadPdf = () => {
     const link = document.createElement('a');
