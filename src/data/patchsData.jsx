@@ -5,6 +5,7 @@ export const patchsData = [
     description: [
       'Added page scroll blocking when opening the contact form.',
       'Added page scroll blocking when opening navigation.',
+      'Limiting text box height for message when sending an email.',
     ],
   },
   {
