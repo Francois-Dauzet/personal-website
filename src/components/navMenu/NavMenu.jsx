@@ -15,8 +15,10 @@ const NavMenu = () => {
   const deadZone = document.querySelector('.dead-zone');
   const navigate = useNavigate();
   const { setCurrentPageName, setCurrentPageRoute } = useStateStore();
+  const [showNavigation, setShowNavigation] = useState(false);
 
   const toggleOverlay = (isItemSelected) => {
+    setShowNavigation(!showNavigation);
     if (!clickBlocked) {
       setClickBlocked(true);
 
@@ -26,6 +28,7 @@ const NavMenu = () => {
         !isItemSelected && window.scrollTo(0, scrollPosition);
         setTimeout(() => {
           setClickBlocked(false);
+          setShowNavigation(false);
         }, 800);
       } else {
         burger.classList.add('active');
@@ -49,6 +52,13 @@ const NavMenu = () => {
   };
 
   useEffect(() => {
+    // Block scroll if navigation open
+    if (showNavigation) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
     if (overlayActive) {
       setClickBlocked(true);
 
@@ -57,12 +67,13 @@ const NavMenu = () => {
       }, 800);
     } else {
       setClickBlocked(true);
+
       setTimeout(() => {
         document.body.style.overflow = 'auto';
         setClickBlocked(false);
       }, 800);
     }
-  }, [overlayActive]);
+  }, [overlayActive, showNavigation]);
 
   return (
     <>

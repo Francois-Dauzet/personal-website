@@ -2,7 +2,10 @@ export const patchsData = [
   {
     date: '02/05/2024',
     version: '0.4.4',
-    description: ['Added page scroll blocking when opening the contact form.'],
+    description: [
+      'Added page scroll blocking when opening the contact form.',
+      'Added page scroll blocking when opening navigation.',
+    ],
   },
   {
     date: '30/04/2024',
