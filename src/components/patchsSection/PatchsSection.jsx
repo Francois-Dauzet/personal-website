@@ -27,7 +27,9 @@ const PatchsSection = () => {
         <div className="container-cards">
           {sortedPatchsData.map((patch, index) => (
             <div key={index} className="item-card">
-              <p className="date">{patch.date}</p>
+              <p translate="no" className="date">
+                {patch.date}
+              </p>
               <input
                 type="checkbox"
                 id={patch.version.toLowerCase()}

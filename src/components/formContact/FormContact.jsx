@@ -107,15 +107,18 @@ const FormContact = () => {
               <ReCAPTCHA
                 sitekey={import.meta.env.VITE_CAPTCHA_SITE_KEY}
                 onChange={handleCaptchaChange}
+                hl="en"
               />
               {!isLoading ? (
                 <input
+                  translate="no"
                   className="submit-button"
                   type="submit"
                   value="Send Message"
                 />
               ) : (
                 <input
+                  translate="no"
                   className="submit-button"
                   type="submit"
                   value="Sending..."
