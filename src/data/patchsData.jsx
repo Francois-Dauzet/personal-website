@@ -1,5 +1,10 @@
 export const patchsData = [
   {
+    date: '07/05/2024',
+    version: '0.5.0',
+    description: ['Added reCaptcha functionality to the contact form.'],
+  },
+  {
     date: '02/05/2024',
     version: '0.4.4',
     description: [

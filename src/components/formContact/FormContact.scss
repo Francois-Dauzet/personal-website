@@ -15,6 +15,12 @@
     top: -1rem;
     left: -1rem;
     user-select: none;
+
+    @media (max-width: 512px) {
+      top: -1.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   .icon-closing-cross {
@@ -38,6 +44,10 @@
     font-size: 2rem;
     color: map-get(map-get($text-color, primary), 100);
     text-shadow: 0 0 11px map-get(map-get($background, primary), 100);
+
+    @media (max-width: 512px) {
+      margin: 2rem 0 1rem 0;
+    }
   }
 
   p {
@@ -63,7 +73,7 @@
     input[type='email'],
     input[type='text'],
     textarea {
-      width: 120%;
+      width: 100%;
       padding: 10px;
       border: 1px solid map-get(map-get($background, on-primary), 25);
       font-family: 'Gilroy-regular';
@@ -74,7 +84,7 @@
 
     textarea {
       resize: vertical;
-      max-height: 16rem;
+      max-height: 12rem;
     }
 
     span {

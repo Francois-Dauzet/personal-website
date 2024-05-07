@@ -3,6 +3,7 @@ import EmailService from '../../services/EmailService';
 import closingCrossPath from '../../assets/icons/closing_cross.svg';
 import iconContactPath from '../../assets/icons/contact.svg';
 import iconCheckPath from '../../assets/icons/check.svg';
+import ReCAPTCHA from 'react-google-recaptcha';
 import './FormContact.scss';
 
 const FormContact = () => {
@@ -10,6 +11,7 @@ const FormContact = () => {
   const [sendEmail, setSendEmail] = useState(false);
   const [sendError, setSendError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [captchaValue, setCaptchaValue] = useState(null);
 
   useEffect(() => {
     const emailStorage = sessionStorage.getItem('sendEmail');
@@ -17,6 +19,10 @@ const FormContact = () => {
       setSendEmail(true);
     }
   }, []);
+
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,7 +37,8 @@ const FormContact = () => {
       email.value.trim() !== '' &&
       subject.value.trim() !== '' &&
       message.value.trim() !== '' &&
-      isEmailValid
+      isEmailValid &&
+      captchaValue
     ) {
       const response = await EmailService.sendEmail(form.current);
 
@@ -97,6 +104,10 @@ const FormContact = () => {
                 ></textarea>
                 {sendError && <span>An error has occurred</span>}
               </div>
+              <ReCAPTCHA
+                sitekey={import.meta.env.VITE_CAPTCHA_SITE_KEY}
+                onChange={handleCaptchaChange}
+              />
               {!isLoading ? (
                 <input
                   className="submit-button"
