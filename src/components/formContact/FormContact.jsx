@@ -70,11 +70,11 @@ const FormContact = () => {
               alt="closing cross"
             />
             <h1 translate="no">Contact</h1>
-            <p>
+            <p className="form-description">
               Feel free to contact me via the form below, I will respond to you
               as soon as possible.
             </p>
-            <p>Hope to hear from you soon!</p>
+            <p className="form-description">Hope to hear from you soon!</p>
             <form ref={form} onSubmit={handleSubmit}>
               <div className="form-group">
                 <input
