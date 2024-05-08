@@ -4,6 +4,7 @@ import closingCrossPath from '../../assets/icons/closing_cross.svg';
 import iconContactPath from '../../assets/icons/contact.svg';
 import iconCheckPath from '../../assets/icons/check.svg';
 import ReCAPTCHA from 'react-google-recaptcha';
+
 import './FormContact.scss';
 
 const FormContact = () => {
