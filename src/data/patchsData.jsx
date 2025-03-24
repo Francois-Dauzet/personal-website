@@ -3,7 +3,8 @@ export const patchsData = [
         date: '24/03/2025',
         version: '1.0.0',
         description: [
-            'Fixed the issue with sending emails.'
+            'Fixed the issue with sending emails.',
+            'Stable version of the site released in production'
         ],
     },
     {
