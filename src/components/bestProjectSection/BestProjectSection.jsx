@@ -9,7 +9,7 @@ import './BestProjectSection.scss';
 
 const BestProjectSection = () => {
   const project = projectsData.find(
-    (project) => project.title === 'Personal Website'
+    (project) => project.title === 'Quizlee'
   );
 
   if (!project) {

@@ -1,10 +1,17 @@
 export const patchsData = [
     {
+        date: '27/04/2025',
+        version: '1.1.0',
+        description: [
+            'Added Quizlee project to Portfolio section.'
+        ],
+    },
+    {
         date: '24/03/2025',
         version: '1.0.0',
         description: [
             'Fixed the issue with sending emails.',
-            'Stable version of the site released in production'
+            'Stable version of the site released in production.'
         ],
     },
     {
