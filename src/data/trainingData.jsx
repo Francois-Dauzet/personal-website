@@ -7,16 +7,31 @@ import imageFormationsPath from './../assets/images/trainings/formations.jpg';
 import imageSimplonPath from './../assets/images/trainings/simplon.jpg';
 import imageEcoleNumeriqueArdechoisePath from './../assets/images/trainings/ecole_numerique_ardechoise.jpg';
 import imageDatascientestPath from './../assets/images/trainings/datascientest.jpg';
+import imageSoftwareEngineerPath from './../assets/images/trainings/software_engineer.jpg';
 
 /* *********************
  * Certificates
  ********************* */
+// Software Engineer
+import imageDatascientestHtmlPath from './../assets/images/certificates/datascientest_html.jpg';
+import imageDatascientestCssPath from './../assets/images/certificates/datascientest_css.jpg';
+import imageDatascientestJavascriptPath from './../assets/images/certificates/datascientest_javascript.jpg';
+import imageDatascientestReactPath from './../assets/images/certificates/datascientest_react.jpg';
+import imageDatascientestReactIntermediairePath from './../assets/images/certificates/datascientest_react_intermediaire.jpg';
+import imageDatascientestTailwindCssPath from './../assets/images/certificates/datascientest_tailwind_css.jpg';
+
 // DevOps System Administrator
 import imageDatascientestAcculturationDataPath from './../assets/images/certificates/datascientest_acculturation_data.jpg';
 import imageDatascientestLinuxAdministrationPath from './../assets/images/certificates/datascientest_linux_administration.jpg';
 import imageDatascientestNosqlDatabasesMongodbPath from './../assets/images/certificates/datascientest_nosql_databases_mongodb.jpg';
 import imageDatascientestPythonForDevopsPath from './../assets/images/certificates/datascientest_python_for_devops.jpg';
 import imageDatascientestSqlForDataSciencePath from './../assets/images/certificates/datascientest_sql_for_data_science.jpg';
+import imageDatascientestDatadogPath from './../assets/images/certificates/datascientest_datadog.jpg';
+import imageDatascientestDockerPath from './../assets/images/certificates/datascientest_docker.jpg';
+import imageDatascientestGitLabPath from './../assets/images/certificates/datascientest_gitlab.jpg';
+import imageDatascientestJenkinsPath from './../assets/images/certificates/datascientest_jenkins.jpg';
+import imageDatascientestKubernetesForDevopsPath from './../assets/images/certificates/datascientest_kubernetes_for_devops.jpg';
+import imageDatascientestTerraformPath from './../assets/images/certificates/datascientest_terraform.jpg';
 
 // Application Designer and Developer
 import imageEcoleNumeriqueArdechoiseApplicationDesignerAndDeveloperPath from './../assets/images/certificates/ecole_numerique_ardechoise_application_designer_and_developer.jpg';
@@ -35,6 +50,23 @@ import imageCfppaBpreaBeekeepingPath from './../assets/images/certificates/cfppa
 
 export const trainingData = [
   {
+    date: '2025 - 2026',
+    certification: 'RNCP. 7',
+    title: 'Software Engineer',
+    subtitle: 'DataScientest & Panthéon Sorbonne',
+    description:
+      'This experience was the culmination of my academic journey, serving as a synthesis of all the knowledge I had acquired. I applied my expertise in software engineering and my DevOps skills to manage and optimize complex IT infrastructures. I used tools for automated deployments and worked on fostering collaboration between development and operations teams, ensuring the availability, reliability, and security of systems.',
+    imagePath: imageSoftwareEngineerPath,
+    certificates: [
+      imageDatascientestHtmlPath,
+      imageDatascientestCssPath,
+      imageDatascientestJavascriptPath,
+      imageDatascientestReactPath,
+      imageDatascientestReactIntermediairePath,
+      imageDatascientestTailwindCssPath,
+    ],
+  },
+  {
     date: '2024 - 2025',
     certification: 'RNCP. 6',
     title: 'DevOps System Administrator',
@@ -48,6 +80,12 @@ export const trainingData = [
       imageDatascientestLinuxAdministrationPath,
       imageDatascientestAcculturationDataPath,
       imageDatascientestPythonForDevopsPath,
+      imageDatascientestDatadogPath,
+      imageDatascientestDockerPath,
+      imageDatascientestGitLabPath,
+      imageDatascientestJenkinsPath,
+      imageDatascientestKubernetesForDevopsPath,
+      imageDatascientestTerraformPath,
     ],
   },
   {

@@ -6,11 +6,11 @@ import iconArmeeDeTerrePath from './../assets/images/experiences/armee_de_terre.
 
 export const experienceData = [
   {
-    date: '2024 - 2025',
-    title: 'Application Containerization Manager',
+    date: '2024 - 2026',
+    title: 'Azure DevOps Environment Manager',
     company: 'Conduent Business Solutions France',
     description:
-      'In my current position, I work with a variety of key tools and technologies for application development and management. I use Docker, Rancher, and Kubernetes for application containerization, ensuring efficient management of environments. Additionally, I utilize Azure DevOps as the central platform to manage permissions, deployments, builds, and all other application lifecycle requirements.',
+      'I am responsible for the overall management of the Azure DevOps environment. My role involves ensuring the smooth operation of all its tools, including the administration of repositories, debugging of pipelines and builds, and handling requests via a ticketing system. I make sure that development and deployment processes run seamlessly and securely.',
     imagePath: iconConduentPath,
   },
   {
