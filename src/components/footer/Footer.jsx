@@ -1,10 +1,9 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { WebsiteCarbonBadge } from 'react-websitecarbon-badge';
-import packageJson from '../../../package.json';
 import iconLinkedinPath from '../../assets/icons/linkedin.svg';
 import iconGithubPath from '../../assets/icons/github.svg';
 import iconGitlabPath from '../../assets/icons/gitlab.svg';
+import { patchsData } from '../../data/patchsData';
 
 //* Styles
 import './Footer.scss';
@@ -25,7 +24,7 @@ const Footer = () => {
       <div className="container-footer">
         <h5 translate="no">francois-d.com</h5>
         <p translate="no" className="version">
-          {packageJson.version}
+          {patchsData[0].version}
         </p>
         <ul>
           <li translate="no" onClick={() => patchNotesNavigate()}>
