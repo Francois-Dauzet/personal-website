@@ -73,20 +73,6 @@ const HeaderPortfolioSection = () => {
     <header>
       <div className="container-header-portfolio-section">
         <div className="background">
-          <div className="container-social-icons">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/fran%C3%A7ois-dauzet-413243226/"
-            >
-              <img src={iconLinkedinPath} alt="linkedin" />
-            </a>
-            <a target="_blank" href="https://github.com/Francois-Dauzet">
-              <img src={iconGithubPath} alt="github" />
-            </a>
-            <a target="_blank" href="https://gitlab.com/Francois-Dauzet">
-              <img src={iconGitlabPath} alt="gitlab" />
-            </a>
-          </div>
           <h1 translate="no">Discover My Work</h1>
           <p>
             Explore a condensed version of my work, projects, and achievements
@@ -105,6 +91,20 @@ const HeaderPortfolioSection = () => {
             <div translate="no" className="contact-button">
               Contact Me
             </div>
+          </div>
+          <div className="container-social-icons">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/fran%C3%A7ois-dauzet-413243226/"
+            >
+              <img src={iconLinkedinPath} alt="linkedin" />
+            </a>
+            <a target="_blank" href="https://github.com/Francois-Dauzet">
+              <img src={iconGithubPath} alt="github" />
+            </a>
+            <a target="_blank" href="https://gitlab.com/Francois-Dauzet">
+              <img src={iconGitlabPath} alt="gitlab" />
+            </a>
           </div>
         </div>
       </div>

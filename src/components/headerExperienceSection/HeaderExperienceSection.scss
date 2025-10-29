@@ -20,18 +20,18 @@
     flex-direction: column;
     align-items: center;
     border-bottom: 2px solid map-get(map-get($background, primary), 100);
+    padding-top: 5rem;
 
     .container-social-icons {
-      user-select: none;
-      margin: 1rem 0 0 0;
+      margin-bottom: 1rem;
       width: 100%;
       display: flex;
       align-items: start;
       justify-content: start;
-      height: 5rem;
+      user-select: none;
 
       @media (max-width: 1024px) {
-        margin: 1rem 0 0 0;
+        margin-bottom: 1rem;
       }
 
       a {

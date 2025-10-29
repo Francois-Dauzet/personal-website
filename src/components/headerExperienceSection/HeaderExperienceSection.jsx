@@ -72,20 +72,6 @@ const HeaderExperienceSection = () => {
     <header>
       <div className="container-header-experience-section">
         <div className="background">
-          <div className="container-social-icons">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/fran%C3%A7ois-dauzet-413243226/"
-            >
-              <img src={iconLinkedinPath} alt="linkedin" />
-            </a>
-            <a target="_blank" href="https://github.com/Francois-Dauzet">
-              <img src={iconGithubPath} alt="github" />
-            </a>
-            <a target="_blank" href="https://gitlab.com/Francois-Dauzet">
-              <img src={iconGitlabPath} alt="gitlab" />
-            </a>
-          </div>
           <h1 translate="no">Explore My Background</h1>
           <p>
             Discover my professional journey, from my earliest trainings to my
@@ -104,6 +90,20 @@ const HeaderExperienceSection = () => {
             <div translate="no" className="contact-button">
               Contact Me
             </div>
+          </div>
+          <div className="container-social-icons">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/fran%C3%A7ois-dauzet-413243226/"
+            >
+              <img src={iconLinkedinPath} alt="linkedin" />
+            </a>
+            <a target="_blank" href="https://github.com/Francois-Dauzet">
+              <img src={iconGithubPath} alt="github" />
+            </a>
+            <a target="_blank" href="https://gitlab.com/Francois-Dauzet">
+              <img src={iconGitlabPath} alt="gitlab" />
+            </a>
           </div>
         </div>
       </div>
