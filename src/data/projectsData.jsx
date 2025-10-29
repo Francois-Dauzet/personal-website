@@ -13,11 +13,11 @@ import imageStudyProjectsDesktopPath from './../assets/images/projects/study_pro
 
 export const projectsData = [
   {
-    date: '20/05/2025',
+    date: '19/10/2025',
     technologies: [
       { name: 'React.js', background: '#08DDFF', color: '#000814' },
-      { name: 'Laravel', background: '#FF3427', color: '#000814' },
       { name: 'TypeScript', background: '#3178C6', color: '#000814' },
+      { name: 'Laravel', background: '#FF3427', color: '#000814' },
     ],
     icon: iconEspaceVeloDromePath,
     title: 'Espace Vélo Drôme',

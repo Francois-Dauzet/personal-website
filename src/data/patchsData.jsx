@@ -1,17 +1,17 @@
 export const patchsData = [
   {
-    date: '05/09/2025',
+    date: '19/10/2025',
     version: '1.2.0',
+    description: ['Added Espace Vélo Drôme project to Portfolio section.'],
+  },
+  {
+    date: '05/09/2025',
+    version: '1.1.0',
     description: [
       'Updated description of Conduent Business Solutions France.',
       'Added the Software Engineer training.',
       'Updated the list of certificates for the DevOps System Administrator training.',
     ],
-  },
-  {
-    date: '27/04/2025',
-    version: '1.1.0',
-    description: ['Added Quizlee project to Portfolio section.'],
   },
   {
     date: '24/03/2025',
