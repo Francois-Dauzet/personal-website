@@ -24,7 +24,7 @@ export const projectsData = [
     subtitle: 'Website & Management System for a Bike Shop',
     description: [
       'Development of a comprehensive website and administrative system for a local bike shop to enhance visibility and streamline service sharing (repair, sales, and rental).',
-      "The site presents all the store's offerings, including repair packages, a mobile workshop, and an online shop for new and used bicycles, as evidenced by the visual screenshots.",
+      "The site presents all the store's offerings, including repair packages, a mobile workshop, and an online shop for new and used bicycles.",
       'It features a dedicated section for detailed bike rental management and a complete e-commerce section for bike sales.',
       'A Laravel backend handles data storage, pricing logic, and reservation management, while a dedicated TypeScript back-office (admin page) offers the manager a complete tool for inventory and request management.',
     ],
