@@ -10,8 +10,41 @@ import imagePersonalWebsiteDesktopPath from './../assets/images/projects/persona
 import imageStudyProjectsMobilePath from './../assets/images/projects/study_projects_mobile.jpg';
 import iconStudyProjectsPath from './../assets/images/projects/study_projects_icon.svg';
 import imageStudyProjectsDesktopPath from './../assets/images/projects/study_projects_desktop.jpg';
+import imageAlgoRunnerMobilePath from './../assets/images/projects/algorunner_mobile.png';
+import iconAlgoRunnerPath from './../assets/images/projects/algorunner_icon.svg';
+import imageAlgoRunnerDesktopPath from './../assets/images/projects/algorunner_desktop.png';
 
 export const projectsData = [
+  {
+    date: '05/06/2026',
+    technologies: [
+      { name: 'React.js', background: '#08DDFF', color: '#000814' },
+      { name: 'Laravel', background: '#FF3427', color: '#000814' },
+    ],
+    icon: iconAlgoRunnerPath,
+    title: 'AlgoRunner',
+    subtitle: 'All-in-one PWA Fitness Application',
+    description: [
+      'Developed following a skiing injury, this application was created to allow users to input contraindications and exclude dangerous exercises.',
+      'She also allows inputting specific pathologies to generate adapted workout sessions.',
+      'The goal was to centralize all fitness needs into a single app, replacing multiple paid applications for different disciplines like core training, weightlifting, and yoga.',
+      'In addition to workouts, the app features comprehensive nutrition tracking, cardio activity logging, and body measurement tracking to monitor progress over time.',
+      'The interface was built as a modern PWA using React, Vite, and React Router, utilizing Recharts for dynamic performance and statistics visualizations.',
+    ],
+    Challenges: [
+      'The main challenge was managing the enormous amount of data required for various exercises and equipment to ensure balanced and varied sessions for every level and discipline.',
+      'The project demanded countless nights and weekends dedicated to design, development, complete testing, optimization, CI/CD setup, and production deployment.',
+      'Additionally, integrating external services like Google Analytics (GA4), Google Tag Manager, and Google AdSense, while strictly ensuring cookie compliance with Funding Choices, added a significant layer of technical complexity.',
+      'Creating a truly all-in-one application tailored to my specific needs and tastes was the ultimate goal.',
+    ],
+    links: {
+      site: 'https://algorunner.fr/',
+    },
+    images: {
+      mobile: imageAlgoRunnerMobilePath,
+      desktop: imageAlgoRunnerDesktopPath,
+    },
+  },
   {
     date: '19/10/2025',
     technologies: [
