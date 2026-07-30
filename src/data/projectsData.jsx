@@ -35,7 +35,7 @@ export const projectsData = [
       'This complete system ensures efficient, database-driven management for both rentals and sales, providing the manager with a comprehensive control panel.',
     ],
     links: {
-      site: 'https://espacevelodrome.fr/', // URL suggérée basée sur les images
+      site: 'https://espacevelodrome.fr/',
     },
     images: {
       mobile: imageEspaceVeloDromeMobilePath,

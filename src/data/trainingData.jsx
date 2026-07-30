@@ -21,6 +21,7 @@ import imageDatascientestReactIntermediairePath from './../assets/images/certifi
 import imageDatascientestTailwindCssPath from './../assets/images/certificates/datascientest_tailwind_css.jpg';
 
 // DevOps System Administrator
+import imageDatascientestIngenieurDevopsPath from './../assets/images/certificates/datascientest_ingenieur_devops.png';
 import imageDatascientestAcculturationDataPath from './../assets/images/certificates/datascientest_acculturation_data.jpg';
 import imageDatascientestLinuxAdministrationPath from './../assets/images/certificates/datascientest_linux_administration.jpg';
 import imageDatascientestNosqlDatabasesMongodbPath from './../assets/images/certificates/datascientest_nosql_databases_mongodb.jpg';
@@ -75,6 +76,7 @@ export const trainingData = [
       'This experience has allowed for acquiring in-depth expertise in the management and optimization of IT infrastructures. DevOps practices and tools were used to automate deployments, enhance collaboration between development and operations teams, and ensure system availability, reliability, and security.',
     imagePath: imageDatascientestPath,
     certificates: [
+      imageDatascientestIngenieurDevopsPath,
       imageDatascientestNosqlDatabasesMongodbPath,
       imageDatascientestSqlForDataSciencePath,
       imageDatascientestLinuxAdministrationPath,
