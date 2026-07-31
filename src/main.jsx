@@ -3,20 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import tagAnalytics from 'react-ga4';
-import tagManager from 'react-gtm-module';
-
-const tagAnalyticsArgs = {
-  gaId: import.meta.env.VITE_TAG_ANALYTICS_ID,
-};
-
-const tagManagerArgs = {
-  gtmId: import.meta.env.VITE_TAG_MANAGER_ID,
-};
-
-tagAnalytics.initialize(tagAnalyticsArgs.gaId);
-
-tagManager.initialize(tagManagerArgs);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
