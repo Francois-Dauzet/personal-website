@@ -1,18 +1,13 @@
-import emailjs from '@emailjs/browser';
-
 const EmailService = {
-  sendEmail: async (formData) => {
+  sendEmail: async (formElement) => {
     try {
-      const response = await emailjs.sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        formData,
-        {
-          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-        }
-      );
+      const formData = new FormData(formElement);
+      const response = await fetch('/contact.php', {
+        method: 'POST',
+        body: formData,
+      });
 
-      return response;
+      return { status: response.status };
     } catch (error) {
       throw new Error('Failed to send email: ' + error);
     }
