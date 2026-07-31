@@ -8,18 +8,18 @@ import iconToolsPath from './../assets/icons/tools.svg';
 export const skillsData = [
   {
     icon: iconFrontendPath,
-    title: 'Frontend Development',
+    title: 'Développement Frontend',
     description:
-      'Design and management of web user interfaces, whether static or dynamic.',
+      'Conception et gestion d\'interfaces utilisateur web, statiques ou dynamiques.',
     points: [
-      'Development of interactive web applications.',
-      'Integration of responsive and static designs.',
-      'Creation of smooth and intuitive user experiences.',
-      'Development of dynamic features for web applications.',
-      'Customization and integration of themes for content and e-commerce platforms.',
-      'Optimization of performance and accessibility of web interfaces.',
-      'Effective collaboration within development teams to achieve project objectives.',
-      'Constant technological watch to stay up-to-date with the latest trends and practices in web development.',
+      'Développement d\'applications web interactives et réactives.',
+      'Intégration de maquettes responsive adaptées à tous les écrans.',
+      'Création d\'expériences utilisateur (UX) fluides et intuitives.',
+      'Intégration de moteurs de templates (Twig) et de frameworks JavaScript (React.js, Vue.js).',
+      'Personnalisation et intégration de thèmes pour plateformes de contenu (WordPress) et e-commerce.',
+      'Optimisation des performances d\'affichage et de l\'accessibilité web.',
+      'Manipulation du DOM et dynamisation d\'interfaces via JavaScript et jQuery.',
+      'Collaboration efficace en équipe projet et veille technologique constante.',
     ],
     tools: [
       { name: 'React.js', background: '#08DDFF', color: '#000814', value: 70 },
@@ -40,18 +40,18 @@ export const skillsData = [
   },
   {
     icon: iconBackendPath,
-    title: 'Backend Development',
+    title: 'Développement Backend',
     description:
-      'Creation of databases and development of data access components for web and mobile applications.',
+      'Conception de bases de données et développement d\'architectures serveur pour applications web et mobiles.',
     points: [
-      'Design and creation of relational databases.',
-      'Development of data access components to ensure efficient data manipulation.',
-      'Backend implementation for web and mobile applications.',
-      'Integration of backend components into content management or e-commerce applications.',
-      'Management of data flows between different parts of an application.',
-      'Optimization of performance and security of backend applications.',
-      'Collaboration with frontend teams to ensure smooth integration between frontend and backend.',
-      'Maintenance and continuous improvement of backend functionalities to meet evolving user and business needs.',
+      'Conception et modélisation de bases de données relationnelles (SQL, MariaDB).',
+      'Développement d\'APIs REST et microservices (Laravel, Symfony, FastAPI, C#).',
+      'Gestion et sécurisation des flux de données entre frontend et serveur.',
+      'Mise en place de la logique métier et gestion de l\'authentification utilisateur.',
+      'Optimisation des requêtes et des performances côté serveur.',
+      'Intégration de composants backend dans des CMS ou plateformes e-commerce.',
+      'Collaboration étroite avec les équipes frontend pour assurer une intégration fluide.',
+      'Maintenance corrective et évolutive des architectures serveur.',
     ],
     tools: [
       { name: 'MariaDB', background: '#C69D71', color: '#000814', value: 35 },
@@ -61,19 +61,21 @@ export const skillsData = [
       { name: 'Laravel', background: '#FF3427', color: '#000814', value: 65 },
       { name: 'Symfony', background: '#FFFFFF', color: '#000814', value: 40 },
       { name: 'PHP', background: '#7B7FB5', color: '#000814', value: 55 },
-      { name: 'SQL', background: '#FFFFFF', color: '#000814', value: 70 },
+      { name: 'SQL', background: '#FFFFFF', color: '#000814', value: 80 },
     ],
   },
   {
     icon: iconMobilePath,
-    title: 'Mobile Development',
+    title: 'Développement Mobile',
     description:
-      'Development and production of applications for Android and iOS, with particular expertise in React Native.',
+      'Conception et déploiement d\'applications multiplateformes pour iOS et Android, avec une expertise ciblée sur React Native.',
     points: [
-      'Development and deployment of applications for Android and iOS platforms.',
-      'Management of build processes to automate application creation.',
-      'Configuration of development environments to ensure smooth integration.',
-      'Development of effective and responsive user interfaces.',
+      'Développement d\'applications mobiles cross-platform (iOS et Android) sous React Native.',
+      'Configuration des environnements natifs via Android Studio et Xcode.',
+      'Gestion et automatisation des processus de build pour le déploiement.',
+      'Intégration d\'interfaces utilisateur réactives, fluides et adaptées aux standards mobiles.',
+      'Connexion aux APIs REST backend et gestion du stockage local des données.',
+      'Optimisation des performances et débogage sur émulateurs et appareils physiques.',
     ],
     tools: [
       {
@@ -93,14 +95,16 @@ export const skillsData = [
   },
   {
     icon: iconDevopsPath,
-    title: 'DevOps Practices',
+    title: 'Pratiques DevOps',
     description:
-      'Use of processes and tools to speed up development and ensure continuous improvement of software.',
+      'Mise en œuvre de processus et d\'outils pour accélérer les cycles de développement et garantir l\'amélioration continue des applications.',
     points: [
-      'Setting up and managing continuous integration pipelines to automate testing and deployment.',
-      'Use of configuration management tools to maintain environment consistency.',
-      'Proficiency in Shell scripting for task automation and system process management.',
-      'Use of version control systems for collaborative management of source code.',
+      'Conception et gestion de pipelines d\'intégration et de déploiement continus (CI/CD) sous Azure DevOps.',
+      'Conteneurisation d\'applications et gestion des environnements isolés avec Docker.',
+      'Automatisation des tâches d\'administration et des processus système via des scripts Shell / Bash.',
+      'Gestion de la configuration et automatisation des environnements de développement avec Vagrant.',
+      'Gestion de versions et collaboration sur le code source via Git.',
+      'Administration de base de systèmes Linux et maintien de la cohérence des infrastructures.',
     ],
     tools: [
       {
@@ -123,22 +127,18 @@ export const skillsData = [
   },
   {
     icon: iconFolderPath,
-    title: 'Project Design and Management',
+    title: 'Conception et Gestion de Projet',
     description:
-      'Planning, designing, and managing software projects, from needs analysis to production and maintenance.',
+      'Planification, conception et pilotage de projets logiciels, de l\'analyse des besoins jusqu\'à la mise en production et la maintenance.',
     points: [
-      'Creation of detailed specifications in collaboration with stakeholders.',
-      'Development of Gantt charts for project planning and tracking.',
-      'Use of mind maps to visualize and organize ideas and processes.',
-      'Identification and specification of functional and non-functional requirements.',
-      'Establishment of technological and application architecture.',
-      'Definition of design guidelines to ensure consistency and quality.',
-      'Creation of mockups and wireframes to visualize the user interface.',
-      'Design and rapid prototyping of user interfaces.',
-      'Data inventory and design of conceptual and physical models.',
-      'Definition of security requirements and implementation of a secure development plan.',
-      'Planning project phases and iterations using agile or traditional methodologies.',
-      'Project budget management and cost tracking throughout the project lifecycle.',
+      'Rédaction de cahiers des charges détaillés et spécification des besoins fonctionnels et techniques.',
+      'Planification et suivi de projet via diagrammes de Gantt (GanttProject) et méthodes agiles (Trello).',
+      'Conception d\'architectures de bases de données et modélisation conceptuelle (Looping, DrawSQL).',
+      'Prototypage rapide, création de maquettes et wireframes UI/UX (Figma, Excalidraw).',
+      'Élaboration de charte graphique et gestion des palettes de couleurs (Coolors).',
+      'Organisation d\'idées et cartographie mentale des processus (Framindmap).',
+      'Définition des exigences de sécurité et mise en place d\'un plan de développement sécurisé.',
+      'Réalisation de présentations d\'impact et gestion documentaire (Prezi, Microsoft 365).',
     ],
     tools: [
       { name: 'Coolors', background: '#17AFF3', color: '#000814', value: 85 },
@@ -175,18 +175,16 @@ export const skillsData = [
   },
   {
     icon: iconToolsPath,
-    title: 'Workflow and Tools',
+    title: 'Environnement et Outils de Travail',
     description:
-      'Set of tools and work environments to optimize productivity and collaboration throughout the development process.',
+      'Ensemble des outils, IDE et environnements d\'exécution optimisant la productivité et la collaboration à chaque étape du développement.',
     points: [
-      'Advanced tag management and event tracking for web data analysis.',
-      'In-depth analysis of traffic and user behavior to make decisions based on precise data.',
-      'Development of web and mobile applications with cloud feature integration.',
-      'Testing and debugging of APIs to ensure proper operation of web services.',
-      'Administration and management of databases to maintain and optimize data.',
-      'Secure file transfer to ensure data integrity during transfers.',
-      'Configuration of development environment to facilitate the development process.',
-      'Administration of operating systems to ensure efficient operation of infrastructures.',
+      'Test, débogage et validation d\'APIs et de services web via Postman.',
+      'Gestion et administration de bases de données relationnelles (phpMyAdmin, MySQL Workbench).',
+      'Intégration de services Cloud et backend-as-a-service (Firebase) pour applications web et mobiles.',
+      'Mise en place du marquage d\'événements et analyse d\'audience web (Google Tag Manager, Google Analytics).',
+      'Configuration et exploitation d\'environnements de développement locaux et IDEs (Visual Studio Code, Visual Studio, Laragon, Notepad++).',
+      'Administration d\'environnements multiplateformes (Windows, Linux, macOS) et transferts sécurisés (FileZilla).',
     ],
     tools: [
       {
@@ -234,5 +232,5 @@ export const skillsData = [
       },
       { name: 'Windows', background: '#087DD7', color: '#000814', value: 90 },
     ],
-  },
+  }
 ];

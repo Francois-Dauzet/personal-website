@@ -40,10 +40,7 @@ const TrainingTimeline = () => {
         <TitleSection
           first="#All"
           second="Trainings"
-          description="From web and mobile design to database management, my Skills extend
-          across a diversity of fields. I followed certified training in
-          application development, self-taught as well as in beekeeping and
-          bodywork."
+          description="De la conception web et mobile à la gestion de bases de données, mes compétences couvrent un large périmètre technique. Mon parcours s'appuie sur des formations certifiantes en ingénierie logicielle et développement applicatif, enrichies par une démarche autodidacte affirmée ainsi que des expériences exigeantes en apiculture et en carrosserie."
           color="black"
         />
         <div className="timeline-items">
@@ -62,13 +59,12 @@ const TrainingTimeline = () => {
                   <p>{training.description}</p>
                   {training.certificates.length > 0 && (
                     <button
-                      translate="no"
                       className="certificate-button"
                       onClick={() => toggleCertificates(training.certificates)}
                     >
                       {training.certificates.length > 1
-                        ? 'View Certificates'
-                        : 'View Certificate'}
+                        ? 'Voir les certificats'
+                        : 'Voir le certificat'}
                     </button>
                   )}
                 </div>
@@ -88,7 +84,7 @@ const TrainingTimeline = () => {
               className="close-button"
               onClick={() => setShowCertificates(false)}
             >
-              Close Window
+              Fermer la fenêtre
             </button>
           </div>
         )}

@@ -10,10 +10,7 @@ const ExperienceTimeline = () => {
         <TitleSection
           first="#All"
           second="Experiences"
-          description="From application containerization to full stack development, my
-          professional experiences have been equally varied. I acquired
-          expertise in areas as diverse as precision in polishing, project
-          management and even military service."
+          description="De la conteneurisation d'applications au développement full-stack, mon parcours professionnel se distingue par sa richesse et sa polyvalence. Cette diversité m'a permis d'acquérir une forte adaptabilité et d'allier des compétences très variées, l'extrême rigueur du polissage de précision, la méthode de la gestion de projet, ainsi que la discipline et l'esprit d'équipe forgés lors de mon engagement militaire."
           color="white"
         />
         <div className="timeline-items">

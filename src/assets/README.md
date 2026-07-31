@@ -6,7 +6,7 @@
 
 ## Training
 
-**width**: `1200`
+**width**: `800x800`
 
 ## Certificate
 
@@ -14,9 +14,13 @@
 
 ## Experience
 
-**width**: `1200`
+**width**: `800x800`
 
 ## Project
 
 **mobile**: `200`
 **desktop**: `800`
+
+# header section
+
+**width**: `1200x800`

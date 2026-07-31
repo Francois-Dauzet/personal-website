@@ -15,9 +15,7 @@ const SkillCardsSection = () => {
         <TitleSection
           first="#Skill"
           second="Cards"
-          description="I am a versatile developer specialized in creating impactful
-          interfaces and securing data, as well as optimizing development and
-          deployment processes."
+          description="Développeur polyvalent spécialisé dans la création d'interfaces performantes, la sécurisation des données et l'optimisation des flux de développement et de déploiement."
           color="black"
         />
         <div className="container-cards">

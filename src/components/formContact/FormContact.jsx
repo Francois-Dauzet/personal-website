@@ -70,12 +70,11 @@ const FormContact = () => {
               src={closingCrossPath}
               alt="closing cross"
             />
-            <h1 translate="no">Contact</h1>
+            <h1>Contact</h1>
             <p className="form-description">
-              Feel free to contact me via the form below, I will respond to you
-              as soon as possible.
+              N'hésitez pas à me contacter via le formulaire ci-dessous, je vous répondrai dans les plus brefs délais.
             </p>
-            <p className="form-description">Hope to hear from you soon!</p>
+            <p className="form-description">À très bientôt !</p>
             <form ref={form} onSubmit={handleSubmit}>
               <div className="form-group">
                 <input
@@ -91,7 +90,7 @@ const FormContact = () => {
                   type="text"
                   id="subject"
                   name="subject"
-                  placeholder="Subject"
+                  placeholder="Sujet"
                   required
                 />
               </div>
@@ -103,26 +102,24 @@ const FormContact = () => {
                   placeholder="Message"
                   required
                 ></textarea>
-                {sendError && <span>An error has occurred</span>}
+                {sendError && <span>Une erreur est survenue</span>}
               </div>
               <ReCAPTCHA
                 sitekey={import.meta.env.VITE_CAPTCHA_SITE_KEY}
                 onChange={handleCaptchaChange}
-                hl="en"
+                hl="fr"
               />
               {!isLoading ? (
                 <input
-                  translate="no"
                   className="submit-button"
                   type="submit"
-                  value="Send Message"
+                  value="Envoyer le message"
                 />
               ) : (
                 <input
-                  translate="no"
                   className="submit-button"
                   type="submit"
-                  value="Sending..."
+                  value="Envoi en cours..."
                   disabled
                 />
               )}
@@ -140,9 +137,9 @@ const FormContact = () => {
               src={closingCrossPath}
               alt="closing cross"
             />
-            <h1 translate="no">Thank you</h1>
+            <h1>Merci</h1>
             <img className="icon-check" src={iconCheckPath} alt="check" />
-            <p>Your message has been successfully sent, see you soon!</p>
+            <p>Votre message a bien été envoyé, à très bientôt !</p>
             <div className="bottom-space"></div>
           </>
         )}

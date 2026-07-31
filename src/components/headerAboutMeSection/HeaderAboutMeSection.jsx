@@ -119,38 +119,33 @@ const HeaderAboutMeSection = () => {
         </div>
         <div className="container-right">
           <div className="container-text">
-            <h1 translate="no">
-              DevOps & Web and Mobile Application Developer
+            <h1>
+              Développeur Web & Mobile | DevOps
             </h1>
             <p>
-              Currently aged {age} years old, I am curious, self-taught, and
-              meticulous, with a strong background in audio/video editing, music
-              production, mapping and modding, computer maintenance, and various
-              IT domains.
+              Âgé de {age} ans, curieux, autodidacte et rigoureux, avec un bagage technique
+              varié incluant le montage audio/vidéo, la production musicale, le mapping/modding,
+              la maintenance informatique et divers domaines de l'IT.
             </p>
             <p>
-              As a DevOps & Web Developer, the focus is on self-enrichment of
-              skills.
+              Passionné par le secteur, l'apprentissage continu est au cœur de la démarche,
+              notamment à travers une veille constante sur les nouvelles technologies,
+              l'administration système et les méthodologies DevOps.
             </p>
             <p>
-              Free time is dedicated to learning new technologies and delving
-              deeper into DevOps and system administration concepts.
-            </p>
-            <p>
-              Adaptable, capable of working both independently and as part of a
-              team, always seeking innovation to enhance projects and eager to
-              apply DevOps principles to development and deployment tasks.
+              Autonome, adaptable et appréciant le travail en équipe, avec une volonté permanente
+              d'innover et d'appliquer les principes DevOps pour optimiser les processus de développement
+              et de déploiement.
             </p>
             <div className="container-contact-button">
-              <div translate="no" className="contact-button">
-                Contact Me
+              <div className="contact-button">
+                Me contacter
               </div>
               <div
-                translate="no"
                 className="pdf-button"
                 onClick={handleDownloadPdf}
               >
-                Download PDF
+                Télécharger PDF
               </div>
             </div>
           </div>

@@ -72,23 +72,20 @@ const HeaderExperienceSection = () => {
     <header>
       <div className="container-header-experience-section">
         <div className="background">
-          <h1 translate="no">Explore My Background</h1>
+          <h1>Explorer mon parcours</h1>
           <p>
-            Discover my professional journey, from my earliest trainings to my
-            most recent experiences.
+            Découvrez mon parcours professionnel, de mes premières formations à mes expériences les plus récentes.
           </p>
           <p>
-            Explore the stages of my career path, the projects I've contributed
-            to.
+            Explorez les étapes de ma carrière et les projets auxquels j'ai contribué.
           </p>
           <p>
-            Feel free to contact me for any questions or collaboration
-            opportunities!
+            N'hésitez pas à me contacter pour toute question ou opportunité de collaboration !
           </p>
 
           <div className="container-contact-button">
-            <div translate="no" className="contact-button">
-              Contact Me
+            <div className="contact-button">
+              Me contacter
             </div>
           </div>
           <div className="container-social-icons">

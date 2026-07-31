@@ -23,9 +23,7 @@ const SkillsSection = () => {
         <TitleSection
           first="#All"
           second="Skills"
-          description="Here are my web development skills, covering frontend, backend and
-          database management. Explore each section to discover the tools and
-          technologies that I master in these key areas."
+          description="Aperçu des compétences techniques et méthodologiques acquises à travers mes expériences et formations. Exploration des domaines d'expertise couvrant le développement Frontend, Backend, Mobile, les pratiques DevOps et le pilotage de projet."
           color="white"
         />
         <div className="container-cards">
@@ -33,7 +31,7 @@ const SkillsSection = () => {
             <div key={skillIndex} className="item-card">
               <div className="title">
                 <img src={skill.icon} alt="" />
-                <h3 translate="no">{skill.title}</h3>
+                <h3>{skill.title}</h3>
               </div>
               <h4>{skill.description}</h4>
               <ul>
@@ -52,7 +50,7 @@ const SkillsSection = () => {
                 htmlFor={skill.title.toLowerCase()}
                 className="item-card-label"
               >
-                Tools & Technologies
+                Outils & Technologies
               </label>
               <div className="item-card-content">
                 {skill.tools.map((tool, toolIndex) => (

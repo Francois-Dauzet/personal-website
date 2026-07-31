@@ -27,11 +27,11 @@ const Footer = () => {
           {patchsData[0].version}
         </p>
         <ul>
-          <li translate="no" onClick={() => patchNotesNavigate()}>
-            Patch Notes
+          <li onClick={() => patchNotesNavigate()}>
+            Notes de mise à jour
           </li>
-          <li translate="no" onClick={() => privacyNavigate()}>
-            Privacy Policy
+          <li onClick={() => privacyNavigate()}>
+            Politique de confidentialité
           </li>
         </ul>
         <div className="line"></div>
@@ -49,7 +49,7 @@ const Footer = () => {
             <img src={iconGitlabPath} alt="gitlab" />
           </a>
         </div>
-        <div translate="no">
+        <div>
           <WebsiteCarbonBadge dark={false} co2="0.18" percentage="82" />
         </div>
         <p translate="no">Copyright © {currentYear} François Dauzet</p>

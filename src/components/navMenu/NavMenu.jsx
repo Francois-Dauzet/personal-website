@@ -105,32 +105,29 @@ const NavMenu = () => {
           <li>
             <p>01.</p>
             <h3
-              translate="no"
-              onClick={() => handleNavMenu(' About.Me', 'about-me')}
+              onClick={() => handleNavMenu(' À propos', 'about-me')}
             >
-              About Me
+              À propos
             </h3>
-            <span>Learn more</span>
+            <span>En savoir plus</span>
           </li>
           <li>
             <p>02.</p>
             <h3
-              translate="no"
-              onClick={() => handleNavMenu(' Experience', 'experience')}
+              onClick={() => handleNavMenu(' Expérience', 'experience')}
             >
-              Experience
+              Expérience
             </h3>
-            <span>Explore my background</span>
+            <span>Explorer mon parcours</span>
           </li>
           <li>
             <p>03.</p> <div></div>
             <h3
-              translate="no"
               onClick={() => handleNavMenu(' Portfolio', 'portfolio')}
             >
               Portfolio
             </h3>
-            <span>Discover my work</span>
+            <span>Découvrir mes réalisations</span>
           </li>
         </ul>
         <div onClick={() => toggleOverlay(false)} className="dead-zone"></div>

@@ -46,15 +46,12 @@ const HeaderPatchNotesSection = () => {
               <img src={iconGitlabPath} alt="gitlab" />
             </a>
           </div>
-          <h1 translate="no">Patch Notes</h1>
+          <h1>Notes de mise à jour</h1>
           <p>
-            On this page you will find a complete summary of all modifications
-            made to the site.
+            Vous trouverez sur cette page le récapitulatif complet de toutes les modifications apportées au site.
           </p>
           <p>
-            It is a central reference point where every adjustment, every
-            addition and each update are logged, providing a clear view clear
-            overview of the developments made.
+            Chaque ajustement, ajout ou mise à jour y est consigné afin d'offrir une vue d'ensemble claire des évolutions réalisées.
           </p>
         </div>
       </div>

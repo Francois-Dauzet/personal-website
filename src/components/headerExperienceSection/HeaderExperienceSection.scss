@@ -4,7 +4,7 @@
   /* -----------------------------------
  * --------------- Container header
 ----------------------------------- */
-  background-image: url(../../assets/backgrounds/bg_header_experience.jpg);
+  background-image: url(../../assets/backgrounds/bg_header_experience.png);
   background-color: map-get(map-get($background, on-primary), 75);
   background-size: cover;
   background-repeat: no-repeat;
@@ -159,8 +159,7 @@
 
       .modal {
         transform: translateX(-1500px);
-        animation: modalRoadRunnerIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1)
-          forwards;
+        animation: modalRoadRunnerIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
       }
     }
 
@@ -171,8 +170,7 @@
         animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 
         .modal {
-          animation: modalRoadRunnerOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
-            forwards;
+          animation: modalRoadRunnerOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
         }
       }
     }

@@ -8,61 +8,68 @@ const PrivacySection = () => {
     <section>
       <div className="container-privacy">
         <div className="item-privacy">
-          <h3>Collection and Use of Information</h3>
+          <h3>Collecte et utilisation des données</h3>
           <p>
-            I use Google Tag Manager (GTM) and Google Analytics (GA) to track
-            activity on my website, such as clicks, pages visited, type of
-            device used, browser used, and country of connection. However, I do
-            not collect any personally identifiable information in this manner.
-            I track this data in an aggregated and anonymous way for the purpose
-            of improving my website and user experience.
+            Google Tag Manager (GTM) et Google Analytics (GA) sont utilisés pour analyser
+            l'activité sur le site (clics, pages visitées, type d'appareil, navigateur et pays de connexion).
+            Aucune donnée directement identifiante n'est collectée par ce biais. Ces mesures sont réalisées de manière
+            agrégée et anonyme dans le seul but d'améliorer l'expérience utilisateur et les performances du site.
           </p>
           <p>
-            If you contact me via my contact form, I will collect your email
-            address, the subject of your message, and the content of your
-            message. This information is used solely for the purpose of
-            responding to your inquiry and will never be shared with third
-            parties without your consent.
+            En cas d'utilisation du formulaire de contact, votre adresse email, le sujet et le contenu de votre message
+            sont collectés. Ces données servent exclusivement à traiter votre demande et ne sont jamais transmises
+            à des tiers sans votre consentement préalable.
           </p>
           <p>
-            When you send an email via my EmailJS service, only your email
-            address, the subject, and the message you entered are directly
-            transmitted to me via email. No other information is collected or
-            stored by third parties.
+            L'envoi de message s'appuie sur le service EmailJS. Seules les informations renseignées (email, sujet, message)
+            sont directement transmises par courrier électronique. Aucune autre donnée n'est collectée ni stockée par des tiers.
           </p>
         </div>
+
         <div className="item-privacy">
-          <h3>Cookies and Tracking Technologies</h3>
+          <h3>Cookies et technologies de suivi</h3>
           <p>
-            I use cookies to track user activity on my website in order to
-            improve my service. These cookies do not contain any personally
-            identifiable information and can be disabled in your browser
-            settings if desired.
+            Des cookies sont utilisés pour mesurer l'audience et optimiser le fonctionnement du site.
+            Ces cookies ne contiennent aucune donnée personnelle nominative et peuvent être désactivés ou bloqués
+            à tout moment depuis les paramètres de votre navigateur.
           </p>
         </div>
+
         <div className="item-privacy">
-          <h3>Data Security</h3>
+          <h3>Durée de conservation et vos droits (RGPD)</h3>
           <p>
-            I take reasonable measures to protect your personal information
-            against unauthorized access, disclosure, alteration, or destruction.
+            Les données transmises via le formulaire de contact sont conservées uniquement le temps nécessaire
+            au traitement de votre demande. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification,
+            d'effacement et de portabilité de vos données personnelles, que vous pouvez exercer à tout moment en me contactant.
           </p>
         </div>
+
         <div className="item-privacy">
-          <h3>Changes to the Privacy Policy</h3>
+          <h3>Sécurité des données</h3>
           <p>
-            I reserve the right to update this Privacy Policy at any time. I
-            encourage you to regularly review this page for any changes.
+            Des mesures de sécurité adaptées sont mises en œuvre pour protéger vos informations personnelles
+            contre tout accès non autorisé, altération, divulgation ou destruction.
           </p>
         </div>
+
         <div className="item-privacy">
-          <h3>Contact Me</h3>
+          <h3>Modifications de la politique de confidentialité</h3>
           <p>
-            If you have any questions regarding this privacy policy, please
-            contact me via the contact form available on the website.
+            Cette politique de confidentialité peut être mise à jour à tout moment pour refléter les évolutions légales
+            ou techniques. Il est conseillé de consulter régulièrement cette page.
           </p>
         </div>
+
         <div className="item-privacy">
-          <span>Last updated: 26/04/2024</span>
+          <h3>Contact</h3>
+          <p>
+            Pour toute question concernant cette politique ou l'exercice de vos droits, vous pouvez utiliser
+            le formulaire de contact disponible sur le site.
+          </p>
+        </div>
+
+        <div className="item-privacy">
+          <span>Dernière mise à jour : 31/07/2026</span>
         </div>
       </div>
     </section>

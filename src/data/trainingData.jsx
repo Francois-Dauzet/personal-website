@@ -1,13 +1,13 @@
 /* *********************
  * Trainings
  ********************* */
-import imageCarrosseriePath from './../assets/images/trainings/carrosserie.jpg';
-import imageApicultureGroupPath from './../assets/images/trainings/apiculture_group.jpg';
-import imageFormationsPath from './../assets/images/trainings/formations.jpg';
-import imageSimplonPath from './../assets/images/trainings/simplon.jpg';
-import imageEcoleNumeriqueArdechoisePath from './../assets/images/trainings/ecole_numerique_ardechoise.jpg';
-import imageDatascientestPath from './../assets/images/trainings/datascientest.jpg';
-import imageSoftwareEngineerPath from './../assets/images/trainings/software_engineer.jpg';
+import imageCarrosseriePath from './../assets/images/trainings/carrosserie.png';
+import imageApicultureGroupPath from './../assets/images/trainings/apiculture_group.png';
+import imageFormationsPath from './../assets/images/trainings/formations.png';
+import imageSimplonPath from './../assets/images/trainings/simplon.png';
+import imageEcoleNumeriqueArdechoisePath from './../assets/images/trainings/ecole_numerique_ardechoise.png';
+import imageDatascientestPath from './../assets/images/trainings/datascientest.png';
+import imageSoftwareEngineerPath from './../assets/images/trainings/software_engineer.png';
 
 /* *********************
  * Certificates
@@ -56,7 +56,7 @@ export const trainingData = [
     title: 'Software Engineer',
     subtitle: 'DataScientest & Panthéon Sorbonne',
     description:
-      'This experience was the culmination of my academic journey, serving as a synthesis of all the knowledge I had acquired. I applied my expertise in software engineering and my DevOps skills to manage and optimize complex IT infrastructures. I used tools for automated deployments and worked on fostering collaboration between development and operations teams, ensuring the availability, reliability, and security of systems.',
+      'Formation axée sur la maîtrise avancée de l\'ingénierie logicielle et des pratiques DevOps. Conception, gestion et automatisation d\'infrastructures complexes via des pipelines CI/CD. Mise en œuvre des meilleures pratiques pour rapprocher développement et opérations, garantissant la haute disponibilité, la fiabilité et la sécurité des systèmes.',
     imagePath: imageSoftwareEngineerPath,
     certificates: [
       imageDatascientestHtmlPath,
@@ -70,10 +70,10 @@ export const trainingData = [
   {
     date: '2024 - 2025',
     certification: 'RNCP. 6',
-    title: 'DevOps System Administrator',
+    title: 'Administrateur Système DevOps',
     subtitle: 'DataScientest & Panthéon Sorbonne',
     description:
-      'This experience has allowed for acquiring in-depth expertise in the management and optimization of IT infrastructures. DevOps practices and tools were used to automate deployments, enhance collaboration between development and operations teams, and ensure system availability, reliability, and security.',
+      'Acquisition d\'une expertise approfondie en administration système et optimisation d\'infrastructures. Mise en œuvre des pratiques et outils DevOps pour l\'automatisation des déploiements, le renforcement de la synergie Dev/Ops et la garantie de la disponibilité, de la fiabilité et de la sécurité des systèmes.',
     imagePath: imageDatascientestPath,
     certificates: [
       imageDatascientestIngenieurDevopsPath,
@@ -93,10 +93,10 @@ export const trainingData = [
   {
     date: '2022 - 2023',
     certification: 'RNCP. 6',
-    title: 'Application Designer and Developer',
+    title: 'Concepteur Développeur d\'Applications',
     subtitle: 'École Numérique Ardéchoise',
     description:
-      'This immersion has led to the development of in-depth expertise in the design and development of software applications. Additionally, it provided an opportunity to cultivate skills in requirements analysis, software architecture design, and project management.',
+      'Conception et développement d\'applications logicielles sur l\'ensemble du cycle de vie. Analyse des besoins utilisateurs, élaboration d\'architectures applicatives et pilotage de projets selon les bonnes pratiques de développement.',
     imagePath: imageEcoleNumeriqueArdechoisePath,
     certificates: [
       imageEcoleNumeriqueArdechoiseApplicationDesignerAndDeveloperPath,
@@ -105,20 +105,20 @@ export const trainingData = [
   {
     date: '2021 - 2022',
     certification: 'RNCP. 5',
-    title: 'Web and Mobile Developer',
+    title: 'Développeur Web et Mobile',
     subtitle: 'Simplon Le Cheylard',
     description:
-      'This experience has conferred a comprehensive mastery in the development of web and mobile applications. I deepened my skills in programming languages such as HTML, CSS, JavaScript, as well as in the use of popular frameworks and libraries. Moreover, I gained the expertise needed to design intuitive and responsive user interfaces.',
+      'Acquisition des fondamentaux et développement d\'applications web et mobiles responsive. Maîtrise des langages clés (HTML, CSS, JavaScript) et de leurs frameworks, avec un accent mis sur la conception d\'interfaces utilisateur intuitives, performantes et ergonomiques.',
     imagePath: imageSimplonPath,
     certificates: [imageSimplonWebAndMobileDeveloperPath],
   },
   {
     date: '2019 - 2021',
-    certification: 'Self-taught',
-    title: 'HTML, CSS, JS, and SQL Trainings',
+    certification: 'Autodidacte',
+    title: 'Formations HTML, CSS, JS et SQL',
     subtitle: 'Sololearn, Pierre Giraud, Mimo...',
     description:
-      'As a self-taught individual, I learned to design and develop dynamic websites using HTML, CSS, and JavaScript. Furthermore, I acquired skills in database manipulation and management by learning the SQL language.',
+      'Apprentissage autodidacte des bases du développement web et de la gestion de données. Conception de sites web dynamiques (HTML, CSS, JavaScript) et modélisation/requêtage de bases de données relationnelles via le langage SQL.',
     imagePath: imageFormationsPath,
     certificates: [
       imageSololearnHtmlPath,
@@ -130,20 +130,20 @@ export const trainingData = [
   {
     date: '2012 - 2013',
     certification: 'RNCP. 4',
-    title: 'BPREA Beekeeping',
+    title: 'BPREA Apiculture',
     subtitle: 'CFPPA de Hyères',
     description:
-      'This provided the opportunity to acquire and develop practical and theoretical skills in hive management and honey production, learning techniques such as beekeeping, honey harvesting, and disease management, all while adhering to principles of sustainable and ecological beekeeping.',
+      'Acquisition des compétences théoriques et pratiques en gestion d\'exploitation apicole, conduite des ruches, techniques d\'élevage, récolte des produits et gestion sanitaire du cheptel, dans le respect des normes d\'une apiculture durable et écologique.',
     imagePath: imageApicultureGroupPath,
     certificates: [imageCfppaBpreaBeekeepingPath],
   },
   {
     date: '2007 - 2008',
     certification: 'RNCP. 3',
-    title: 'CAP Bodywork',
+    title: 'CAP Carrosserie',
     subtitle: 'CFA Lucien Ravit de Livron',
     description:
-      'This immersion allowed for the development of skills necessary to perform repairs and restoration work on the structure and exterior appearance of vehicles. This includes repairing deformations, painting, and replacing damaged elements, all while adhering to safety and quality standards.',
+      'Apprentissage et mise en pratique des techniques de réparation et de restauration de carrosserie automobile, redressage des structures, préparation des surfaces, application de peinture et remplacement d\'éléments endommagés, dans le strict respect des normes de sécurité et de qualité.',
     imagePath: imageCarrosseriePath,
     certificates: [],
   },

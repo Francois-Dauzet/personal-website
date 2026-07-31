@@ -47,10 +47,10 @@ const HeaderPrivacySection = () => {
               <img src={iconGitlabPath} alt="gitlab" />
             </a>
           </div>
-          <h1 translate="no">Privacy Policy</h1>
+          <h1>Politique de confidentialité</h1>
           <p>
-            This Privacy Policy describes how I collect, use, and protect the
-            information you provide to me when you use my website.
+            Cette politique de confidentialité décrit la manière dont les informations
+            transmises lors de votre utilisation du site sont collectées, utilisées et protégées.
           </p>
         </div>
       </div>

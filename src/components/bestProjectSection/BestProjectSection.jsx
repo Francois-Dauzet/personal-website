@@ -24,7 +24,7 @@ const BestProjectSection = () => {
         <TitleSection
           first="#Best"
           second="Project"
-          description="Explore my current major project, a balanced expression of my current skills. It reflects my ability to tackle technical challenges with confidence and to innovate pragmatically."
+          description="Découvrez mon projet majeur actuel, une synthèse de mes compétences. Il illustre ma capacité à relever des défis techniques complexes et à innover avec pragmatisme."
           color="black"
         />
         <div className="container-cards">

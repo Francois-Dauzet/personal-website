@@ -73,23 +73,20 @@ const HeaderPortfolioSection = () => {
     <header>
       <div className="container-header-portfolio-section">
         <div className="background">
-          <h1 translate="no">Discover My Work</h1>
+          <h1>Découvrir mes réalisations</h1>
           <p>
-            Explore a condensed version of my work, projects, and achievements
-            here.
+            Un aperçu synthétique de mes projets, travaux et accomplissements.
           </p>
           <p>
-            Dive into my professional universe where creativity, innovation, and
-            passion converge.
+            Une immersion dans un univers professionnel où convergent créativité, innovation et passion.
           </p>
           <p>
-            Feel free to contact me for any questions or collaboration
-            opportunities!
+            N'hésitez pas à me contacter pour toute question ou opportunité de collaboration !
           </p>
 
           <div className="container-contact-button">
-            <div translate="no" className="contact-button">
-              Contact Me
+            <div className="contact-button">
+              Me contacter
             </div>
           </div>
           <div className="container-social-icons">

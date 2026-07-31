@@ -4,7 +4,7 @@ import './IntroPage.scss';
 
 const IntroPage = () => {
   const TitleData = ' Welcome';
-  const subtitleData = ' in.my.website';
+  const subtitleData = ' to.my.world';
   const navigate = useNavigate();
   const [transitionActive, setTransitionActive] = useState(false);
 
@@ -36,9 +36,8 @@ const IntroPage = () => {
           );
           timeouts.current.push(
             setTimeout(() => {
-              item.style.transform = `translateY(+1400%) rotate(${
-                Math.floor(Math.random() * 2884) - 1440
-              }deg)`;
+              item.style.transform = `translateY(+1400%) rotate(${Math.floor(Math.random() * 2884) - 1440
+                }deg)`;
             }, index * 160 + 4000)
           );
         }
@@ -57,9 +56,8 @@ const IntroPage = () => {
           );
           timeouts.current.push(
             setTimeout(() => {
-              item.style.transform = `translateY(2000%) rotate(${
-                Math.floor(Math.random() * 2884) - 1440
-              }deg)`;
+              item.style.transform = `translateY(2000%) rotate(${Math.floor(Math.random() * 2884) - 1440
+                }deg)`;
 
               if (index === textSubtitleArray.length - 1) {
                 timeouts.current.push(
@@ -92,9 +90,8 @@ const IntroPage = () => {
               key={index}
               ref={(el) => (titleLetterItems.current[index] = el)}
               style={{
-                transform: `translateY(-1400%) rotate(${
-                  Math.floor(Math.random() * 1442) - 720
-                }deg)`,
+                transform: `translateY(-1400%) rotate(${Math.floor(Math.random() * 1442) - 720
+                  }deg)`,
                 fontSize: `${88 / TitleData.length}vw`,
               }}
             >
@@ -108,9 +105,8 @@ const IntroPage = () => {
               key={index}
               ref={(el) => (subtitleLetterItems.current[index] = el)}
               style={{
-                transform: `translateY(-2200%) rotate(${
-                  Math.floor(Math.random() * 1442) - 720
-                }deg)`,
+                transform: `translateY(-2200%) rotate(${Math.floor(Math.random() * 1442) - 720
+                  }deg)`,
                 fontSize: `${66 / subtitleData.length}vw`,
               }}
             >
@@ -118,8 +114,8 @@ const IntroPage = () => {
             </li>
           ))}
         </ul>
-        <span translate="no" className="text-stop-animation">
-          Click to stop the animation
+        <span className="text-stop-animation">
+          Cliquer pour arrêter l'animation
         </span>
       </div>
     </div>

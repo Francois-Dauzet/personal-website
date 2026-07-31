@@ -28,10 +28,7 @@ const ProjectsSection = () => {
         <TitleSection
           first="#All"
           second="Projects"
-          description="Explore my projects, a showcase of my development skills. Each project
-          represents an opportunity to innovate, create and meet technical
-          challenges. Browse each project to discover the technologies used, the
-          challenges faced and the solutions brought."
+          description="Découvrez mes réalisations, vitrine de mes compétences en développement. Chaque projet illustre une opportunité d'innover, de concevoir et de relever des défis techniques. Parcourez-les pour découvrir les technologies utilisées, les enjeux relevés et les solutions apportées."
           color="white"
         />
         <div className="container-cards">
@@ -76,12 +73,12 @@ const ProjectsSection = () => {
                 htmlFor={project.title.toLowerCase()}
                 className="item-card-label"
               >
-                More information
+                En savoir plus
               </label>
               <div className="item-card-content">
                 <div className="title">
-                  <img src={iconRobotPath} alt="project description" />
-                  <h3>Project Description</h3>
+                  <img src={iconRobotPath} alt="description du projet" />
+                  <h3>Description du projet</h3>
                 </div>
                 <ul>
                   {project.description.map((paragraph, index) => (
@@ -89,8 +86,8 @@ const ProjectsSection = () => {
                   ))}
                 </ul>
                 <div className="title">
-                  <img src={iconIdeaPath} alt="challenges encountered" />
-                  <h3>Challenges Encountered</h3>
+                  <img src={iconIdeaPath} alt="défis rencontrés" />
+                  <h3>Défis rencontrés</h3>
                 </div>
                 <ul>
                   {project.Challenges.map((paragraph, index) => (
